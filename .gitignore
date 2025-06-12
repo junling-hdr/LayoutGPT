@@ -1,5 +1,7 @@
 ATISS/
 
+gligen/gligen/gligen_checkpoints
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
