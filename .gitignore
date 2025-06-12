@@ -1,7 +1,8 @@
-ATISS/
+ATISS/data_output/*
+ATISS/data_output_future/*
+ATISS/3D-FUTURE/*
 
-gligen/gligen/gligen_checkpoints
-
+ATISS/gligen/gligen_chckpoints/*
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
