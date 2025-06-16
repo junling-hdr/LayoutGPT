@@ -1,0 +1,8 @@
+# https://github.com/mikedh/trimesh
+
+newmtl solid_001_wire
+Ka 0.26274510 0.21176471 0.13333333
+Kd 0.26274510 0.21176471 0.13333333
+Ks 0.43137255 0.38823529 0.31764706
+Ns 1.00000000
+map_Kd solid_001_wire.png

@@ -77,9 +77,20 @@ if __name__ == '__main__':
         bsdf = mat.node_tree.nodes["Principled BSDF"]
         texImage = mat.node_tree.nodes.new('ShaderNodeTexImage')
         try:
-            texImage.image = bpy.data.images.load(os.path.join(args.input_dir, f"material_{id}.png"))
-        except:
-            texImage.image = bpy.data.images.load(os.path.join(args.input_dir, f"material_{id}.jpeg"))
+            png_path = os.path.abspath(os.path.normpath(os.path.join(args.input_dir, f"material_{id}.png")))
+            print(f"Trying to load PNG: {png_path}")
+            print(f"File exists: {os.path.exists(png_path)}")
+            texImage.image = bpy.data.images.load(png_path)
+        except Exception as e:
+            print(f"PNG failed: {e}")
+            try:
+                jpeg_path = os.path.abspath(os.path.normpath(os.path.join(args.input_dir, f"material_{id}.jpeg")))
+                print(f"Trying to load JPEG: {jpeg_path}")
+                print(f"File exists: {os.path.exists(jpeg_path)}")
+                texImage.image = bpy.data.images.load(jpeg_path)
+            except Exception as e2:
+                print(f"JPEG also failed: {e2}")
+                print(f"Skipping material for object {id}")
         mat.node_tree.links.new(bsdf.inputs['Base Color'], texImage.outputs['Color'])
         # if obj.data.materials:
         #     obj.data.materials[0] = mat
@@ -89,7 +100,14 @@ if __name__ == '__main__':
     bpy.ops.object.add(type="EMPTY")
 
     # Set render settings (optional)
-    scene.render.engine = 'BLENDER_EEVEE'  # or 'BLENDER_EEVEE'
+    # Try different render engines based on Blender version
+    try:
+        scene.render.engine = 'BLENDER_EEVEE_NEXT'  # Blender 4.2+
+    except:
+        try:
+            scene.render.engine = 'BLENDER_EEVEE'  # Older Blender versions
+        except:
+            scene.render.engine = 'CYCLES'  # Fallback
     scene.render.resolution_x = 1080  # Width of the output
     scene.render.resolution_y = 1080  # Height of the output
     scene.render.resolution_percentage = 100
