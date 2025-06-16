@@ -6,6 +6,7 @@ sentencepiece
 cssutils
 accelerate
 openai
+python-dotenv
 albumentations 
 opencv-python 
 pudb 

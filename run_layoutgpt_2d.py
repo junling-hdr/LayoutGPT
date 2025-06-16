@@ -10,12 +10,28 @@ import time
 import random
 import argparse
 import openai
+import os
 from transformers import GPT2TokenizerFast, LlamaForCausalLM, LlamaTokenizer
 import transformers
 from utils import *
 
-openai.organization = ""
-openai.api_key = ""
+# Load environment variables from .env file if available
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass  # python-dotenv not installed, use system environment variables
+
+# Load OpenAI API configuration from environment variables
+openai.organization = os.getenv('OPENAI_ORGANIZATION', '')
+openai.api_key = os.getenv('OPENAI_API_KEY', '')
+
+# Check if API key is properly configured
+if not openai.api_key:
+    print("Warning: OPENAI_API_KEY environment variable is not set.")
+    print("Please set your OpenAI API key in environment variables:")
+    print("export OPENAI_API_KEY='your_api_key_here'")
+    print("export OPENAI_ORGANIZATION='your_org_id_here'  # optional")
 
 # GPT-3 Type
 llm_name2id = {

@@ -5,11 +5,25 @@ import time
 from openai import OpenAI
 from utils import write_json
 
-# Initialize OpenAI client (new v1.0+ API)
+# Load environment variables from .env file if available
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass  # python-dotenv not installed, use system environment variables
+
+# Initialize OpenAI client (new v1.0+ API) - Load from environment variables
 client = OpenAI(
-    api_key="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",
-    organization="org-bS9cxlUQLcn0BmjvRa376m3W"
-) 
+    api_key=os.getenv('OPENAI_API_KEY'),
+    organization=os.getenv('OPENAI_ORGANIZATION')
+)
+
+# Check if API key is properly configured
+if not client.api_key:
+    print("Warning: OPENAI_API_KEY environment variable is not set.")
+    print("Please set your OpenAI API key in environment variables:")
+    print("export OPENAI_API_KEY='your_api_key_here'")
+    print("export OPENAI_ORGANIZATION='your_org_id_here'  # optional") 
 
 # GPT Type mapping
 GPT_NAME = {

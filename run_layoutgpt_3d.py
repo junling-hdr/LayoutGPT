@@ -11,14 +11,30 @@ import random
 from PIL import Image
 import argparse
 import openai
+import os
 from utils import *
 
 from transformers import GPT2TokenizerFast
 
 from parse_llm_output import parse_3D_layout
 
-openai.organization = ""
-openai.api_key = "" 
+# Load environment variables from .env file if available
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass  # python-dotenv not installed, use system environment variables
+
+# Load OpenAI API configuration from environment variables
+openai.organization = os.getenv('OPENAI_ORGANIZATION', '')
+openai.api_key = os.getenv('OPENAI_API_KEY', '')
+
+# Check if API key is properly configured
+if not openai.api_key:
+    print("Warning: OPENAI_API_KEY environment variable is not set.")
+    print("Please set your OpenAI API key in environment variables:")
+    print("export OPENAI_API_KEY='your_api_key_here'")
+    print("export OPENAI_ORGANIZATION='your_org_id_here'  # optional") 
 tokenizer = GPT2TokenizerFast.from_pretrained("gpt2")
 
 
