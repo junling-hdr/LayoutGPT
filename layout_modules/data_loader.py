@@ -110,7 +110,7 @@ def load_features(meta_data, floor_plan=True):
 
 
 def get_closest_room(train_features, val_feature):
-    """获取最相似的房间"""
+    """get the closest room"""
     distances = [[id, ((feat - val_feature) ** 2).mean()] for id, feat in train_features.items()]
     distances = sorted(distances, key=lambda x: x[1])
     sorted_ids, _ = zip(*distances)
@@ -138,9 +138,8 @@ def load_dataset(args):
     
     print(f"Loaded {len(train_data)} train samples and {len(val_data)} validation samples")
 
-    if args.test:
-        val_data = {k: v for k, v in list(val_data.items())[:5]}
-    elif args.max_val_samples is not None:
+    # 只在标准模式下限制验证样本数量（如果指定了max_val_samples）
+    if hasattr(args, 'max_val_samples') and getattr(args, 'max_val_samples', None) is not None:
         val_data = {k: v for k, v in list(val_data.items())[:args.max_val_samples]}
         print(f"Limited validation samples to {len(val_data)} samples")
 

@@ -16,6 +16,7 @@ from utils import *
 from transformers import GPT2TokenizerFast
 
 from parse_llm_output import parse_3D_layout
+from layout_modules.gpt_client import call_gpt_api
 
 # Load environment variables from .env file if available
 try:
@@ -42,7 +43,7 @@ tokenizer = GPT2TokenizerFast.from_pretrained("gpt2")
 parser = argparse.ArgumentParser(prog='LayoutGPT for scene synthesis', description='Use GPTs to predict 3D layout for indoor scenes.')
 parser.add_argument('--room', type=str, default='bedroom', choices=['bedroom','livingroom'])
 parser.add_argument('--dataset_dir', type=str)
-parser.add_argument('--gpt_type', type=str, default='gpt4', choices=['gpt3.5', 'gpt3.5-chat', 'gpt4'])
+parser.add_argument('--gpt_type', type=str, default='gpt4', choices=['gpt3.5', 'gpt3.5-chat', 'gpt4', 'gpt-4.1', 'gpt-4-turbo', 'gpt-4.5-preview', 'o3', 'o4-mini'])
 parser.add_argument('--icl_type', type=str, default='k-similar', choices=['fixed-random', 'k-similar'])
 parser.add_argument('--base_output_dir', type=str, default='./llm_output/3D/')
 parser.add_argument('--K', type=int, default=8)
@@ -63,6 +64,11 @@ gpt_name = {
     'gpt3.5': 'text-davinci-003',
     'gpt3.5-chat': 'gpt-3.5-turbo',
     'gpt4': 'gpt-4',
+    'gpt-4.1': 'gpt-4.1',
+    'gpt-4-turbo': 'gpt-4-turbo',
+    'gpt-4.5-preview': 'gpt-4.5-preview',
+    'o3': 'o3',
+    'o4-mini': 'o4-mini',
 }
 
 
@@ -280,6 +286,9 @@ def _main(args):
     if args.regular_floor_plan:
         args.suffix += '_regular'
 
+    # Sanitize gpt_type for file paths (replace dots with underscores)
+    gpt_type_safe = args.gpt_type.replace('.', '_').replace('-', '_')
+
     # check if have been processed
     args.output_dir = args.base_output_dir
     os.makedirs(args.output_dir, exist_ok=True)
@@ -335,7 +344,7 @@ def _main(args):
                     train_features=train_features,
                     val_feature=val_features[val_id]
                 )
-            elif args.gpt_type in ['gpt3.5-chat', 'gpt4']:
+            elif args.gpt_type in ['gpt3.5-chat', 'gpt4', 'gpt-4.1', 'gpt-4-turbo', 'gpt-4.5-preview', 'o3', 'o4-mini']:
                 prompt_for_gpt3,sorted_ids = form_prompt_for_chatgpt(
                     text_input=val_example,
                     top_k=top_k,
@@ -353,8 +362,8 @@ def _main(args):
                 print('\n' + '-'*30)
                 pdb.set_trace()
 
-            if op.exists(op.join(args.output_dir, 'tmp', args.gpt_type, f"{val_id}.json")):
-                response = json.load(open(op.join(args.output_dir, 'tmp', args.gpt_type, f"{val_id}.json")))
+            if op.exists(op.join(args.output_dir, 'tmp', gpt_type_safe, f"{val_id}.json")):
+                response = json.load(open(op.join(args.output_dir, 'tmp', gpt_type_safe, f"{val_id}.json")))
                 break
 
             try:
@@ -370,18 +379,68 @@ def _main(args):
                         stop="Condition:",
                         n=args.n_iter,
                     )
-                elif args.gpt_type in ['gpt3.5-chat', 'gpt4']:
-                    response = client.chat.completions.create(
-                        model=args.gpt_name,
-                        messages=prompt_for_gpt3,
-                        temperature=0.7,
-                        max_tokens=1024 if args.room=='livingroom' else 512,
-                        top_p=1.0,
-                        frequency_penalty=0.0,
-                        presence_penalty=0.0,
-                        stop="Condition:",
-                        n=args.n_iter,
-                    )
+                elif args.gpt_type in ['gpt3.5-chat', 'gpt4', 'gpt-4.1', 'gpt-4-turbo', 'gpt-4.5-preview', 'o3', 'o4-mini']:
+                    # Handle models with restricted parameter support
+                    models_with_restricted_params = {
+                        'o4-mini': {
+                            'temperature': 1.0, 
+                            'supports_custom_temperature': False,
+                            'unsupported_params': ['stop', 'frequency_penalty', 'presence_penalty', 'top_p', 'n'],
+                            'supported_params': ['model', 'messages', 'temperature', 'max_completion_tokens']
+                        },
+                        'o3': {
+                            'temperature': 1.0, 
+                            'supports_custom_temperature': False,
+                            'unsupported_params': ['stop', 'frequency_penalty', 'presence_penalty', 'top_p', 'n'],
+                            'supported_params': ['model', 'messages', 'temperature', 'max_completion_tokens']
+                        }
+                    }
+                    
+                    if args.gpt_type in models_with_restricted_params:
+                        model_restrictions = models_with_restricted_params[args.gpt_type]
+                        
+                        # Handle temperature restrictions
+                        if not model_restrictions.get('supports_custom_temperature', True):
+                            temperature = model_restrictions['temperature']
+                            print(f"Note: {args.gpt_type} only supports temperature={temperature}, overriding user setting")
+                        else:
+                            temperature = 0.7
+                        
+                        # Use only supported parameters for restricted models
+                        print(f"Note: {args.gpt_type} has limited parameter support, using minimal parameter set")
+                        api_params = {
+                            'model': args.gpt_name,
+                            'messages': prompt_for_gpt3,
+                            'temperature': temperature,
+                            'max_completion_tokens': 1024 if args.room=='livingroom' else 512,
+                        }
+                        
+                        # Add n parameter only if supported (for multiple iterations)
+                        if 'n' not in model_restrictions.get('unsupported_params', []):
+                            api_params['n'] = args.n_iter
+                        elif args.n_iter > 1:
+                            print(f"Warning: {args.gpt_type} doesn't support multiple iterations (n={args.n_iter}), forcing n=1")
+                            # Force single iteration for restricted models
+                            args.n_iter = 1
+                            
+                    else:
+                        # Standard models use all parameters
+                        models_with_new_token_param = ['o4-mini', 'o3']
+                        max_token_param = 'max_completion_tokens' if args.gpt_type in models_with_new_token_param else 'max_tokens'
+                        
+                        api_params = {
+                            'model': args.gpt_name,
+                            'messages': prompt_for_gpt3,
+                            'temperature': 0.7,
+                            max_token_param: 1024 if args.room=='livingroom' else 512,
+                            'top_p': 1.0,
+                            'frequency_penalty': 0.0,
+                            'presence_penalty': 0.0,
+                            'stop': "Condition:",
+                            'n': args.n_iter,
+                        }
+                    
+                    response = client.chat.completions.create(**api_params)
                 else:
                     raise NotImplementedError
                 
@@ -407,8 +466,8 @@ def _main(args):
                     print(f'Unexpected error: {e}')
                     time.sleep(5)
         
-        os.makedirs(op.join(args.output_dir, 'tmp', args.gpt_type), exist_ok=True)
-        write_json(op.join(args.output_dir, 'tmp', args.gpt_type, f"{val_id}.json"), response)
+        os.makedirs(op.join(args.output_dir, 'tmp', gpt_type_safe), exist_ok=True)
+        write_json(op.join(args.output_dir, 'tmp', gpt_type_safe, f"{val_id}.json"), response)
         response['prompt'] = prompt_for_gpt3
         all_responses.append(response)
 
@@ -447,7 +506,7 @@ def _main(args):
                 'sorted_ids': sorted_ids[:top_k],
             })
 
-            if args.gpt_type in ['gpt4']:
+            if args.gpt_type in ['gpt4', 'gpt-4.1', 'gpt-4-turbo', 'gpt-4.5-preview', 'o3', 'o4-mini']:
                 time.sleep(3)
 
     # # save output

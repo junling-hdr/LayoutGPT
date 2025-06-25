@@ -1,0 +1,67 @@
+{
+    "choices":[
+        {
+            "finish_reason":"stop",
+            "index":0,
+            "logprobs":null,
+            "message":{
+                "annotations":[],
+                "audio":null,
+                "content":"double_bed {length: 114px; width: 108px; height: 56px; left: 79px; top: 79px; depth: 28px;orientation: 0 degrees;}\nwardrobe {length: 218px; width: 40px; height: 140px; left: 15px; top: 27px; depth: 70px;orientation: 90 degrees;}\nwardrobe {length: 218px; width: 40px; height: 140px; left: 15px; top: 192px; depth: 70px;orientation: 90 degrees;}\npendant_lamp {length: 45px; width: 45px; height: 60px; left: 136px; top: 79px; depth: 105px;orientation: 0 degrees;}",
+                "function_call":null,
+                "refusal":null,
+                "role":"assistant",
+                "tool_calls":null
+            }
+        },
+        {
+            "finish_reason":"stop",
+            "index":1,
+            "logprobs":null,
+            "message":{
+                "annotations":[],
+                "audio":null,
+                "content":"double_bed {length: 112px; width: 126px; height: 58px; left: 105px; top: 164px; depth: 29px;orientation: 0 degrees;}\nwardrobe {length: 73px; width: 30px; height: 120px; left: 13px; top: 26px; depth: 60px;orientation: 0 degrees;}\nwardrobe {length: 73px; width: 30px; height: 120px; left: 13px; top: 152px; depth: 60px;orientation: 0 degrees;}\npendant_lamp {length: 50px; width: 50px; height: 70px; left: 131px; top: 103px; depth: 125px;orientation: 0 degrees;}",
+                "function_call":null,
+                "refusal":null,
+                "role":"assistant",
+                "tool_calls":null
+            }
+        },
+        {
+            "finish_reason":"stop",
+            "index":2,
+            "logprobs":null,
+            "message":{
+                "annotations":[],
+                "audio":null,
+                "content":"double_bed {length: 114px; width: 120px; height: 70px; left: 133px; top: 169px; depth: 35px;orientation: 0 degrees;}\nwardrobe {length: 96px; width: 38px; height: 131px; left: 14px; top: 56px; depth: 65px;orientation: 90 degrees;}\nwardrobe {length: 96px; width: 38px; height: 131px; left: 14px; top: 206px; depth: 65px;orientation: 90 degrees;}\npendant_lamp {length: 52px; width: 52px; height: 63px; left: 128px; top: 169px; depth: 150px;orientation: 0 degrees;}",
+                "function_call":null,
+                "refusal":null,
+                "role":"assistant",
+                "tool_calls":null
+            }
+        }
+    ],
+    "created":1750797122,
+    "id":"chatcmpl-Bm4bCnqdRSLc6jt6I7m1LUW2NGpCr",
+    "model":"gpt-4-0613",
+    "object":"chat.completion",
+    "service_tier":"default",
+    "system_fingerprint":null,
+    "usage":{
+        "completion_tokens":546,
+        "completion_tokens_details":{
+            "accepted_prediction_tokens":0,
+            "audio_tokens":0,
+            "reasoning_tokens":0,
+            "rejected_prediction_tokens":0
+        },
+        "prompt_tokens":3640,
+        "prompt_tokens_details":{
+            "audio_tokens":0,
+            "cached_tokens":0
+        },
+        "total_tokens":4186
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "choices":[
+        {
+            "finish_reason":"stop",
+            "index":0,
+            "logprobs":null,
+            "message":{
+                "annotations":[],
+                "audio":null,
+                "content":"double_bed {length: 199px; width: 215px; height: 89px; left: 137px; top: 105px; depth: 44px;orientation: 0 degrees;}\ntable {length: 63px; width: 54px; height: 76px; left: 43px; top: 20px; depth: 38px;orientation: 0 degrees;}\nbookshelf {length: 76px; width: 38px; height: 168px; left: 219px; top: 92px; depth: 84px;orientation: -90 degrees;}",
+                "function_call":null,
+                "refusal":null,
+                "role":"assistant",
+                "tool_calls":null
+            }
+        }
+    ],
+    "created":1750786406,
+    "id":"chatcmpl-Bm1oMCJugDzRTTfy5HsythgVWwqqq",
+    "model":"gpt-4-0613",
+    "object":"chat.completion",
+    "service_tier":"default",
+    "system_fingerprint":null,
+    "usage":{
+        "completion_tokens":134,
+        "completion_tokens_details":{
+            "accepted_prediction_tokens":0,
+            "audio_tokens":0,
+            "reasoning_tokens":0,
+            "rejected_prediction_tokens":0
+        },
+        "prompt_tokens":2053,
+        "prompt_tokens_details":{
+            "audio_tokens":0,
+            "cached_tokens":0
+        },
+        "total_tokens":2187
+    }
+}

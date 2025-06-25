@@ -1,0 +1,53 @@
+{
+    "choices":[
+        {
+            "finish_reason":"stop",
+            "index":0,
+            "logprobs":null,
+            "message":{
+                "annotations":[],
+                "audio":null,
+                "content":"double_bed {length: 110px; width: 130px; height: 60px; orientation: 0 degrees; left: 82px; top: 160px; depth: 30px;}\nwardrobe {length: 60px; width: 35px; height: 130px; orientation: 0 degrees; left: 10px; top: 20px; depth: 65px;}\nwardrobe {length: 60px; width: 35px; height: 130px; orientation: 0 degrees; left: 203px; top: 20px; depth: 65px;}\npendant_lamp {length: 40px; width: 40px; height: 50px; orientation: 0 degrees; left: 116px; top: 110px; depth: 100px;}",
+                "function_call":null,
+                "refusal":null,
+                "role":"assistant",
+                "tool_calls":null
+            }
+        },
+        {
+            "finish_reason":"stop",
+            "index":1,
+            "logprobs":null,
+            "message":{
+                "annotations":[],
+                "audio":null,
+                "content":"double_bed {length: 110px; width: 130px; height: 60px; orientation: 0 degrees; left: 82px; top: 160px; depth: 30px;}\nwardrobe {length: 60px; width: 40px; height: 140px; orientation: 0 degrees; left: 10px; top: 20px; depth: 40px;}\nwardrobe {length: 60px; width: 40px; height: 140px; orientation: 0 degrees; left: 203px; top: 20px; depth: 40px;}\npendant_lamp {length: 30px; width: 30px; height: 50px; orientation: 0 degrees; left: 122px; top: 100px; depth: 150px;}",
+                "function_call":null,
+                "refusal":null,
+                "role":"assistant",
+                "tool_calls":null
+            }
+        }
+    ],
+    "created":1750797309,
+    "id":"chatcmpl-Bm4eDg2K9vGevKo2bjmuX6tTGeDqe",
+    "model":"gpt-4.5-preview-2025-02-27",
+    "object":"chat.completion",
+    "service_tier":"default",
+    "system_fingerprint":null,
+    "usage":{
+        "completion_tokens":366,
+        "completion_tokens_details":{
+            "accepted_prediction_tokens":0,
+            "audio_tokens":0,
+            "reasoning_tokens":0,
+            "rejected_prediction_tokens":0
+        },
+        "prompt_tokens":3659,
+        "prompt_tokens_details":{
+            "audio_tokens":0,
+            "cached_tokens":0
+        },
+        "total_tokens":4025
+    }
+}

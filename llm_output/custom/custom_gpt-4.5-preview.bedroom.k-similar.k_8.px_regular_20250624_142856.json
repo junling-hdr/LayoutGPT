@@ -1,0 +1,76 @@
+[
+    {
+        "custom_condition": "Condition:\nRoom Type: bedroom\nRoom Size: max length 273px, max width 256px\nDescription: A bedroom with a double bed, a table and two bookshelf. Don't add addtional furniture",
+        "generated_at": "2025-06-24T14:29:13.748058",
+        "gpt_type": "gpt-4.5-preview",
+        "icl_type": "k-similar",
+        "is_custom": true,
+        "iter": 0,
+        "object_list": [
+            [
+                "double_bed",
+                {
+                    "depth": 30.0,
+                    "height": 60.0,
+                    "left": 77.0,
+                    "length": 120.0,
+                    "orientation": 0.0,
+                    "top": 170.0,
+                    "width": 130.0
+                }
+            ],
+            [
+                "table",
+                {
+                    "depth": 20.0,
+                    "height": 45.0,
+                    "left": 102.0,
+                    "length": 70.0,
+                    "orientation": 0.0,
+                    "top": 70.0,
+                    "width": 40.0
+                }
+            ],
+            [
+                "bookshelf",
+                {
+                    "depth": 25.0,
+                    "height": 100.0,
+                    "left": 15.0,
+                    "length": 30.0,
+                    "orientation": 90.0,
+                    "top": 40.0,
+                    "width": 25.0
+                }
+            ],
+            [
+                "bookshelf",
+                {
+                    "depth": 25.0,
+                    "height": 100.0,
+                    "left": 228.0,
+                    "length": 30.0,
+                    "orientation": 90.0,
+                    "top": 40.0,
+                    "width": 25.0
+                }
+            ]
+        ],
+        "prompt": "Condition:\nRoom Type: bedroom\nRoom Size: max length 273px, max width 256px\nDescription: A bedroom with a double bed, a table and two bookshelf. Don't add addtional furniture",
+        "query_id": "custom_20250624_142856",
+        "sorted_ids": [
+            "8b7f7e8e-0eae-428d-8c0f-9600435db055_Bedroom-3951",
+            "bb66077e-f845-4c61-bea7-d88fc7dd4aeb_Bedroom-1087",
+            "fbd8335f-0637-42e3-8d89-dc96d4651ac2_MasterBedroom-3684",
+            "99a9a277-df69-43f1-a934-3548f4438510_SecondBedroom-92664",
+            "06fd7746-9abf-4430-b674-a6b904d5f1a3_Bedroom-68029",
+            "e60d4680-8a03-4f74-be43-99483b9ad9d3_MasterBedroom-9093",
+            "14e7aa9f-8774-40f4-b786-c042aecb27ff_MasterBedroom-6712",
+            "864a6e55-ad69-4803-8922-391d57d061b9_MasterBedroom-32709"
+        ],
+        "temperature": 0.7,
+        "timestamp": "20250624_142856",
+        "top_k": 8,
+        "unit": "px"
+    }
+]

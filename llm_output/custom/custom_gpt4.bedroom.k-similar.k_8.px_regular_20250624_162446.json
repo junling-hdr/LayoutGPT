@@ -1,0 +1,154 @@
+[
+    {
+        "custom_condition": "Condition:\nRoom Type: bedroom\nRoom Size: max length 273px, max width 256px\nDescription: A bedroom with a double bed, two wardrobes and a pendant lamp.",
+        "generated_at": "2025-06-24T16:25:09.322106",
+        "gpt_type": "gpt4",
+        "icl_type": "k-similar",
+        "is_custom": true,
+        "iter": 0,
+        "iteration": 1,
+        "iteration_id": "custom_20250624_162446_iter1",
+        "object_list": [
+            [
+                "double_bed",
+                {
+                    "depth": 36.0,
+                    "height": 72.0,
+                    "left": 82.0,
+                    "length": 107.0,
+                    "orientation": 0.0,
+                    "top": 117.0,
+                    "width": 115.0
+                }
+            ],
+            [
+                "wardrobe",
+                {
+                    "depth": 65.0,
+                    "height": 130.0,
+                    "left": 9.0,
+                    "length": 105.0,
+                    "orientation": 90.0,
+                    "top": 60.0,
+                    "width": 36.0
+                }
+            ],
+            [
+                "wardrobe",
+                {
+                    "depth": 65.0,
+                    "height": 130.0,
+                    "left": 9.0,
+                    "length": 105.0,
+                    "orientation": 90.0,
+                    "top": 184.0,
+                    "width": 36.0
+                }
+            ],
+            [
+                "pendant_lamp",
+                {
+                    "depth": 120.0,
+                    "height": 80.0,
+                    "left": 135.0,
+                    "length": 43.0,
+                    "orientation": 0.0,
+                    "top": 155.0,
+                    "width": 43.0
+                }
+            ]
+        ],
+        "prompt": "Condition:\nRoom Type: bedroom\nRoom Size: max length 273px, max width 256px\nDescription: A bedroom with a double bed, two wardrobes and a pendant lamp.",
+        "query_id": "custom_20250624_162446",
+        "sorted_ids": [
+            "8b7f7e8e-0eae-428d-8c0f-9600435db055_Bedroom-3951",
+            "bb66077e-f845-4c61-bea7-d88fc7dd4aeb_Bedroom-1087",
+            "fbd8335f-0637-42e3-8d89-dc96d4651ac2_MasterBedroom-3684",
+            "99a9a277-df69-43f1-a934-3548f4438510_SecondBedroom-92664",
+            "06fd7746-9abf-4430-b674-a6b904d5f1a3_Bedroom-68029",
+            "e60d4680-8a03-4f74-be43-99483b9ad9d3_MasterBedroom-9093",
+            "14e7aa9f-8774-40f4-b786-c042aecb27ff_MasterBedroom-6712",
+            "864a6e55-ad69-4803-8922-391d57d061b9_MasterBedroom-32709"
+        ],
+        "temperature": 0.7,
+        "timestamp": "20250624_162446",
+        "top_k": 8,
+        "unit": "px"
+    },
+    {
+        "custom_condition": "Condition:\nRoom Type: bedroom\nRoom Size: max length 273px, max width 256px\nDescription: A bedroom with a double bed, two wardrobes and a pendant lamp.",
+        "generated_at": "2025-06-24T16:25:09.322106",
+        "gpt_type": "gpt4",
+        "icl_type": "k-similar",
+        "is_custom": true,
+        "iter": 1,
+        "iteration": 2,
+        "iteration_id": "custom_20250624_162446_iter2",
+        "object_list": [
+            [
+                "double_bed",
+                {
+                    "depth": 28.0,
+                    "height": 57.0,
+                    "left": 83.0,
+                    "length": 107.0,
+                    "orientation": 0.0,
+                    "top": 133.0,
+                    "width": 124.0
+                }
+            ],
+            [
+                "wardrobe",
+                {
+                    "depth": 70.0,
+                    "height": 140.0,
+                    "left": 10.0,
+                    "length": 95.0,
+                    "orientation": 90.0,
+                    "top": 11.0,
+                    "width": 32.0
+                }
+            ],
+            [
+                "wardrobe",
+                {
+                    "depth": 70.0,
+                    "height": 140.0,
+                    "left": 10.0,
+                    "length": 95.0,
+                    "orientation": 90.0,
+                    "top": 205.0,
+                    "width": 32.0
+                }
+            ],
+            [
+                "pendant_lamp",
+                {
+                    "depth": 125.0,
+                    "height": 70.0,
+                    "left": 120.0,
+                    "length": 48.0,
+                    "orientation": 0.0,
+                    "top": 50.0,
+                    "width": 48.0
+                }
+            ]
+        ],
+        "prompt": "Condition:\nRoom Type: bedroom\nRoom Size: max length 273px, max width 256px\nDescription: A bedroom with a double bed, two wardrobes and a pendant lamp.",
+        "query_id": "custom_20250624_162446",
+        "sorted_ids": [
+            "8b7f7e8e-0eae-428d-8c0f-9600435db055_Bedroom-3951",
+            "bb66077e-f845-4c61-bea7-d88fc7dd4aeb_Bedroom-1087",
+            "fbd8335f-0637-42e3-8d89-dc96d4651ac2_MasterBedroom-3684",
+            "99a9a277-df69-43f1-a934-3548f4438510_SecondBedroom-92664",
+            "06fd7746-9abf-4430-b674-a6b904d5f1a3_Bedroom-68029",
+            "e60d4680-8a03-4f74-be43-99483b9ad9d3_MasterBedroom-9093",
+            "14e7aa9f-8774-40f4-b786-c042aecb27ff_MasterBedroom-6712",
+            "864a6e55-ad69-4803-8922-391d57d061b9_MasterBedroom-32709"
+        ],
+        "temperature": 0.7,
+        "timestamp": "20250624_162446",
+        "top_k": 8,
+        "unit": "px"
+    }
+]

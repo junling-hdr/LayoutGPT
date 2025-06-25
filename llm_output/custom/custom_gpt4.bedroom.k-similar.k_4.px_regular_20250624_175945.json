@@ -1,0 +1,787 @@
+[
+    {
+        "custom_condition": "Condition:\nRoom Type: bedroom\nRoom Size: max length 273px, max width 256px\nDescription: A bedroom with an armchair, a coffee table, a double bed, a dressing table, a floor lamp, three pendant lamps, a sofa, two stools and two tables",
+        "generated_at": "2025-06-24T18:00:28.285797",
+        "gpt_type": "gpt4",
+        "icl_type": "k-similar",
+        "is_custom": true,
+        "iter": 0,
+        "iteration": 1,
+        "iteration_id": "custom_20250624_175945_iter1",
+        "object_list": [
+            [
+                "double_bed",
+                {
+                    "depth": 36.0,
+                    "height": 72.0,
+                    "left": 92.0,
+                    "length": 124.0,
+                    "orientation": 0.0,
+                    "top": 68.0,
+                    "width": 107.0
+                }
+            ],
+            [
+                "table",
+                {
+                    "depth": 12.0,
+                    "height": 24.0,
+                    "left": 11.0,
+                    "length": 39.0,
+                    "orientation": 0.0,
+                    "top": 22.0,
+                    "width": 32.0
+                }
+            ],
+            [
+                "table",
+                {
+                    "depth": 12.0,
+                    "height": 24.0,
+                    "left": 215.0,
+                    "length": 39.0,
+                    "orientation": 0.0,
+                    "top": 181.0,
+                    "width": 32.0
+                }
+            ],
+            [
+                "sofa",
+                {
+                    "depth": 26.0,
+                    "height": 52.0,
+                    "left": 115.0,
+                    "length": 109.0,
+                    "orientation": 180.0,
+                    "top": 245.0,
+                    "width": 51.0
+                }
+            ],
+            [
+                "stool",
+                {
+                    "depth": 7.0,
+                    "height": 14.0,
+                    "left": 20.0,
+                    "length": 72.0,
+                    "orientation": 0.0,
+                    "top": 190.0,
+                    "width": 29.0
+                }
+            ],
+            [
+                "stool",
+                {
+                    "depth": 7.0,
+                    "height": 14.0,
+                    "left": 200.0,
+                    "length": 72.0,
+                    "orientation": 0.0,
+                    "top": 130.0,
+                    "width": 29.0
+                }
+            ],
+            [
+                "armchair",
+                {
+                    "depth": 20.0,
+                    "height": 40.0,
+                    "left": 30.0,
+                    "length": 46.0,
+                    "orientation": 60.0,
+                    "top": 130.0,
+                    "width": 37.0
+                }
+            ],
+            [
+                "dressing_table",
+                {
+                    "depth": 32.0,
+                    "height": 64.0,
+                    "left": 183.0,
+                    "length": 71.0,
+                    "orientation": -90.0,
+                    "top": 61.0,
+                    "width": 29.0
+                }
+            ],
+            [
+                "coffee_table",
+                {
+                    "depth": 10.0,
+                    "height": 21.0,
+                    "left": 51.0,
+                    "length": 63.0,
+                    "orientation": 0.0,
+                    "top": 206.0,
+                    "width": 41.0
+                }
+            ],
+            [
+                "pendant_lamp",
+                {
+                    "depth": 88.0,
+                    "height": 47.0,
+                    "left": 151.0,
+                    "length": 15.0,
+                    "orientation": 0.0,
+                    "top": 11.0,
+                    "width": 15.0
+                }
+            ],
+            [
+                "pendant_lamp",
+                {
+                    "depth": 88.0,
+                    "height": 47.0,
+                    "left": 18.0,
+                    "length": 15.0,
+                    "orientation": 0.0,
+                    "top": 11.0,
+                    "width": 15.0
+                }
+            ]
+        ],
+        "prompt": "Condition:\nRoom Type: bedroom\nRoom Size: max length 273px, max width 256px\nDescription: A bedroom with an armchair, a coffee table, a double bed, a dressing table, a floor lamp, three pendant lamps, a sofa, two stools and two tables",
+        "query_id": "custom_20250624_175945_iter1",
+        "raw_gpt_response": "double_bed {length: 124px; width: 107px; height: 72px; left: 92px; top: 68px; depth: 36px;orientation: 0 degrees;}\ntable {length: 39px; width: 32px; height: 24px; left: 11px; top: 22px; depth: 12px;orientation: 0 degrees;}\ntable {length: 39px; width: 32px; height: 24px; left: 215px; top: 181px; depth: 12px;orientation: 0 degrees;}\nsofa {length: 109px; width: 51px; height: 52px; left: 115px; top: 245px; depth: 26px;orientation: 180 degrees;}\nstool {length: 72px; width: 29px; height: 14px; left: 20px; top: 190px; depth: 7px;orientation: 0 degrees;}\nstool {length: 72px; width: 29px; height: 14px; left: 200px; top: 130px; depth: 7px;orientation: 0 degrees;}\narmchair {length: 46px; width: 37px; height: 40px; left: 30px; top: 130px; depth: 20px;orientation: 60 degrees;}\ndressing_table {length: 71px; width: 29px; height: 64px; left: 183px; top: 61px; depth: 32px;orientation: -90 degrees;}\ncoffee_table {length: 63px; width: 41px; height: 21px; left: 51px; top: 206px; depth: 10px; orientation: 0 degrees;}\npendant_lamp {length: 15px; width: 15px; height: 47px; left: 151px; top: 11px; depth: 88px;orientation: 0 degrees;}\npendant_lamp {length: 15px; width: 15px; height: 47px; left: 18px; top: 11px; depth: 88px;orientation: 0 degrees;}\npendant_lamp {length: 15px; width: ",
+        "sorted_ids": [
+            "8b7f7e8e-0eae-428d-8c0f-9600435db055_Bedroom-3951",
+            "bb66077e-f845-4c61-bea7-d88fc7dd4aeb_Bedroom-1087",
+            "fbd8335f-0637-42e3-8d89-dc96d4651ac2_MasterBedroom-3684",
+            "99a9a277-df69-43f1-a934-3548f4438510_SecondBedroom-92664"
+        ],
+        "temperature": 1.0,
+        "timestamp": "20250624_175945",
+        "top_k": 4,
+        "unit": "px"
+    },
+    {
+        "custom_condition": "Condition:\nRoom Type: bedroom\nRoom Size: max length 273px, max width 256px\nDescription: A bedroom with an armchair, a coffee table, a double bed, a dressing table, a floor lamp, three pendant lamps, a sofa, two stools and two tables",
+        "generated_at": "2025-06-24T18:00:28.285797",
+        "gpt_type": "gpt4",
+        "icl_type": "k-similar",
+        "is_custom": true,
+        "iter": 1,
+        "iteration": 2,
+        "iteration_id": "custom_20250624_175945_iter2",
+        "object_list": [
+            [
+                "double_bed",
+                {
+                    "depth": 28.0,
+                    "height": 56.0,
+                    "left": 100.0,
+                    "length": 107.0,
+                    "orientation": 0.0,
+                    "top": 120.0,
+                    "width": 124.0
+                }
+            ],
+            [
+                "table",
+                {
+                    "depth": 9.0,
+                    "height": 18.0,
+                    "left": 12.0,
+                    "length": 29.0,
+                    "orientation": 0.0,
+                    "top": 45.0,
+                    "width": 29.0
+                }
+            ],
+            [
+                "table",
+                {
+                    "depth": 9.0,
+                    "height": 18.0,
+                    "left": 210.0,
+                    "length": 29.0,
+                    "orientation": 0.0,
+                    "top": 45.0,
+                    "width": 29.0
+                }
+            ],
+            [
+                "sofa",
+                {
+                    "depth": 9.0,
+                    "height": 18.0,
+                    "left": 45.0,
+                    "length": 57.0,
+                    "orientation": -180.0,
+                    "top": 250.0,
+                    "width": 29.0
+                }
+            ],
+            [
+                "armchair",
+                {
+                    "depth": 22.0,
+                    "height": 45.0,
+                    "left": 13.0,
+                    "length": 54.0,
+                    "orientation": 90.0,
+                    "top": 188.0,
+                    "width": 29.0
+                }
+            ],
+            [
+                "stool",
+                {
+                    "depth": 6.0,
+                    "height": 12.0,
+                    "left": 45.0,
+                    "length": 23.0,
+                    "orientation": 0.0,
+                    "top": 188.0,
+                    "width": 23.0
+                }
+            ],
+            [
+                "stool",
+                {
+                    "depth": 6.0,
+                    "height": 12.0,
+                    "left": 100.0,
+                    "length": 23.0,
+                    "orientation": 0.0,
+                    "top": 65.0,
+                    "width": 23.0
+                }
+            ],
+            [
+                "coffee_table",
+                {
+                    "depth": 4.0,
+                    "height": 9.0,
+                    "left": 128.0,
+                    "length": 36.0,
+                    "orientation": 0.0,
+                    "top": 250.0,
+                    "width": 18.0
+                }
+            ],
+            [
+                "dressing_table",
+                {
+                    "depth": 22.0,
+                    "height": 45.0,
+                    "left": 210.0,
+                    "length": 29.0,
+                    "orientation": -180.0,
+                    "top": 188.0,
+                    "width": 41.0
+                }
+            ],
+            [
+                "pendant_lamp",
+                {
+                    "depth": 97.0,
+                    "height": 47.0,
+                    "left": 30.0,
+                    "length": 13.0,
+                    "orientation": 0.0,
+                    "top": 7.0,
+                    "width": 13.0
+                }
+            ],
+            [
+                "pendant_lamp",
+                {
+                    "depth": 97.0,
+                    "height": 47.0,
+                    "left": 210.0,
+                    "length": 13.0,
+                    "orientation": 0.0,
+                    "top": 7.0,
+                    "width": 13.0
+                }
+            ]
+        ],
+        "prompt": "Condition:\nRoom Type: bedroom\nRoom Size: max length 273px, max width 256px\nDescription: A bedroom with an armchair, a coffee table, a double bed, a dressing table, a floor lamp, three pendant lamps, a sofa, two stools and two tables",
+        "query_id": "custom_20250624_175945_iter2",
+        "raw_gpt_response": "double_bed {length: 107px; width: 124px; height: 56px; left: 100px; top: 120px; depth: 28px;orientation: 0 degrees;}\ntable {length: 29px; width: 29px; height: 18px; left: 12px; top: 45px; depth: 9px;orientation: 0 degrees;}\ntable {length: 29px; width: 29px; height: 18px; left: 210px; top: 45px; depth: 9px;orientation: 0 degrees;}\nsofa {length: 57px; width: 29px; height: 18px; left: 45px; top: 250px; depth: 9px;orientation: -180 degrees;}\narmchair {length: 54px; width: 29px; height: 45px; left: 13px; top: 188px; depth: 22px;orientation: 90 degrees;}\nstool {length: 23px; width: 23px; height: 12px; left: 45px; top: 188px; depth: 6px;orientation: 0 degrees;}\nstool {length: 23px; width: 23px; height: 12px; left: 100px; top: 65px; depth: 6px;orientation: 0 degrees;}\ncoffee_table {length: 36px; width: 18px; height: 9px; left: 128px; top: 250px; depth: 4px;orientation: 0 degrees;}\ndressing_table {length: 29px; width: 41px; height: 45px; left: 210px; top: 188px; depth: 22px;orientation: -180 degrees;}\npendant_lamp {length: 13px; width: 13px; height: 47px; left: 30px; top: 7px; depth: 97px;orientation: 0 degrees;}\npendant_lamp {length: 13px; width: 13px; height: 47px; left: 210px; top: 7px; depth: 97px;orientation: 0 degrees;}\npendant_lamp {length: 13px; width: ",
+        "sorted_ids": [
+            "8b7f7e8e-0eae-428d-8c0f-9600435db055_Bedroom-3951",
+            "bb66077e-f845-4c61-bea7-d88fc7dd4aeb_Bedroom-1087",
+            "fbd8335f-0637-42e3-8d89-dc96d4651ac2_MasterBedroom-3684",
+            "99a9a277-df69-43f1-a934-3548f4438510_SecondBedroom-92664"
+        ],
+        "temperature": 1.0,
+        "timestamp": "20250624_175945",
+        "top_k": 4,
+        "unit": "px"
+    },
+    {
+        "custom_condition": "Condition:\nRoom Type: bedroom\nRoom Size: max length 273px, max width 256px\nDescription: A bedroom with an armchair, a coffee table, a double bed, a dressing table, a floor lamp, three pendant lamps, a sofa, two stools and two tables",
+        "generated_at": "2025-06-24T18:00:28.285797",
+        "gpt_type": "gpt4",
+        "icl_type": "k-similar",
+        "is_custom": true,
+        "iter": 2,
+        "iteration": 3,
+        "iteration_id": "custom_20250624_175945_iter3",
+        "object_list": [
+            [
+                "double_bed",
+                {
+                    "depth": 28.0,
+                    "height": 56.0,
+                    "left": 148.0,
+                    "length": 102.0,
+                    "orientation": 0.0,
+                    "top": 36.0,
+                    "width": 125.0
+                }
+            ],
+            [
+                "table",
+                {
+                    "depth": 11.0,
+                    "height": 22.0,
+                    "left": 43.0,
+                    "length": 22.0,
+                    "orientation": 0.0,
+                    "top": 24.0,
+                    "width": 18.0
+                }
+            ],
+            [
+                "table",
+                {
+                    "depth": 11.0,
+                    "height": 22.0,
+                    "left": 243.0,
+                    "length": 22.0,
+                    "orientation": 0.0,
+                    "top": 18.0,
+                    "width": 18.0
+                }
+            ],
+            [
+                "sofa",
+                {
+                    "depth": 18.0,
+                    "height": 36.0,
+                    "left": 54.0,
+                    "length": 92.0,
+                    "orientation": 180.0,
+                    "top": 225.0,
+                    "width": 56.0
+                }
+            ],
+            [
+                "armchair",
+                {
+                    "depth": 18.0,
+                    "height": 36.0,
+                    "left": 221.0,
+                    "length": 38.0,
+                    "orientation": -45.0,
+                    "top": 220.0,
+                    "width": 36.0
+                }
+            ],
+            [
+                "coffee_table",
+                {
+                    "depth": 7.0,
+                    "height": 14.0,
+                    "left": 161.0,
+                    "length": 38.0,
+                    "orientation": 0.0,
+                    "top": 234.0,
+                    "width": 22.0
+                }
+            ],
+            [
+                "dressing_table",
+                {
+                    "depth": 39.0,
+                    "height": 78.0,
+                    "left": 199.0,
+                    "length": 71.0,
+                    "orientation": 0.0,
+                    "top": 108.0,
+                    "width": 33.0
+                }
+            ],
+            [
+                "stool",
+                {
+                    "depth": 7.0,
+                    "height": 14.0,
+                    "left": 206.0,
+                    "length": 18.0,
+                    "orientation": 0.0,
+                    "top": 175.0,
+                    "width": 14.0
+                }
+            ],
+            [
+                "stool",
+                {
+                    "depth": 7.0,
+                    "height": 14.0,
+                    "left": 235.0,
+                    "length": 18.0,
+                    "orientation": 0.0,
+                    "top": 175.0,
+                    "width": 14.0
+                }
+            ],
+            [
+                "pendant_lamp",
+                {
+                    "depth": 130.0,
+                    "height": 40.0,
+                    "left": 97.0,
+                    "length": 21.0,
+                    "orientation": 0.0,
+                    "top": 15.0,
+                    "width": 21.0
+                }
+            ],
+            [
+                "pendant_lamp",
+                {
+                    "depth": 130.0,
+                    "height": 40.0,
+                    "left": 171.0,
+                    "length": 21.0,
+                    "orientation": 0.0,
+                    "top": 15.0,
+                    "width": 21.0
+                }
+            ]
+        ],
+        "prompt": "Condition:\nRoom Type: bedroom\nRoom Size: max length 273px, max width 256px\nDescription: A bedroom with an armchair, a coffee table, a double bed, a dressing table, a floor lamp, three pendant lamps, a sofa, two stools and two tables",
+        "query_id": "custom_20250624_175945_iter3",
+        "raw_gpt_response": "double_bed {length: 102px; width: 125px; height: 56px; left: 148px; top: 36px; depth: 28px;orientation: 0 degrees;}\ntable {length: 22px; width: 18px; height: 22px; left: 43px; top: 24px; depth: 11px;orientation: 0 degrees;}\ntable {length: 22px; width: 18px; height: 22px; left: 243px; top: 18px; depth: 11px;orientation: 0 degrees;}\nsofa {length: 92px; width: 56px; height: 36px; left: 54px; top: 225px; depth: 18px;orientation: 180 degrees;}\narmchair {length: 38px; width: 36px; height: 36px; left: 221px; top: 220px; depth: 18px;orientation: -45 degrees;}\ncoffee_table {length: 38px; width: 22px; height: 14px; left: 161px; top: 234px; depth: 7px;orientation: 0 degrees;}\ndressing_table {length: 71px; width: 33px; height: 78px; left: 199px; top: 108px; depth: 39px;orientation: 0 degrees;}\nstool {length: 18px; width: 14px; height: 14px; left: 206px; top: 175px; depth: 7px;orientation: 0 degrees;}\nstool {length: 18px; width: 14px; height: 14px; left: 235px; top: 175px; depth: 7px;orientation: 0 degrees;}\npendant_lamp {length: 21px; width: 21px; height: 40px; left: 97px; top: 15px; depth: 130px;orientation: 0 degrees;}\npendant_lamp {length: 21px; width: 21px; height: 40px; left: 171px; top: 15px; depth: 130px;orientation: 0 degrees;}\npendant_lamp {length: 21px; width: ",
+        "sorted_ids": [
+            "8b7f7e8e-0eae-428d-8c0f-9600435db055_Bedroom-3951",
+            "bb66077e-f845-4c61-bea7-d88fc7dd4aeb_Bedroom-1087",
+            "fbd8335f-0637-42e3-8d89-dc96d4651ac2_MasterBedroom-3684",
+            "99a9a277-df69-43f1-a934-3548f4438510_SecondBedroom-92664"
+        ],
+        "temperature": 1.0,
+        "timestamp": "20250624_175945",
+        "top_k": 4,
+        "unit": "px"
+    },
+    {
+        "custom_condition": "Condition:\nRoom Type: bedroom\nRoom Size: max length 273px, max width 256px\nDescription: A bedroom with an armchair, a coffee table, a double bed, a dressing table, a floor lamp, three pendant lamps, a sofa, two stools and two tables",
+        "generated_at": "2025-06-24T18:00:28.285797",
+        "gpt_type": "gpt4",
+        "icl_type": "k-similar",
+        "is_custom": true,
+        "iter": 3,
+        "iteration": 4,
+        "iteration_id": "custom_20250624_175945_iter4",
+        "object_list": [
+            [
+                "double_bed",
+                {
+                    "depth": 26.0,
+                    "height": 52.0,
+                    "left": 15.0,
+                    "length": 92.0,
+                    "orientation": 0.0,
+                    "top": 102.0,
+                    "width": 100.0
+                }
+            ],
+            [
+                "table",
+                {
+                    "depth": 12.0,
+                    "height": 25.0,
+                    "left": 180.0,
+                    "length": 28.0,
+                    "orientation": 0.0,
+                    "top": 15.0,
+                    "width": 24.0
+                }
+            ],
+            [
+                "table",
+                {
+                    "depth": 12.0,
+                    "height": 25.0,
+                    "left": 180.0,
+                    "length": 28.0,
+                    "orientation": 0.0,
+                    "top": 75.0,
+                    "width": 24.0
+                }
+            ],
+            [
+                "sofa",
+                {
+                    "depth": 21.0,
+                    "height": 43.0,
+                    "left": 41.0,
+                    "length": 95.0,
+                    "orientation": -90.0,
+                    "top": 225.0,
+                    "width": 45.0
+                }
+            ],
+            [
+                "stool",
+                {
+                    "depth": 15.0,
+                    "height": 31.0,
+                    "left": 144.0,
+                    "length": 78.0,
+                    "orientation": 0.0,
+                    "top": 148.0,
+                    "width": 44.0
+                }
+            ],
+            [
+                "stool",
+                {
+                    "depth": 15.0,
+                    "height": 31.0,
+                    "left": 183.0,
+                    "length": 78.0,
+                    "orientation": 0.0,
+                    "top": 148.0,
+                    "width": 44.0
+                }
+            ],
+            [
+                "armchair",
+                {
+                    "depth": 21.0,
+                    "height": 42.0,
+                    "left": 177.0,
+                    "length": 40.0,
+                    "orientation": -90.0,
+                    "top": 227.0,
+                    "width": 44.0
+                }
+            ],
+            [
+                "dressing_table",
+                {
+                    "depth": 37.0,
+                    "height": 75.0,
+                    "left": 223.0,
+                    "length": 64.0,
+                    "orientation": -90.0,
+                    "top": 95.0,
+                    "width": 28.0
+                }
+            ],
+            [
+                "coffee_table",
+                {
+                    "depth": 10.0,
+                    "height": 20.0,
+                    "left": 165.0,
+                    "length": 51.0,
+                    "orientation": 0.0,
+                    "top": 203.0,
+                    "width": 38.0
+                }
+            ],
+            [
+                "floor_lamp",
+                {
+                    "depth": 40.0,
+                    "height": 81.0,
+                    "left": 9.0,
+                    "length": 20.0,
+                    "orientation": 0.0,
+                    "top": 46.0,
+                    "width": 27.0
+                }
+            ],
+            [
+                "pendant_lamp",
+                {
+                    "depth": 95.0,
+                    "height": 37.0,
+                    "left": 90.0,
+                    "length": 18.0,
+                    "orientation": 0.0,
+                    "top": 197.0,
+                    "width": 18.0
+                }
+            ]
+        ],
+        "prompt": "Condition:\nRoom Type: bedroom\nRoom Size: max length 273px, max width 256px\nDescription: A bedroom with an armchair, a coffee table, a double bed, a dressing table, a floor lamp, three pendant lamps, a sofa, two stools and two tables",
+        "query_id": "custom_20250624_175945_iter4",
+        "raw_gpt_response": "double_bed {length: 92px; width: 100px; height: 52px; left: 15px; top: 102px; depth: 26px; orientation: 0 degrees;}\ntable {length: 28px; width: 24px; height: 25px; left: 180px; top: 15px; depth: 12px; orientation: 0 degrees;}\ntable {length: 28px; width: 24px; height: 25px; left: 180px; top: 75px; depth: 12px; orientation: 0 degrees;}\nsofa {length: 95px; width: 45px; height: 43px; left: 41px; top: 225px; depth: 21px; orientation: -90 degrees;}\nstool {length: 78px; width: 44px; height: 31px; left: 144px; top: 148px; depth: 15px; orientation: 0 degrees;}\nstool {length: 78px; width: 44px; height: 31px; left: 183px; top: 148px; depth: 15px; orientation: 0 degrees;}\narmchair {length: 40px; width: 44px; height: 42px; left: 177px; top: 227px; depth: 21px; orientation: -90 degrees;}\ndressing_table {length: 64px; width: 28px; height: 75px; left: 223px; top: 95px; depth: 37px; orientation: -90 degrees;}\ncoffee_table {length: 51px; width: 38px; height: 20px; left: 165px; top: 203px; depth: 10px; orientation: 0 degrees;}\nfloor_lamp {length: 20px; width: 27px; height: 81px; left: 9px; top: 46px; depth: 40px; orientation: 0 degrees;}\npendant_lamp {length: 18px; width: 18px; height: 37px; left: 90px; top: 197px; depth: 95px; orientation: 0 degrees;}\npendant_lamp {length: 18px; width: 18",
+        "sorted_ids": [
+            "8b7f7e8e-0eae-428d-8c0f-9600435db055_Bedroom-3951",
+            "bb66077e-f845-4c61-bea7-d88fc7dd4aeb_Bedroom-1087",
+            "fbd8335f-0637-42e3-8d89-dc96d4651ac2_MasterBedroom-3684",
+            "99a9a277-df69-43f1-a934-3548f4438510_SecondBedroom-92664"
+        ],
+        "temperature": 1.0,
+        "timestamp": "20250624_175945",
+        "top_k": 4,
+        "unit": "px"
+    },
+    {
+        "custom_condition": "Condition:\nRoom Type: bedroom\nRoom Size: max length 273px, max width 256px\nDescription: A bedroom with an armchair, a coffee table, a double bed, a dressing table, a floor lamp, three pendant lamps, a sofa, two stools and two tables",
+        "generated_at": "2025-06-24T18:00:28.285797",
+        "gpt_type": "gpt4",
+        "icl_type": "k-similar",
+        "is_custom": true,
+        "iter": 4,
+        "iteration": 5,
+        "iteration_id": "custom_20250624_175945_iter5",
+        "object_list": [
+            [
+                "double_bed",
+                {
+                    "depth": 28.0,
+                    "height": 56.0,
+                    "left": 83.0,
+                    "length": 96.0,
+                    "orientation": 0.0,
+                    "top": 80.0,
+                    "width": 134.0
+                }
+            ],
+            [
+                "armchair",
+                {
+                    "depth": 21.0,
+                    "height": 42.0,
+                    "left": 22.0,
+                    "length": 36.0,
+                    "orientation": 0.0,
+                    "top": 198.0,
+                    "width": 41.0
+                }
+            ],
+            [
+                "sofa",
+                {
+                    "depth": 16.0,
+                    "height": 32.0,
+                    "left": 186.0,
+                    "length": 98.0,
+                    "orientation": -90.0,
+                    "top": 208.0,
+                    "width": 32.0
+                }
+            ],
+            [
+                "table",
+                {
+                    "depth": 8.0,
+                    "height": 17.0,
+                    "left": 59.0,
+                    "length": 43.0,
+                    "orientation": 0.0,
+                    "top": 205.0,
+                    "width": 32.0
+                }
+            ],
+            [
+                "table",
+                {
+                    "depth": 13.0,
+                    "height": 26.0,
+                    "left": 225.0,
+                    "length": 33.0,
+                    "orientation": 0.0,
+                    "top": 157.0,
+                    "width": 23.0
+                }
+            ],
+            [
+                "stool",
+                {
+                    "depth": 9.0,
+                    "height": 19.0,
+                    "left": 105.0,
+                    "length": 36.0,
+                    "orientation": 0.0,
+                    "top": 202.0,
+                    "width": 29.0
+                }
+            ],
+            [
+                "stool",
+                {
+                    "depth": 6.0,
+                    "height": 13.0,
+                    "left": 46.0,
+                    "length": 23.0,
+                    "orientation": 0.0,
+                    "top": 218.0,
+                    "width": 12.0
+                }
+            ],
+            [
+                "dressing_table",
+                {
+                    "depth": 34.0,
+                    "height": 68.0,
+                    "left": 203.0,
+                    "length": 59.0,
+                    "orientation": -90.0,
+                    "top": 129.0,
+                    "width": 28.0
+                }
+            ],
+            [
+                "coffee_table",
+                {
+                    "depth": 8.0,
+                    "height": 17.0,
+                    "left": 173.0,
+                    "length": 45.0,
+                    "orientation": 0.0,
+                    "top": 225.0,
+                    "width": 28.0
+                }
+            ],
+            [
+                "pendant_lamp",
+                {
+                    "depth": 78.0,
+                    "height": 42.0,
+                    "left": 51.0,
+                    "length": 21.0,
+                    "orientation": 0.0,
+                    "top": 23.0,
+                    "width": 21.0
+                }
+            ],
+            [
+                "pendant_lamp",
+                {
+                    "depth": 79.0,
+                    "height": 43.0,
+                    "left": 125.0,
+                    "length": 23.0,
+                    "orientation": 0.0,
+                    "top": 22.0,
+                    "width": 23.0
+                }
+            ]
+        ],
+        "prompt": "Condition:\nRoom Type: bedroom\nRoom Size: max length 273px, max width 256px\nDescription: A bedroom with an armchair, a coffee table, a double bed, a dressing table, a floor lamp, three pendant lamps, a sofa, two stools and two tables",
+        "query_id": "custom_20250624_175945_iter5",
+        "raw_gpt_response": "double_bed {length: 96px; width: 134px; height: 56px; left: 83px; top: 80px; depth: 28px;orientation: 0 degrees;}\narmchair {length: 36px; width: 41px; height: 42px; left: 22px; top: 198px; depth: 21px;orientation: 0 degrees;}\nsofa {length: 98px; width: 32px; height: 32px; left: 186px; top: 208px; depth: 16px;orientation: -90 degrees;}\ntable {length: 43px; width: 32px; height: 17px; left: 59px; top: 205px; depth: 8px;orientation: 0 degrees;}\ntable {length: 33px; width: 23px; height: 26px; left: 225px; top: 157px; depth: 13px;orientation: 0 degrees;}\nstool {length: 36px; width: 29px; height: 19px; left: 105px; top: 202px; depth: 9px;orientation: 0 degrees;}\nstool {length: 23px; width: 12px; height: 13px; left: 46px; top: 218px; depth: 6px;orientation: 0 degrees;}\ndressing_table {length: 59px; width: 28px; height: 68px; left: 203px; top: 129px; depth: 34px;orientation: -90 degrees;}\ncoffee_table {length: 45px;width: 28px; height: 17px; left: 173px; top: 225px; depth: 8px;orientation: 0 degrees;}\npendant_lamp {length: 21px; width: 21px; height: 42px; left: 51px; top: 23px; depth: 78px;orientation: 0 degrees;}\npendant_lamp {length: 23px; width: 23px; height: 43px; left: 125px; top: 22px; depth: 79px;orientation: 0 degrees;}\npendant_lamp {length: 19px; width: ",
+        "sorted_ids": [
+            "8b7f7e8e-0eae-428d-8c0f-9600435db055_Bedroom-3951",
+            "bb66077e-f845-4c61-bea7-d88fc7dd4aeb_Bedroom-1087",
+            "fbd8335f-0637-42e3-8d89-dc96d4651ac2_MasterBedroom-3684",
+            "99a9a277-df69-43f1-a934-3548f4438510_SecondBedroom-92664"
+        ],
+        "temperature": 1.0,
+        "timestamp": "20250624_175945",
+        "top_k": 4,
+        "unit": "px"
+    }
+]

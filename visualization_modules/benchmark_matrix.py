@@ -1,9 +1,10 @@
 import os
 import matplotlib.pyplot as plt
 from PIL import Image, ImageDraw, ImageFont
+from datetime import datetime
 from .scene_3d import visualize_scene
 from .scene_2d import create_2d_visualization
-from .utils import calculate_out_of_boundary_rate
+from .utils import calculate_out_of_boundary_rate, calculate_overlapping_statistics
 
 
 def resize_image_to_height(img_path, target_height):
@@ -62,7 +63,7 @@ def create_image_matrix(matrix_data, cell_height=400):
     
     # 创建大图，增加更多空间
     total_width = sum(col_widths) + 400  # 增加左侧标签空间
-    total_height = n_rows * cell_height + 300  # 增加顶部标题空间
+    total_height = n_rows * cell_height + 350  # 增加顶部标题空间以容纳重叠统计
     
     matrix_img = Image.new('RGB', (total_width, total_height), color='white')
     draw = ImageDraw.Draw(matrix_img)
@@ -81,17 +82,21 @@ def create_image_matrix(matrix_data, cell_height=400):
     
     # 计算整体统计
     total_oob_rate = sum(data['oob_rate'] for data in matrix_data) / len(matrix_data)
+    total_overlap_rate = sum(data['overlap_stats']['overlapping_rate'] for data in matrix_data) / len(matrix_data)
+    total_avg_overlap_num = sum(data['overlap_stats']['average_overlapping_number'] for data in matrix_data) / len(matrix_data)
     total_scenes = len(matrix_data)
     
     # 绘制标题和统计
     draw.text((10, 10), "Benchmarking Matrix", fill='black', font=title_font)
-    draw.text((10, 40), f"Total Scenes: {total_scenes} | Overall OOB Rate: {total_oob_rate:.1%}", 
+    draw.text((10, 40), f"Total Scenes: {total_scenes} | OOB Rate: {total_oob_rate:.1%}", 
              fill='darkblue', font=font)
+    draw.text((10, 65), f"Overlap Rate: {total_overlap_rate:.1%} | Avg Overlap Number: {total_avg_overlap_num:.2f}", 
+             fill='darkred', font=font)
     
     # 绘制行标签
     row_labels = ["Query", "3D View", "2D View", "Prompt"] + [f"In-context {i+1}" for i in range(max_in_context)]
     for i, label in enumerate(row_labels):
-        y = 80 + i * cell_height + cell_height // 2
+        y = 105 + i * cell_height + cell_height // 2  # 调整起始位置以容纳重叠统计
         draw.text((10, y), label, fill='black', font=small_font)
     
     # 填充矩阵
@@ -103,9 +108,12 @@ def create_image_matrix(matrix_data, cell_height=400):
         # 列标题
         col_x = x_offset + sum(col_widths[:col])
         short_id = query_id.split('_')[-1] if '_' in query_id else query_id
-        draw.text((col_x, 60), f"{short_id}\nOOB: {oob_rate:.1%}", fill='black', font=small_font)
+        overlap_rate = data['overlap_stats']['overlapping_rate']
+        avg_overlap = data['overlap_stats']['average_overlapping_number']
+        draw.text((col_x, 60), f"{short_id}\nOOB: {oob_rate:.1%}\nOverlap: {overlap_rate:.1%}\nAvg: {avg_overlap:.1f}", 
+                 fill='black', font=small_font)
         
-        row_y = 80
+        row_y = 105  # 增加空间以容纳更多列标题信息
         
         # Query image
         if data['query_img'] and os.path.exists(data['query_img']):
@@ -189,7 +197,7 @@ def create_image_matrix(matrix_data, cell_height=400):
     return matrix_img
 
 
-def create_benchmark_matrix(data, top_n, gpt_version=None, output_dir="visualization_output"):
+def create_benchmark_matrix(data, top_n, gpt_version=None, output_dir="visualization_output", is_custom=False, add_timestamp=True, timestamp=None):
     """创建 benchmarking 矩阵图片"""
     print(f"Creating benchmark matrix for {len(data)} scenes...")
     
@@ -239,12 +247,24 @@ def create_benchmark_matrix(data, top_n, gpt_version=None, output_dir="visualiza
             placeholder_img.save(temp_2d_path)
             temp_files.append(temp_2d_path)
         
-        # 计算 out of boundary 率
+        # 计算 out of boundary 率和重叠统计
         try:
             oob_rate = calculate_out_of_boundary_rate(scene_data)
         except Exception as e:
             print(f"  Warning: Failed to calculate OOB rate: {e}")
             oob_rate = 0.0
+        
+        try:
+            overlap_stats = calculate_overlapping_statistics(scene_data)
+        except Exception as e:
+            print(f"  Warning: Failed to calculate overlap statistics: {e}")
+            overlap_stats = {
+                'overlapping_rate': 0.0,
+                'average_overlapping_number': 0.0,
+                'total_overlaps': 0,
+                'total_furniture': 0,
+                'furniture_with_overlaps': 0
+            }
         
         matrix_data.append({
             'query_id': query_id,
@@ -253,6 +273,7 @@ def create_benchmark_matrix(data, top_n, gpt_version=None, output_dir="visualiza
             '2d_img': temp_2d_path,
             'sorted_imgs': sorted_imgs or [],
             'oob_rate': oob_rate,
+            'overlap_stats': overlap_stats,
             'prompt': scene_data.get('prompt', ''),
             'object_list': scene_data.get('object_list', [])
         })
@@ -264,21 +285,47 @@ def create_benchmark_matrix(data, top_n, gpt_version=None, output_dir="visualiza
         matrix_img = create_image_matrix(matrix_data)
         
         if matrix_img:
-            # 保存到 top_n_gpt 文件夹
-            if gpt_version:
-                folder_name = f"top{top_n}_{gpt_version}"
+            # 保存到相应的文件夹（支持custom类型）
+            if is_custom:
+                # Custom results go to custom/html/topn_gpt/ structure
+                if gpt_version:
+                    # Sanitize gpt_version for folder names (replace dots and hyphens with underscores)
+                    safe_gpt_version = gpt_version.replace('.', '_').replace('-', '_')
+                    folder_name = f"top{top_n}_{safe_gpt_version}"
+                else:
+                    folder_name = f"top{top_n}"
+                matrix_output_dir = os.path.join(output_dir, "custom", "html", folder_name)
             else:
-                folder_name = f"top{top_n}"
-            matrix_output_dir = os.path.join(output_dir, "html", folder_name)
+                # Standard results go to html/topn_gpt/ structure
+                if gpt_version:
+                    # Sanitize gpt_version for folder names (replace dots and hyphens with underscores)
+                    safe_gpt_version = gpt_version.replace('.', '_').replace('-', '_')
+                    folder_name = f"top{top_n}_{safe_gpt_version}"
+                else:
+                    folder_name = f"top{top_n}"
+                matrix_output_dir = os.path.join(output_dir, "html", folder_name)
+            
             os.makedirs(matrix_output_dir, exist_ok=True)
-            matrix_output_path = os.path.join(matrix_output_dir, "benchmark_matrix.png")
+            
+            # Create filename with optional timestamp
+            base_filename = "benchmark_matrix"
+            if add_timestamp:
+                if timestamp is None:
+                    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+                base_filename = f"{base_filename}_{timestamp}"
+            
+            matrix_output_path = os.path.join(matrix_output_dir, f"{base_filename}.png")
             matrix_img.save(matrix_output_path, dpi=(600, 600))  # 提高到600 DPI
             print(f"Benchmark matrix saved to: {matrix_output_path}")
             
             # 计算总体统计
             if matrix_data:
                 total_oob_rate = sum(data['oob_rate'] for data in matrix_data) / len(matrix_data)
+                total_overlap_rate = sum(data['overlap_stats']['overlapping_rate'] for data in matrix_data) / len(matrix_data)
+                total_avg_overlap_num = sum(data['overlap_stats']['average_overlapping_number'] for data in matrix_data) / len(matrix_data)
                 print(f"Overall out-of-boundary rate: {total_oob_rate:.1%}")
+                print(f"Overall overlapping rate: {total_overlap_rate:.1%}")
+                print(f"Overall average overlapping number: {total_avg_overlap_num:.2f}")
         else:
             print("Failed to create matrix image")
             matrix_output_path = None

@@ -1,0 +1,752 @@
+[
+    {
+        "iter": 0,
+        "object_list": [
+            [
+                "double_bed",
+                {
+                    "depth": 36.0,
+                    "height": 72.0,
+                    "left": 189.0,
+                    "length": 155.0,
+                    "orientation": -90.0,
+                    "top": 116.0,
+                    "width": 175.0
+                }
+            ],
+            [
+                "table",
+                {
+                    "depth": 20.0,
+                    "height": 40.0,
+                    "left": 258.0,
+                    "length": 45.0,
+                    "orientation": -90.0,
+                    "top": 22.0,
+                    "width": 45.0
+                }
+            ],
+            [
+                "pendant_lamp",
+                {
+                    "depth": 202.0,
+                    "height": 93.0,
+                    "left": 163.0,
+                    "length": 50.0,
+                    "orientation": -180.0,
+                    "top": 131.0,
+                    "width": 50.0
+                }
+            ],
+            [
+                "wardrobe",
+                {
+                    "depth": 87.0,
+                    "height": 175.0,
+                    "left": 90.0,
+                    "length": 122.0,
+                    "orientation": -180.0,
+                    "top": 235.0,
+                    "width": 24.0
+                }
+            ]
+        ],
+        "prompt": "Condition:\nRoom Type: bedroom\nRoom Size: max length 273px, max width 256px\n",
+        "query_id": "52e1f54c-3d9b-4d69-bebc-decfdc950f7c_Bedroom-803",
+        "sorted_ids": [
+            "35f27849-c5f6-4a81-8fa7-d527f9963b96_SecondBedroom-25444",
+            "625cc958-7f61-487f-a076-427034fedc1a_MasterBedroom-232",
+            "7c21dd91-e3ba-46d9-b158-27c9a589e1fd_SecondBedroom-32869",
+            "2dc39940-b53e-4451-84f8-ce8cf3aa9171_Bedroom-10751",
+            "766a326b-a379-475c-8cc1-3af87e5b5ca3_MasterBedroom-5591",
+            "05aa0174-838c-4255-a34d-1b419365f7a7_SecondBedroom-5150"
+        ]
+    },
+    {
+        "iter": 0,
+        "object_list": [
+            [
+                "double_bed",
+                {
+                    "depth": 35.0,
+                    "height": 70.0,
+                    "left": 100.0,
+                    "length": 150.0,
+                    "orientation": 0.0,
+                    "top": 150.0,
+                    "width": 180.0
+                }
+            ],
+            [
+                "nightstand",
+                {
+                    "depth": 20.0,
+                    "height": 40.0,
+                    "left": 30.0,
+                    "length": 45.0,
+                    "orientation": 0.0,
+                    "top": 150.0,
+                    "width": 30.0
+                }
+            ],
+            [
+                "nightstand",
+                {
+                    "depth": 20.0,
+                    "height": 40.0,
+                    "left": 280.0,
+                    "length": 45.0,
+                    "orientation": 0.0,
+                    "top": 150.0,
+                    "width": 30.0
+                }
+            ],
+            [
+                "wardrobe",
+                {
+                    "depth": 100.0,
+                    "height": 200.0,
+                    "left": 170.0,
+                    "length": 180.0,
+                    "orientation": 0.0,
+                    "top": 300.0,
+                    "width": 50.0
+                }
+            ],
+            [
+                "pendant_lamp",
+                {
+                    "depth": 200.0,
+                    "height": 80.0,
+                    "left": 130.0,
+                    "length": 40.0,
+                    "orientation": 0.0,
+                    "top": 110.0,
+                    "width": 40.0
+                }
+            ]
+        ],
+        "prompt": "Condition:\nRoom Type: bedroom\nRoom Size: max length 256px, max width 350px\n",
+        "query_id": "0ca13717-8f2a-485f-b991-6211ff18a00b_SecondBedroom-116650",
+        "sorted_ids": [
+            "644dba87-0d65-4897-912c-38185791b3c2_SecondBedroom-116544",
+            "cbe422ce-66fb-43d8-b546-7ea428c6972b_SecondBedroom-115910",
+            "21c3b027-c6b7-480c-9933-d519eefab02d_SecondBedroom-1901",
+            "32b648a3-a703-4639-ab84-deb1da43793e_SecondBedroom-3549",
+            "0422e423-8aba-40f0-9090-78f448423468_SecondBedroom-20",
+            "4efedd5d-31d9-46c2-8c26-94ebdd7c0187_SecondBedroom-39528"
+        ]
+    },
+    {
+        "iter": 0,
+        "object_list": [
+            [
+                "double_bed",
+                {
+                    "depth": 45.0,
+                    "height": 90.0,
+                    "left": 173.0,
+                    "length": 240.0,
+                    "orientation": 0.0,
+                    "top": 193.0,
+                    "width": 200.0
+                }
+            ],
+            [
+                "wardrobe",
+                {
+                    "depth": 105.0,
+                    "height": 210.0,
+                    "left": 123.0,
+                    "length": 145.0,
+                    "orientation": 0.0,
+                    "top": 28.0,
+                    "width": 60.0
+                }
+            ],
+            [
+                "nightstand",
+                {
+                    "depth": 20.0,
+                    "height": 40.0,
+                    "left": 21.0,
+                    "length": 40.0,
+                    "orientation": 0.0,
+                    "top": 23.0,
+                    "width": 40.0
+                }
+            ],
+            [
+                "nightstand",
+                {
+                    "depth": 20.0,
+                    "height": 40.0,
+                    "left": 325.0,
+                    "length": 40.0,
+                    "orientation": 0.0,
+                    "top": 23.0,
+                    "width": 40.0
+                }
+            ],
+            [
+                "ceiling_lamp",
+                {
+                    "depth": 250.0,
+                    "height": 30.0,
+                    "left": 162.0,
+                    "length": 61.0,
+                    "orientation": 0.0,
+                    "top": 51.0,
+                    "width": 61.0
+                }
+            ]
+        ],
+        "prompt": "Condition:\nRoom Type: bedroom\nRoom Size: max length 256px, max width 386px\n",
+        "query_id": "0925adc7-8bb3-4080-a3bc-8bf19d5d2916_SecondBedroom-25214",
+        "sorted_ids": [
+            "4704fc8f-c4e8-4a68-92f6-5abdc54d327d_MasterBedroom-22674",
+            "30f2574f-dd2d-4e97-a937-dce8be2af98e_MasterBedroom-118964",
+            "8eebb493-c733-478d-a90b-b43620d3291a_BedRoom-61784",
+            "4f847ca8-17e6-4256-9737-9fd7befeebf3_MasterBedroom-273",
+            "9dbe7711-718f-49d4-819c-caca531b3cd7_MasterBedroom-9638",
+            "bb8583bf-ee94-4667-9981-63faf7a91234_MasterBedroom-10958"
+        ]
+    },
+    {
+        "iter": 0,
+        "object_list": [
+            [
+                "double_bed",
+                {
+                    "depth": 32.0,
+                    "height": 64.0,
+                    "left": 102.0,
+                    "length": 190.0,
+                    "orientation": 90.0,
+                    "top": 111.0,
+                    "width": 200.0
+                }
+            ],
+            [
+                "nightstand",
+                {
+                    "depth": 32.0,
+                    "height": 65.0,
+                    "left": 10.0,
+                    "length": 46.0,
+                    "orientation": 90.0,
+                    "top": 18.0,
+                    "width": 30.0
+                }
+            ],
+            [
+                "pendant_lamp",
+                {
+                    "depth": 196.0,
+                    "height": 42.0,
+                    "left": 176.0,
+                    "length": 54.0,
+                    "orientation": -180.0,
+                    "top": 123.0,
+                    "width": 51.0
+                }
+            ],
+            [
+                "wardrobe",
+                {
+                    "depth": 96.0,
+                    "height": 193.0,
+                    "left": 104.0,
+                    "length": 203.0,
+                    "orientation": -180.0,
+                    "top": 235.0,
+                    "width": 50.0
+                }
+            ]
+        ],
+        "prompt": "Condition:\nRoom Type: bedroom\nRoom Size: max length 299px, max width 256px\n",
+        "query_id": "2c6d0cdd-d4f0-4937-8401-3c13680aaa61_Bedroom-933",
+        "sorted_ids": [
+            "3d258450-f746-4153-ba85-90c309d71720_MasterBedroom-12805",
+            "cc7bd93b-9511-421e-a67c-fb5f39c86208_MasterBedroom-40296",
+            "490f9a57-79fd-4854-901d-023d0a56fadc_MasterBedroom-30669",
+            "25886cb8-4b26-4354-b331-d3ccbbb37b10_MasterBedroom-1288",
+            "3dc195aa-0a30-440e-bf84-5f1995ec1c3f_MasterBedroom-1150",
+            "52b6a7c2-509f-4253-a562-27347f318b05_Bedroom-233"
+        ]
+    },
+    {
+        "iter": 0,
+        "object_list": [
+            [
+                "double_bed",
+                {
+                    "depth": 65.0,
+                    "height": 130.0,
+                    "left": 140.0,
+                    "length": 180.0,
+                    "orientation": 0.0,
+                    "top": 230.0,
+                    "width": 200.0
+                }
+            ],
+            [
+                "wardrobe",
+                {
+                    "depth": 105.0,
+                    "height": 210.0,
+                    "left": 200.0,
+                    "length": 200.0,
+                    "orientation": 0.0,
+                    "top": 30.0,
+                    "width": 60.0
+                }
+            ],
+            [
+                "nightstand",
+                {
+                    "depth": 30.0,
+                    "height": 60.0,
+                    "left": 50.0,
+                    "length": 40.0,
+                    "orientation": 0.0,
+                    "top": 360.0,
+                    "width": 40.0
+                }
+            ],
+            [
+                "nightstand",
+                {
+                    "depth": 30.0,
+                    "height": 60.0,
+                    "left": 50.0,
+                    "length": 40.0,
+                    "orientation": 0.0,
+                    "top": 100.0,
+                    "width": 40.0
+                }
+            ],
+            [
+                "pendant_lamp",
+                {
+                    "depth": 180.0,
+                    "height": 90.0,
+                    "left": 130.0,
+                    "length": 60.0,
+                    "orientation": 0.0,
+                    "top": 230.0,
+                    "width": 60.0
+                }
+            ]
+        ],
+        "prompt": "Condition:\nRoom Type: bedroom\nRoom Size: max length 256px, max width 460px\n",
+        "query_id": "b4605349-5ca9-44ec-bb78-1edf5fac49b5_SecondBedroom-44692",
+        "sorted_ids": [
+            "ad2bc1ea-0567-4048-8cdb-d298dc18d162_SecondBedroom-30536",
+            "bb8583bf-ee94-4667-9981-63faf7a91234_MasterBedroom-10958",
+            "71afc86e-1261-4c9e-a2b0-59e0811180e3_MasterBedroom-2732",
+            "198eb9ec-9059-4e26-958e-dc8fb8187713_MasterBedroom-15321",
+            "0e373951-83a9-43e4-83cd-febb0ead7c9a_MasterBedroom-45353",
+            "b4605349-5ca9-44ec-bb78-1edf5fac49b5_MasterBedroom-44790"
+        ]
+    },
+    {
+        "iter": 0,
+        "object_list": [
+            [
+                "wardrobe",
+                {
+                    "depth": 111.0,
+                    "height": 223.0,
+                    "left": 30.0,
+                    "length": 135.0,
+                    "orientation": 90.0,
+                    "top": 85.0,
+                    "width": 60.0
+                }
+            ],
+            [
+                "double_bed",
+                {
+                    "depth": 40.0,
+                    "height": 80.0,
+                    "left": 250.0,
+                    "length": 182.0,
+                    "orientation": 0.0,
+                    "top": 100.0,
+                    "width": 200.0
+                }
+            ],
+            [
+                "nightstand",
+                {
+                    "depth": 20.0,
+                    "height": 40.0,
+                    "left": 120.0,
+                    "length": 45.0,
+                    "orientation": 0.0,
+                    "top": 18.0,
+                    "width": 45.0
+                }
+            ],
+            [
+                "nightstand",
+                {
+                    "depth": 20.0,
+                    "height": 40.0,
+                    "left": 370.0,
+                    "length": 45.0,
+                    "orientation": 0.0,
+                    "top": 18.0,
+                    "width": 45.0
+                }
+            ],
+            [
+                "chair",
+                {
+                    "depth": 35.0,
+                    "height": 70.0,
+                    "left": 365.0,
+                    "length": 60.0,
+                    "orientation": -135.0,
+                    "top": 215.0,
+                    "width": 50.0
+                }
+            ],
+            [
+                "ceiling_lamp",
+                {
+                    "depth": 205.0,
+                    "height": 25.0,
+                    "left": 242.0,
+                    "length": 50.0,
+                    "orientation": 0.0,
+                    "top": 128.0,
+                    "width": 50.0
+                }
+            ]
+        ],
+        "prompt": "Condition:\nRoom Type: bedroom\nRoom Size: max length 402px, max width 256px\n",
+        "query_id": "5ba554c9-9edf-4d8c-9816-0e28fa909982_SecondBedroom-13869",
+        "sorted_ids": [
+            "af50bca9-1d0d-4eaf-9e81-9f8fc643949f_SecondBedroom-22166",
+            "5669e7d6-ad0f-47ad-be4a-c511786ad433_SecondBedroom-21866",
+            "74e9a688-df21-44c4-a4e1-a57081a62bc0_MasterBedroom-78127",
+            "8d29c73c-1246-4852-b7e1-d076ca22d7cc_MasterBedroom-85660",
+            "eb41d9bd-e372-479c-9dc9-ea9f738bf9c4_MasterBedroom-28978",
+            "206d8aff-ccfc-4120-b5d8-d63c5578796e_MasterBedroom-994"
+        ]
+    },
+    {
+        "iter": 0,
+        "object_list": [
+            [
+                "double_bed",
+                {
+                    "depth": 39.0,
+                    "height": 78.0,
+                    "left": 184.0,
+                    "length": 191.0,
+                    "orientation": 0.0,
+                    "top": 103.0,
+                    "width": 201.0
+                }
+            ],
+            [
+                "wardrobe",
+                {
+                    "depth": 104.0,
+                    "height": 209.0,
+                    "left": 15.0,
+                    "length": 169.0,
+                    "orientation": 90.0,
+                    "top": 127.0,
+                    "width": 47.0
+                }
+            ],
+            [
+                "nightstand",
+                {
+                    "depth": 22.0,
+                    "height": 44.0,
+                    "left": 80.0,
+                    "length": 37.0,
+                    "orientation": 0.0,
+                    "top": 20.0,
+                    "width": 39.0
+                }
+            ],
+            [
+                "nightstand",
+                {
+                    "depth": 22.0,
+                    "height": 44.0,
+                    "left": 278.0,
+                    "length": 37.0,
+                    "orientation": 0.0,
+                    "top": 20.0,
+                    "width": 39.0
+                }
+            ],
+            [
+                "ceiling_lamp",
+                {
+                    "depth": 228.0,
+                    "height": 15.0,
+                    "left": 189.0,
+                    "length": 64.0,
+                    "orientation": 0.0,
+                    "top": 128.0,
+                    "width": 64.0
+                }
+            ],
+            [
+                "bookshelf",
+                {
+                    "depth": 46.0,
+                    "height": 92.0,
+                    "left": 315.0,
+                    "length": 137.0,
+                    "orientation": -90.0,
+                    "top": 194.0,
+                    "width": 32.0
+                }
+            ]
+        ],
+        "prompt": "Condition:\nRoom Type: bedroom\nRoom Size: max length 355px, max width 256px\n",
+        "query_id": "8879fdaf-a95e-4a05-b1ae-e1bede3cb592_Bedroom-21273",
+        "sorted_ids": [
+            "96bc1382-7f9a-42ff-8937-f0175468d63f_MasterBedroom-35172",
+            "43f250b1-17a4-4ac7-af2d-ba722f3a8bcb_Bedroom-43042",
+            "72cfe763-f119-4fb0-a697-5a56cf3b8289_Bedroom-28692",
+            "9894d4c3-43cb-4af9-9107-263bdb85bd18_SecondBedroom-19505",
+            "7ca0ebf5-fab7-481f-9225-979c3fa4f949_Bedroom-6637",
+            "bf869394-db5e-43ef-a664-aa863b99cf55_SecondBedroom-3301"
+        ]
+    },
+    {
+        "iter": 0,
+        "object_list": [
+            [
+                "double_bed",
+                {
+                    "depth": 33.0,
+                    "height": 67.0,
+                    "left": 132.0,
+                    "length": 198.0,
+                    "orientation": 90.0,
+                    "top": 198.0,
+                    "width": 176.0
+                }
+            ],
+            [
+                "nightstand",
+                {
+                    "depth": 29.0,
+                    "height": 58.0,
+                    "left": 13.0,
+                    "length": 44.0,
+                    "orientation": 90.0,
+                    "top": 81.0,
+                    "width": 36.0
+                }
+            ],
+            [
+                "nightstand",
+                {
+                    "depth": 29.0,
+                    "height": 58.0,
+                    "left": 18.0,
+                    "length": 44.0,
+                    "orientation": 90.0,
+                    "top": 294.0,
+                    "width": 36.0
+                }
+            ],
+            [
+                "pendant_lamp",
+                {
+                    "depth": 189.0,
+                    "height": 85.0,
+                    "left": 129.0,
+                    "length": 63.0,
+                    "orientation": 0.0,
+                    "top": 192.0,
+                    "width": 63.0
+                }
+            ],
+            [
+                "pendant_lamp",
+                {
+                    "depth": 189.0,
+                    "height": 85.0,
+                    "left": 189.0,
+                    "length": 63.0,
+                    "orientation": 0.0,
+                    "top": 192.0,
+                    "width": 63.0
+                }
+            ],
+            [
+                "wardrobe",
+                {
+                    "depth": 81.0,
+                    "height": 162.0,
+                    "left": 109.0,
+                    "length": 174.0,
+                    "orientation": 0.0,
+                    "top": 22.0,
+                    "width": 51.0
+                }
+            ]
+        ],
+        "prompt": "Condition:\nRoom Type: bedroom\nRoom Size: max length 256px, max width 314px\n",
+        "query_id": "ba01d127-c603-47bb-ac22-e6546031244c_MasterBedroom-35124",
+        "sorted_ids": [
+            "cde4fdcb-4e23-42b7-bce8-af71fb4fef57_SecondBedroom-19608",
+            "c685d996-7959-44bf-85d2-ffca8fbd6841_SecondBedroom-42885",
+            "f8ee1c9b-799e-4137-80ea-b9a5c240d988_MasterBedroom-4930",
+            "eff72f0f-049a-47b3-8685-b1b6af535435_MasterBedroom-17488",
+            "c4e93e2a-3b1d-4c3c-8a94-4cebc91e4eac_SecondBedroom-9386",
+            "38363d0e-7fc5-415e-aad1-248515d01ac5_Bedroom-71694"
+        ]
+    },
+    {
+        "iter": 0,
+        "object_list": [
+            [
+                "double_bed",
+                {
+                    "depth": 55.0,
+                    "height": 110.0,
+                    "left": 143.0,
+                    "length": 235.0,
+                    "orientation": 90.0,
+                    "top": 217.0,
+                    "width": 220.0
+                }
+            ],
+            [
+                "nightstand",
+                {
+                    "depth": 17.0,
+                    "height": 35.0,
+                    "left": 15.0,
+                    "length": 43.0,
+                    "orientation": 90.0,
+                    "top": 309.0,
+                    "width": 42.0
+                }
+            ],
+            [
+                "nightstand",
+                {
+                    "depth": 17.0,
+                    "height": 35.0,
+                    "left": 15.0,
+                    "length": 43.0,
+                    "orientation": 90.0,
+                    "top": 82.0,
+                    "width": 42.0
+                }
+            ],
+            [
+                "wardrobe",
+                {
+                    "depth": 110.0,
+                    "height": 220.0,
+                    "left": 140.0,
+                    "length": 281.0,
+                    "orientation": -180.0,
+                    "top": 405.0,
+                    "width": 61.0
+                }
+            ],
+            [
+                "pendant_lamp",
+                {
+                    "depth": 208.0,
+                    "height": 36.0,
+                    "left": 101.0,
+                    "length": 36.0,
+                    "orientation": 0.0,
+                    "top": 208.0,
+                    "width": 36.0
+                }
+            ]
+        ],
+        "prompt": "Condition:\nRoom Type: bedroom\nRoom Size: max length 256px, max width 442px\n",
+        "query_id": "4563a93a-fffd-4829-b768-2cbe398c5cf1_SecondBedroom-13315",
+        "sorted_ids": [
+            "e604494e-6f67-4fe9-af75-5f30b819d8aa_MasterBedroom-32060",
+            "300a30a0-69d3-46c3-99ae-98cc2665ea28_Bedroom-35152",
+            "ef0613b7-4461-461b-96c6-cb140f7a2f2a_Bedroom-16717",
+            "384778fb-7b67-47b5-898c-89ad5538d9f5_SecondBedroom-372",
+            "79c5c8d7-bdbc-42ea-b582-bb5c3a925c11_SecondBedroom-12402",
+            "2b7bbd2f-8e66-45af-bfda-8ccec86cf64d_SecondBedroom-12420"
+        ]
+    },
+    {
+        "iter": 0,
+        "object_list": [
+            [
+                "double_bed",
+                {
+                    "depth": 35.0,
+                    "height": 70.0,
+                    "left": 150.0,
+                    "length": 185.0,
+                    "orientation": -90.0,
+                    "top": 145.0,
+                    "width": 140.0
+                }
+            ],
+            [
+                "wardrobe",
+                {
+                    "depth": 87.0,
+                    "height": 175.0,
+                    "left": 17.0,
+                    "length": 195.0,
+                    "orientation": 0.0,
+                    "top": 128.0,
+                    "width": 60.0
+                }
+            ],
+            [
+                "nightstand",
+                {
+                    "depth": 12.0,
+                    "height": 25.0,
+                    "left": 240.0,
+                    "length": 30.0,
+                    "orientation": 0.0,
+                    "top": 240.0,
+                    "width": 30.0
+                }
+            ],
+            [
+                "ceiling_lamp",
+                {
+                    "depth": 230.0,
+                    "height": 30.0,
+                    "left": 130.0,
+                    "length": 35.0,
+                    "orientation": 0.0,
+                    "top": 120.0,
+                    "width": 35.0
+                }
+            ]
+        ],
+        "prompt": "Condition:\nRoom Type: bedroom\nRoom Size: max length 256px, max width 256px\n",
+        "query_id": "676675bd-df42-4951-afca-7d39a70af0da_Bedroom-71366",
+        "sorted_ids": [
+            "f105dd34-bc81-432e-83bd-314087015257_Bedroom-97",
+            "54b8104f-05e8-49a4-a8df-004a3ed42064_Bedroom-34195",
+            "f242015d-0a67-4ac7-a5ad-30199df3e02c_SecondBedroom-21986",
+            "36449723-a4a8-4ee1-9f0c-0baada1ab3d8_MasterBedroom-7524",
+            "0be73303-6270-482d-be06-528c07da02fb_Bedroom-1411",
+            "d6359e97-edea-43ac-a05a-22a9fc17f6a0_SecondBedroom-58474"
+        ]
+    }
+]

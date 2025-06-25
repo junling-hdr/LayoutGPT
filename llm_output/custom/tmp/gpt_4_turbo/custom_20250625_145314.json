@@ -1,0 +1,53 @@
+{
+    "choices":[
+        {
+            "finish_reason":"length",
+            "index":0,
+            "logprobs":null,
+            "message":{
+                "annotations":[],
+                "audio":null,
+                "content":"double_bed {length: 107px; width: 115px; height: 72px; left: 96px; top: 61px; depth: 36px; orientation: 0 degrees;}\narmchair {length: 37px; width: 42px; height: 45px; left: 32px; top: 191px; depth: 22px; orientation: 90 degrees;}\ncoffee_table {length: 56px; width: 38px; height: 18px; left: 104px; top: 197px; depth: 9px; orientation: 0 degrees;}\ndressing_table {length: 69px; width: 25px; height: 64px; left: 203px; top: 254px; depth: 32px; orientation: -180 degrees;}\nfloor_lamp {length: 23px; width: 26px; height: 78px; left: 29px; top: 249px; depth: 39px; orientation: -135 degrees;}\npendant_lamp {length: 18px; width: 18px; height: 55px; left: 169px; top: 9px; depth: 85px; orientation: 0 degrees;}\npendant_lamp {length: 18px; width: 18px; height: 55px; left: 23px; top: 9px; depth: 85px; orientation: 0 degrees;}\npendant_lamp {length: 9px; width: 9px; height: 31px; left: 132px; top: 193px; depth: 119px; orientation: 0 degrees;}\nsofa {length: 107px; width: 53px; height: 53px; left: 103px; top: 253px; depth: 26px; orientation: -180 degrees;}\nstool {length: 73px; width: 47px; height: 29px; left: 101px; top: 143px; depth: 14px; orientation: 0 degrees;}\nstool {length: 56px; width: 21px; height: 14px; left: 204px; top: 229px; depth: 7px; orientation: -180 degrees;}\ntable {length: 23px; width",
+                "function_call":null,
+                "refusal":null,
+                "role":"assistant",
+                "tool_calls":null
+            }
+        },
+        {
+            "finish_reason":"length",
+            "index":1,
+            "logprobs":null,
+            "message":{
+                "annotations":[],
+                "audio":null,
+                "content":"double_bed {length: 107px; width: 115px; height: 72px; left: 96px; top: 61px; depth: 36px; orientation: 0 degrees;}\narmchair {length: 37px; width: 42px; height: 45px; left: 32px; top: 191px; depth: 22px; orientation: 90 degrees;}\ncoffee_table {length: 56px; width: 38px; height: 18px; left: 104px; top: 197px; depth: 9px; orientation: 0 degrees;}\ndressing_table {length: 69px; width: 25px; height: 64px; left: 203px; top: 254px; depth: 32px; orientation: -180 degrees;}\nfloor_lamp {length: 23px; width: 26px; height: 78px; left: 29px; top: 249px; depth: 39px; orientation: -135 degrees;}\npendant_lamp {length: 18px; width: 18px; height: 55px; left: 169px; top: 9px; depth: 85px; orientation: 0 degrees;}\npendant_lamp {length: 18px; width: 18px; height: 55px; left: 23px; top: 9px; depth: 85px; orientation: 0 degrees;}\npendant_lamp {length: 9px; width: 9px; height: 31px; left: 132px; top: 193px; depth: 119px; orientation: 0 degrees;}\nsofa {length: 107px; width: 53px; height: 53px; left: 103px; top: 253px; depth: 26px; orientation: -180 degrees;}\nstool {length: 73px; width: 47px; height: 29px; left: 101px; top: 143px; depth: 14px; orientation: 0 degrees;}\nstool {length: 56px; width: 21px; height: 14px; left: 204px; top: 229px; depth: 7px; orientation: -180 degrees;}\ntable {length: 23px; width",
+                "function_call":null,
+                "refusal":null,
+                "role":"assistant",
+                "tool_calls":null
+            }
+        }
+    ],
+    "created":1750877607,
+    "id":"chatcmpl-BmPXLSskgPQDrRcn6IQbMd6zS1Tya",
+    "model":"gpt-4-turbo-2024-04-09",
+    "object":"chat.completion",
+    "service_tier":"default",
+    "system_fingerprint":"fp_de235176ee",
+    "usage":{
+        "completion_tokens":1024,
+        "completion_tokens_details":{
+            "accepted_prediction_tokens":0,
+            "audio_tokens":0,
+            "reasoning_tokens":0,
+            "rejected_prediction_tokens":0
+        },
+        "prompt_tokens":3470,
+        "prompt_tokens_details":{
+            "audio_tokens":0,
+            "cached_tokens":0
+        },
+        "total_tokens":4494
+    }
+}

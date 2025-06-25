@@ -1,0 +1,139 @@
+[
+    {
+        "choices": [
+            {
+                "finish_reason": "length",
+                "index": 0,
+                "logprobs": null,
+                "message": {
+                    "annotations": [],
+                    "audio": null,
+                    "content": "double_bed {length: 124px; width: 107px; height: 72px; left: 92px; top: 68px; depth: 36px;orientation: 0 degrees;}\ntable {length: 39px; width: 32px; height: 24px; left: 11px; top: 22px; depth: 12px;orientation: 0 degrees;}\ntable {length: 39px; width: 32px; height: 24px; left: 215px; top: 181px; depth: 12px;orientation: 0 degrees;}\nsofa {length: 109px; width: 51px; height: 52px; left: 115px; top: 245px; depth: 26px;orientation: 180 degrees;}\nstool {length: 72px; width: 29px; height: 14px; left: 20px; top: 190px; depth: 7px;orientation: 0 degrees;}\nstool {length: 72px; width: 29px; height: 14px; left: 200px; top: 130px; depth: 7px;orientation: 0 degrees;}\narmchair {length: 46px; width: 37px; height: 40px; left: 30px; top: 130px; depth: 20px;orientation: 60 degrees;}\ndressing_table {length: 71px; width: 29px; height: 64px; left: 183px; top: 61px; depth: 32px;orientation: -90 degrees;}\ncoffee_table {length: 63px; width: 41px; height: 21px; left: 51px; top: 206px; depth: 10px; orientation: 0 degrees;}\npendant_lamp {length: 15px; width: 15px; height: 47px; left: 151px; top: 11px; depth: 88px;orientation: 0 degrees;}\npendant_lamp {length: 15px; width: 15px; height: 47px; left: 18px; top: 11px; depth: 88px;orientation: 0 degrees;}\npendant_lamp {length: 15px; width: ",
+                    "function_call": null,
+                    "refusal": null,
+                    "role": "assistant",
+                    "tool_calls": null
+                }
+            },
+            {
+                "finish_reason": "length",
+                "index": 1,
+                "logprobs": null,
+                "message": {
+                    "annotations": [],
+                    "audio": null,
+                    "content": "double_bed {length: 107px; width: 124px; height: 56px; left: 100px; top: 120px; depth: 28px;orientation: 0 degrees;}\ntable {length: 29px; width: 29px; height: 18px; left: 12px; top: 45px; depth: 9px;orientation: 0 degrees;}\ntable {length: 29px; width: 29px; height: 18px; left: 210px; top: 45px; depth: 9px;orientation: 0 degrees;}\nsofa {length: 57px; width: 29px; height: 18px; left: 45px; top: 250px; depth: 9px;orientation: -180 degrees;}\narmchair {length: 54px; width: 29px; height: 45px; left: 13px; top: 188px; depth: 22px;orientation: 90 degrees;}\nstool {length: 23px; width: 23px; height: 12px; left: 45px; top: 188px; depth: 6px;orientation: 0 degrees;}\nstool {length: 23px; width: 23px; height: 12px; left: 100px; top: 65px; depth: 6px;orientation: 0 degrees;}\ncoffee_table {length: 36px; width: 18px; height: 9px; left: 128px; top: 250px; depth: 4px;orientation: 0 degrees;}\ndressing_table {length: 29px; width: 41px; height: 45px; left: 210px; top: 188px; depth: 22px;orientation: -180 degrees;}\npendant_lamp {length: 13px; width: 13px; height: 47px; left: 30px; top: 7px; depth: 97px;orientation: 0 degrees;}\npendant_lamp {length: 13px; width: 13px; height: 47px; left: 210px; top: 7px; depth: 97px;orientation: 0 degrees;}\npendant_lamp {length: 13px; width: ",
+                    "function_call": null,
+                    "refusal": null,
+                    "role": "assistant",
+                    "tool_calls": null
+                }
+            },
+            {
+                "finish_reason": "length",
+                "index": 2,
+                "logprobs": null,
+                "message": {
+                    "annotations": [],
+                    "audio": null,
+                    "content": "double_bed {length: 102px; width: 125px; height: 56px; left: 148px; top: 36px; depth: 28px;orientation: 0 degrees;}\ntable {length: 22px; width: 18px; height: 22px; left: 43px; top: 24px; depth: 11px;orientation: 0 degrees;}\ntable {length: 22px; width: 18px; height: 22px; left: 243px; top: 18px; depth: 11px;orientation: 0 degrees;}\nsofa {length: 92px; width: 56px; height: 36px; left: 54px; top: 225px; depth: 18px;orientation: 180 degrees;}\narmchair {length: 38px; width: 36px; height: 36px; left: 221px; top: 220px; depth: 18px;orientation: -45 degrees;}\ncoffee_table {length: 38px; width: 22px; height: 14px; left: 161px; top: 234px; depth: 7px;orientation: 0 degrees;}\ndressing_table {length: 71px; width: 33px; height: 78px; left: 199px; top: 108px; depth: 39px;orientation: 0 degrees;}\nstool {length: 18px; width: 14px; height: 14px; left: 206px; top: 175px; depth: 7px;orientation: 0 degrees;}\nstool {length: 18px; width: 14px; height: 14px; left: 235px; top: 175px; depth: 7px;orientation: 0 degrees;}\npendant_lamp {length: 21px; width: 21px; height: 40px; left: 97px; top: 15px; depth: 130px;orientation: 0 degrees;}\npendant_lamp {length: 21px; width: 21px; height: 40px; left: 171px; top: 15px; depth: 130px;orientation: 0 degrees;}\npendant_lamp {length: 21px; width: ",
+                    "function_call": null,
+                    "refusal": null,
+                    "role": "assistant",
+                    "tool_calls": null
+                }
+            },
+            {
+                "finish_reason": "length",
+                "index": 3,
+                "logprobs": null,
+                "message": {
+                    "annotations": [],
+                    "audio": null,
+                    "content": "double_bed {length: 92px; width: 100px; height: 52px; left: 15px; top: 102px; depth: 26px; orientation: 0 degrees;}\ntable {length: 28px; width: 24px; height: 25px; left: 180px; top: 15px; depth: 12px; orientation: 0 degrees;}\ntable {length: 28px; width: 24px; height: 25px; left: 180px; top: 75px; depth: 12px; orientation: 0 degrees;}\nsofa {length: 95px; width: 45px; height: 43px; left: 41px; top: 225px; depth: 21px; orientation: -90 degrees;}\nstool {length: 78px; width: 44px; height: 31px; left: 144px; top: 148px; depth: 15px; orientation: 0 degrees;}\nstool {length: 78px; width: 44px; height: 31px; left: 183px; top: 148px; depth: 15px; orientation: 0 degrees;}\narmchair {length: 40px; width: 44px; height: 42px; left: 177px; top: 227px; depth: 21px; orientation: -90 degrees;}\ndressing_table {length: 64px; width: 28px; height: 75px; left: 223px; top: 95px; depth: 37px; orientation: -90 degrees;}\ncoffee_table {length: 51px; width: 38px; height: 20px; left: 165px; top: 203px; depth: 10px; orientation: 0 degrees;}\nfloor_lamp {length: 20px; width: 27px; height: 81px; left: 9px; top: 46px; depth: 40px; orientation: 0 degrees;}\npendant_lamp {length: 18px; width: 18px; height: 37px; left: 90px; top: 197px; depth: 95px; orientation: 0 degrees;}\npendant_lamp {length: 18px; width: 18",
+                    "function_call": null,
+                    "refusal": null,
+                    "role": "assistant",
+                    "tool_calls": null
+                }
+            },
+            {
+                "finish_reason": "length",
+                "index": 4,
+                "logprobs": null,
+                "message": {
+                    "annotations": [],
+                    "audio": null,
+                    "content": "double_bed {length: 96px; width: 134px; height: 56px; left: 83px; top: 80px; depth: 28px;orientation: 0 degrees;}\narmchair {length: 36px; width: 41px; height: 42px; left: 22px; top: 198px; depth: 21px;orientation: 0 degrees;}\nsofa {length: 98px; width: 32px; height: 32px; left: 186px; top: 208px; depth: 16px;orientation: -90 degrees;}\ntable {length: 43px; width: 32px; height: 17px; left: 59px; top: 205px; depth: 8px;orientation: 0 degrees;}\ntable {length: 33px; width: 23px; height: 26px; left: 225px; top: 157px; depth: 13px;orientation: 0 degrees;}\nstool {length: 36px; width: 29px; height: 19px; left: 105px; top: 202px; depth: 9px;orientation: 0 degrees;}\nstool {length: 23px; width: 12px; height: 13px; left: 46px; top: 218px; depth: 6px;orientation: 0 degrees;}\ndressing_table {length: 59px; width: 28px; height: 68px; left: 203px; top: 129px; depth: 34px;orientation: -90 degrees;}\ncoffee_table {length: 45px;width: 28px; height: 17px; left: 173px; top: 225px; depth: 8px;orientation: 0 degrees;}\npendant_lamp {length: 21px; width: 21px; height: 42px; left: 51px; top: 23px; depth: 78px;orientation: 0 degrees;}\npendant_lamp {length: 23px; width: 23px; height: 43px; left: 125px; top: 22px; depth: 79px;orientation: 0 degrees;}\npendant_lamp {length: 19px; width: ",
+                    "function_call": null,
+                    "refusal": null,
+                    "role": "assistant",
+                    "tool_calls": null
+                }
+            }
+        ],
+        "created": 1750802398,
+        "id": "chatcmpl-Bm5yI0gZ1UA3ueBPweiGbC8FIHeWM",
+        "model": "gpt-4-0613",
+        "object": "chat.completion",
+        "prompt": [
+            {
+                "content": "You are a 3D indoor scene designer. \nInstruction: synthesize the 3D layout of an indoor scene. The generated 3D layout should follow the CSS style, where each line starts with the furniture category and is followed by the 3D size, orientation and absolute position. Formally, each line should follow the template: \nFURNITURE {length: ?px: width: ?px; height: ?px; orientation: ? degrees; left: ?px; top: ?px; depth: ?px;}\nAll values are in pixel but the orientation angle is in degrees.\n\nIMPORTANT: Generate CSS for furniture layout. Each item must use absolute positioning and must not overlap with others based on top/left/width/height.\n\nAvailable furnitures: armchair, bookshelf, cabinet, ceiling_lamp, chair, children_cabinet, coffee_table, desk, double_bed, dressing_chair, dressing_table, floor_lamp, kids_bed, nightstand, pendant_lamp, shelf, single_bed, sofa, stool, table, tv_stand, wardrobe \nOverall furniture frequencies: (armchair: 0.0049; bookshelf: 0.0077; cabinet: 0.0222; ceiling_lamp: 0.0616; chair: 0.0247; children_cabinet: 0.0072; coffee_table: 0.0011; desk: 0.0171; double_bed: 0.1675; dressing_chair: 0.006; dressing_table: 0.021; floor_lamp: 0.0093; kids_bed: 0.0077; nightstand: 0.2655; pendant_lamp: 0.1251; shelf: 0.0086; single_bed: 0.0215; sofa: 0.0019; stool: 0.0117; table: 0.0209; tv_stand: 0.0315; wardrobe: 0.1555)\n\nCONSTRAINT: No additional furniture beyond what is specified in the room description.\n\n",
+                "role": "system"
+            },
+            {
+                "content": "Condition:\nRoom Type: bedroom\nRoom Size: max length 256px, max width 291px\nLayout:\n",
+                "role": "user"
+            },
+            {
+                "content": "double_bed {length: 107px; width: 115px; height: 72px; left: 96px; top: 61px; depth: 36px;orientation: 0 degrees;}\ntable {length: 23px; width: 18px; height: 24px; left: 22px; top: 11px; depth: 12px;orientation: 0 degrees;}\ntable {length: 23px; width: 18px; height: 24px; left: 169px; top: 11px; depth: 12px;orientation: 0 degrees;}\nsofa {length: 107px; width: 53px; height: 53px; left: 103px; top: 253px; depth: 26px;orientation: -180 degrees;}\nstool {length: 73px; width: 47px; height: 29px; left: 101px; top: 143px; depth: 14px;orientation: 0 degrees;}\narmchair {length: 37px; width: 42px; height: 45px; left: 32px; top: 191px; depth: 22px;orientation: 90 degrees;}\ndressing_table {length: 69px; width: 25px; height: 64px; left: 203px; top: 254px; depth: 32px;orientation: -180 degrees;}\nstool {length: 56px; width: 21px; height: 14px; left: 204px; top: 229px; depth: 7px;orientation: -180 degrees;}\npendant_lamp {length: 18px; width: 18px; height: 55px; left: 169px; top: 9px; depth: 85px;orientation: 0 degrees;}\npendant_lamp {length: 18px; width: 18px; height: 55px; left: 23px; top: 9px; depth: 85px;orientation: 0 degrees;}\ncoffee_table {length: 56px; width: 38px; height: 18px; left: 104px; top: 197px; depth: 9px;orientation: 0 degrees;}\npendant_lamp {length: 9px; width: 9px; height: 31px; left: 132px; top: 193px; depth: 119px;orientation: 0 degrees;}\nfloor_lamp {length: 23px; width: 26px; height: 78px; left: 29px; top: 249px; depth: 39px;orientation: -135 degrees;}\n",
+                "role": "assistant"
+            },
+            {
+                "content": "Condition:\nRoom Type: bedroom\nRoom Size: max length 256px, max width 318px\nLayout:\n",
+                "role": "user"
+            },
+            {
+                "content": "single_bed {length: 107px; width: 131px; height: 57px; left: 65px; top: 221px; depth: 28px;orientation: 90 degrees;}\nnightstand {length: 16px; width: 12px; height: 27px; left: 9px; top: 155px; depth: 13px;orientation: 90 degrees;}\nnightstand {length: 16px; width: 12px; height: 27px; left: 13px; top: 300px; depth: 13px;orientation: 90 degrees;}\nwardrobe {length: 240px; width: 36px; height: 140px; left: 125px; top: 100px; depth: 70px;orientation: 0 degrees;}\npendant_lamp {length: 65px; width: 23px; height: 45px; left: 157px; top: 214px; depth: 136px;orientation: 0 degrees;}\nshelf {length: 27px; width: 16px; height: 48px; left: 71px; top: 68px; depth: 24px;orientation: -180 degrees;}\nceiling_lamp {length: 56px; width: 56px; height: 27px; left: 86px; top: 35px; depth: 129px;orientation: 0 degrees;}\n",
+                "role": "assistant"
+            },
+            {
+                "content": "Condition:\nRoom Type: bedroom\nRoom Size: max length 256px, max width 298px\nLayout:\n",
+                "role": "user"
+            },
+            {
+                "content": "double_bed {length: 96px; width: 100px; height: 57px; left: 196px; top: 153px; depth: 28px;orientation: -90 degrees;}\nnightstand {length: 19px; width: 18px; height: 23px; left: 243px; top: 83px; depth: 11px;orientation: -90 degrees;}\ndressing_table {length: 53px; width: 27px; height: 80px; left: 230px; top: 42px; depth: 40px;orientation: -90 degrees;}\ndesk {length: 117px; width: 47px; height: 37px; left: 23px; top: 59px; depth: 18px;orientation: 90 degrees;}\nceiling_lamp {length: 42px; width: 42px; height: 46px; left: 128px; top: 143px; depth: 124px;orientation: 0 degrees;}\nwardrobe {length: 118px; width: 31px; height: 116px; left: 195px; top: 282px; depth: 58px;orientation: -180 degrees;}\nnightstand {length: 19px; width: 18px; height: 23px; left: 243px; top: 223px; depth: 11px;orientation: -90 degrees;}\nchair {length: 32px; width: 34px; height: 58px; left: 55px; top: 50px; depth: 29px;orientation: -90 degrees;}\ncabinet {length: 25px; width: 22px; height: 70px; left: 11px; top: 151px; depth: 35px;orientation: 90 degrees;}\nstool {length: 82px; width: 36px; height: 29px; left: 122px; top: 154px; depth: 14px;orientation: -90 degrees;}\nshelf {length: 15px; width: 8px; height: 83px; left: 118px; top: 283px; depth: 41px;orientation: -180 degrees;}\n",
+                "role": "assistant"
+            },
+            {
+                "content": "Condition:\nRoom Type: bedroom\nRoom Size: max length 269px, max width 256px\nLayout:\n",
+                "role": "user"
+            },
+            {
+                "content": "double_bed {length: 107px; width: 124px; height: 56px; left: 148px; top: 72px; depth: 28px;orientation: 0 degrees;}\nnightstand {length: 29px; width: 22px; height: 35px; left: 78px; top: 25px; depth: 17px;orientation: 0 degrees;}\nnightstand {length: 29px; width: 22px; height: 35px; left: 224px; top: 18px; depth: 17px;orientation: 0 degrees;}\nwardrobe {length: 119px; width: 36px; height: 126px; left: 18px; top: 60px; depth: 63px;orientation: 90 degrees;}\ntv_stand {length: 81px; width: 20px; height: 25px; left: 151px; top: 244px; depth: 12px;orientation: -180 degrees;}\npendant_lamp {length: 51px; width: 51px; height: 36px; left: 129px; top: 119px; depth: 135px;orientation: 0 degrees;}\nchair {length: 28px; width: 29px; height: 31px; left: 228px; top: 175px; depth: 15px;orientation: -80 degrees;}\n",
+                "role": "assistant"
+            },
+            {
+                "content": "Condition:\nRoom Type: bedroom\nRoom Size: max length 273px, max width 256px\nDescription: A bedroom with an armchair, a coffee table, a double bed, a dressing table, a floor lamp, three pendant lamps, a sofa, two stools and two tablesLayout:\n",
+                "role": "user"
+            }
+        ],
+        "service_tier": "default",
+        "system_fingerprint": null,
+        "usage": {
+            "completion_tokens": 2560,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens": 2353,
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+            },
+            "total_tokens": 4913
+        }
+    }
+]

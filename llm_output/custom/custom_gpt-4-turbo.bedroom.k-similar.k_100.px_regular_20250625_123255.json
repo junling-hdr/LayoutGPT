@@ -1,0 +1,1014 @@
+[
+    {
+        "custom_condition": "Condition:\nRoom Type: bedroom\nRoom Size: max length 256px, max width 291px\nDescription: A bedroom with an armchair, a coffee table, a double bed, a dressing table, a floor lamp, three pendant lamps, a sofa, two stools and two tables",
+        "generated_at": "2025-06-25T12:33:54.156746",
+        "gpt_type": "gpt-4-turbo",
+        "icl_type": "k-similar",
+        "is_custom": true,
+        "iter": 0,
+        "iteration": 1,
+        "iteration_id": "custom_20250625_123255_iter1",
+        "object_list": [
+            [
+                "double_bed",
+                {
+                    "depth": 35.0,
+                    "height": 70.0,
+                    "left": 56.0,
+                    "length": 128.0,
+                    "orientation": 0.0,
+                    "top": 90.0,
+                    "width": 160.0
+                }
+            ],
+            [
+                "armchair",
+                {
+                    "depth": 30.0,
+                    "height": 60.0,
+                    "left": 10.0,
+                    "length": 40.0,
+                    "orientation": 45.0,
+                    "top": 10.0,
+                    "width": 42.0
+                }
+            ],
+            [
+                "coffee_table",
+                {
+                    "depth": 10.0,
+                    "height": 20.0,
+                    "left": 100.0,
+                    "length": 60.0,
+                    "orientation": 0.0,
+                    "top": 190.0,
+                    "width": 40.0
+                }
+            ],
+            [
+                "dressing_table",
+                {
+                    "depth": 45.0,
+                    "height": 90.0,
+                    "left": 190.0,
+                    "length": 70.0,
+                    "orientation": -90.0,
+                    "top": 10.0,
+                    "width": 40.0
+                }
+            ],
+            [
+                "sofa",
+                {
+                    "depth": 35.0,
+                    "height": 70.0,
+                    "left": 10.0,
+                    "length": 130.0,
+                    "orientation": 0.0,
+                    "top": 230.0,
+                    "width": 60.0
+                }
+            ],
+            [
+                "stool",
+                {
+                    "depth": 20.0,
+                    "height": 40.0,
+                    "left": 200.0,
+                    "length": 30.0,
+                    "orientation": 0.0,
+                    "top": 120.0,
+                    "width": 30.0
+                }
+            ],
+            [
+                "stool",
+                {
+                    "depth": 20.0,
+                    "height": 40.0,
+                    "left": 220.0,
+                    "length": 30.0,
+                    "orientation": 0.0,
+                    "top": 200.0,
+                    "width": 30.0
+                }
+            ],
+            [
+                "table",
+                {
+                    "depth": 22.0,
+                    "height": 45.0,
+                    "left": 150.0,
+                    "length": 50.0,
+                    "orientation": 60.0,
+                    "top": 260.0,
+                    "width": 50.0
+                }
+            ],
+            [
+                "table",
+                {
+                    "depth": 22.0,
+                    "height": 45.0,
+                    "left": 175.0,
+                    "length": 50.0,
+                    "orientation": 30.0,
+                    "top": 20.0,
+                    "width": 50.0
+                }
+            ],
+            [
+                "floor_lamp",
+                {
+                    "depth": 35.0,
+                    "height": 70.0,
+                    "left": 240.0,
+                    "length": 20.0,
+                    "orientation": 0.0,
+                    "top": 40.0,
+                    "width": 20.0
+                }
+            ],
+            [
+                "pendant_lamp",
+                {
+                    "depth": 90.0,
+                    "height": 60.0,
+                    "left": 90.0,
+                    "length": 15.0,
+                    "orientation": 0.0,
+                    "top": 120.0,
+                    "width": 15.0
+                }
+            ]
+        ],
+        "prompt": "Condition:\nRoom Type: bedroom\nRoom Size: max length 256px, max width 291px\nDescription: A bedroom with an armchair, a coffee table, a double bed, a dressing table, a floor lamp, three pendant lamps, a sofa, two stools and two tables",
+        "query_id": "custom_20250625_123255_iter1",
+        "raw_gpt_response": "double_bed {length: 128px; width: 160px; height: 70px; left: 56px; top: 90px; depth: 35px;orientation: 0 degrees;}\narmchair {length: 40px; width: 42px; height: 60px; left: 10px; top: 10px; depth: 30px;orientation: 45 degrees;}\ncoffee_table {length: 60px; width: 40px; height: 20px; left: 100px; top: 190px; depth: 10px;orientation: 0 degrees;}\ndressing_table {length: 70px; width: 40px; height: 90px; left: 190px; top: 10px; depth: 45px;orientation: -90 degrees;}\nsofa {length: 130px; width: 60px; height: 70px; left: 10px; top: 230px; depth: 35px;orientation: 0 degrees;}\nstool {length: 30px; width: 30px; height: 40px; left: 200px; top: 120px; depth: 20px;orientation: 0 degrees;}\nstool {length: 30px; width: 30px; height: 40px; left: 220px; top: 200px; depth: 20px;orientation: 0 degrees;}\ntable {length: 50px; width: 50px; height: 45px; left: 150px; top: 260px; depth: 22px;orientation: 60 degrees;}\ntable {length: 50px; width: 50px; height: 45px; left: 175px; top: 20px; depth: 22px;orientation: 30 degrees;}\nfloor_lamp {length: 20px; width: 20px; height: 70px; left: 240px; top: 40px; depth: 35px;orientation: 0 degrees;}\npendant_lamp {length: 15px; width: 15px; height: 60px; left: 90px; top: 120px; depth: 90px;orientation: 0 degrees;}\npendant_lamp {length: 15px; width: 15",
+        "sorted_ids": [
+            "8b7f7e8e-0eae-428d-8c0f-9600435db055_Bedroom-3951",
+            "bb66077e-f845-4c61-bea7-d88fc7dd4aeb_Bedroom-1087",
+            "fbd8335f-0637-42e3-8d89-dc96d4651ac2_MasterBedroom-3684",
+            "99a9a277-df69-43f1-a934-3548f4438510_SecondBedroom-92664",
+            "06fd7746-9abf-4430-b674-a6b904d5f1a3_Bedroom-68029",
+            "864a6e55-ad69-4803-8922-391d57d061b9_MasterBedroom-32709",
+            "5de48c8f-3e53-43fa-b174-d59e597201e5_MasterBedroom-3298",
+            "14e7aa9f-8774-40f4-b786-c042aecb27ff_MasterBedroom-6712",
+            "5d31ce38-c87f-484b-85d4-952ba06bd13c_MasterBedroom-2504",
+            "e60d4680-8a03-4f74-be43-99483b9ad9d3_MasterBedroom-9093",
+            "6c39a824-c7de-4ca5-87b7-553057ddacf1_MasterBedroom-45563",
+            "0eee2f23-0f2f-4beb-9712-c54e8dd6bd9e_MasterBedroom-5493",
+            "15669288-4a23-49e3-b586-9822b27fc3c9_Bedroom-59127",
+            "6bc28ca2-2555-49b4-816a-042ae648f4c6_MasterBedroom-50612",
+            "3079ba44-1a94-4a0c-8bcc-f35dbc0602e6_MasterBedroom-18288",
+            "db113afa-d8c6-499e-b70c-08ce94e05071_Bedroom-24059",
+            "c8819e35-7f93-40de-98b0-3e62db618e8e_MasterBedroom-7747",
+            "71b1339c-fd3f-4150-981d-5b93097b136e_MasterBedroom-71915",
+            "30c0c5d6-30c7-43fc-95b1-e7424df97d77_Bedroom-46540",
+            "1283c8a5-b589-48a8-a6c9-486791da56ff_SecondBedroom-19482",
+            "2c36d890-0d02-438e-9dfc-b817f31c3f44_MasterBedroom-17448",
+            "1fb04296-436f-4676-bd6c-b56fa9e31f05_MasterBedroom-15007",
+            "a7c63ad9-cf85-43f2-bd62-6222344661b7_MasterBedroom-40171",
+            "041c7dfd-2422-40d0-9fa4-7fe1c18ff454_MasterBedroom-50863",
+            "dc8a8a1f-ea65-445b-9c5f-000d9bb20269_MasterBedroom-50875",
+            "0a77986b-5c04-41b9-8ee8-1ea301ccda3e_Bedroom-86824",
+            "bdaeaa5c-d79d-4540-a08c-be2cda8c5eb3_MasterBedroom-7220",
+            "c8819e35-7f93-40de-98b0-3e62db618e8e_SecondBedroom-7807",
+            "324e817c-96c3-43c0-a96d-70b8c8a35f6f_MasterBedroom-91485",
+            "55b2d6ae-86e5-40de-a739-95ce5b824d67_MasterBedroom-192",
+            "65e91b0e-4855-4f99-9ea0-4091b011e323_MasterBedroom-26181",
+            "00337f71-5f56-4d82-8848-b8d194a27d4e_MasterBedroom-6776",
+            "55f96837-a873-45b3-8feb-6c25ae7991d1_MasterBedroom-142285",
+            "615ee7d3-9ffc-457a-8ada-43ba03d79983_MasterBedroom-6762",
+            "06bb7494-bd68-45f7-b38c-af949dff8449_Bedroom-797",
+            "86b14d42-1ea7-4570-8cf3-81c4f7b6a840_MasterBedroom-34842",
+            "e02e2373-1bb0-4d67-819b-8c471edc78a3_Bedroom-8051",
+            "bdf64124-075e-4aea-a6e4-aa961e3af480_Bedroom-7707",
+            "184bdd8c-cbe7-4f95-a444-65dc56d389e1_MasterBedroom-19310",
+            "56fedd11-b226-4c51-8d89-552caf24487b_MasterBedroom-19251",
+            "a3793c44-f933-4356-84df-578a26e4cd33_MasterBedroom-7269",
+            "91ef40fc-0228-498f-87a8-38818269fd63_SecondBedroom-33144",
+            "5b60eded-8082-4efe-a33f-9e3c00768f20_SecondBedroom-25309",
+            "71b1339c-fd3f-4150-981d-5b93097b136e_SecondBedroom-71864",
+            "492f7d99-2d61-4c57-a95b-f83d9bb4f2eb_MasterBedroom-11013",
+            "11163921-47e3-4f3b-a7a2-c436c322b64c_MasterBedroom-8388",
+            "5b69a767-6a05-4cd5-b4d1-77ae696dadc5_MasterBedroom-18730",
+            "151777ef-6113-426c-bd88-335a9718c75a_MasterBedroom-8750",
+            "d581a7da-14ec-4c27-85d7-96908d89a9bd_Bedroom-46918",
+            "d33d3c64-330a-43c7-ab6f-059d2844d6a0_MasterBedroom-4588",
+            "c12b4b58-7546-4221-aea2-66b35952dafd_BedRoom-78013",
+            "519b86db-47ec-41aa-9375-34d6aa714349_SecondBedroom-21482",
+            "29c77527-8237-4bd3-8110-788c03a1f1cc_Bedroom-396",
+            "9647c855-837e-43b6-8be3-ead5320d3274_MasterBedroom-235420",
+            "16c0e506-c41b-4532-8293-1b15110c3919_MasterBedroom-13813",
+            "e255b2a0-dedb-464d-bad1-bf78d1dc7462_SecondBedroom-17259",
+            "ca0f44ac-687c-48e1-9b6a-dd64319d4a9b_Bedroom-44489",
+            "fd956aea-c66d-4771-9cb3-9247f5da110c_MasterBedroom-71933",
+            "959d7224-db8a-4ce0-8dd6-8e17adbe719f_SecondBedroom-1245",
+            "068b2b34-52cb-4499-b33e-b777e632e4a1_MasterBedroom-12970",
+            "6a58fca6-3af8-4807-b3cd-80b97aa81c7b_SecondBedroom-31363",
+            "55b2d6ae-86e5-40de-a739-95ce5b824d67_SecondBedroom-1360",
+            "491af85e-3c8f-40f2-a204-392483bb4308_MasterBedroom-7347",
+            "e2bae01c-2956-4025-8b86-7a8592b9e831_MasterBedroom-29555",
+            "058bec6f-bbc7-45ce-b5a1-177aea63be4f_MasterBedroom-20538",
+            "c15e5b24-87ea-4729-a648-e406f048a25b_MasterBedroom-41843",
+            "6bc28ca2-2555-49b4-816a-042ae648f4c6_SecondBedroom-48703",
+            "aee82a11-1d1f-47ff-80d5-902e800b839a_MasterBedroom-5121",
+            "0d83ef53-4122-4678-93be-69f8b6d32c77_Bedroom-727",
+            "9ced874b-7641-4dd6-b839-86e327f92344_MasterBedroom-20459",
+            "ad0ae7b6-f80d-4ba3-be86-2c2c7f86776e_Bedroom-7670",
+            "2f5da0b3-fa2f-4bd4-aa1f-6d49073c7b90_Bedroom-15516",
+            "b917e5c2-0271-4419-a3ae-65be2c108114_MasterBedroom-8000",
+            "b9443b5d-de9c-4392-b5f6-1239d7a4e8c2_Bedroom-11392",
+            "ba3303e0-761d-4cfc-9411-18f1ff7a4340_MasterBedroom-11688",
+            "a791d489-d419-435f-9235-827390615fdf_MasterBedroom-4225",
+            "40023299-f0a9-4017-a1fa-1972bddaaeea_MasterBedroom-10891",
+            "2d728150-ecd3-4648-b584-68de8e9f9a89_SecondBedroom-119762",
+            "0a77986b-5c04-41b9-8ee8-1ea301ccda3e_Bedroom-90564",
+            "bb1737bf-dae6-4215-bccf-fab6f584046b_Bedroom-4700",
+            "c2e891ec-de52-4ebd-bd91-5720ca647fd9_MasterBedroom-2957",
+            "d63b9c4d-0b03-4e0d-94d1-c113aec32e22_MasterBedroom-47915",
+            "53608c94-9c21-4beb-a7c4-fb19b05a1a34_SecondBedroom-9632",
+            "aa7599ea-5d9c-44bd-a3e5-1e4216dcbf34_Bedroom-11354",
+            "efae3b03-c5e7-42b6-8a1d-74a60df65af1_MasterBedroom-75082",
+            "fba48f02-1ffc-4328-b877-e53c3716ec18_SecondBedroom-29858",
+            "8eebb493-c733-478d-a90b-b43620d3291a_Bedroom-61862",
+            "396e4534-9929-456f-a091-8e4308d55d69_Bedroom-5928",
+            "2db22595-4053-4976-93c3-244fc17a0cbf_MasterBedroom-46100",
+            "3a19c7bb-bc35-44e3-8d48-4fb00b9789ff_MasterBedroom-24739",
+            "df69e2a1-9ca8-4512-9410-b848e91da0d8_MasterBedroom-1008",
+            "53057c6f-149c-44d1-8a2c-55a3955976c8_MasterBedroom-3486",
+            "78ea1591-9502-47a2-ad5d-db8a633f8179_Bedroom-10503",
+            "177baa22-21a7-4d8b-91df-a6934117160c_SecondBedroom-18352",
+            "39ffe480-646b-4a22-a4e9-b1118ed2cfdf_MasterBedroom-11106",
+            "a526e37a-fa7a-4fa1-95df-326ebdf3350e_Bedroom-1395",
+            "a390f6ea-2c8b-4e0f-8a0e-74eeed8b32fd_Bedroom-10811",
+            "ce51b1c1-72b8-4812-a291-30bf97c07aa1_Bedroom-32206",
+            "1bb9605f-fd81-45ef-a483-85c41038bc80_MasterBedroom-2035",
+            "e812a184-e26d-4700-b7b1-940b7cfbcd43_MasterBedroom-10156"
+        ],
+        "temperature": 1.0,
+        "timestamp": "20250625_123255",
+        "top_k": 100,
+        "unit": "px"
+    },
+    {
+        "custom_condition": "Condition:\nRoom Type: bedroom\nRoom Size: max length 256px, max width 291px\nDescription: A bedroom with an armchair, a coffee table, a double bed, a dressing table, a floor lamp, three pendant lamps, a sofa, two stools and two tables",
+        "generated_at": "2025-06-25T12:33:54.156746",
+        "gpt_type": "gpt-4-turbo",
+        "icl_type": "k-similar",
+        "is_custom": true,
+        "iter": 1,
+        "iteration": 2,
+        "iteration_id": "custom_20250625_123255_iter2",
+        "object_list": [
+            [
+                "double_bed",
+                {
+                    "depth": 45.0,
+                    "height": 90.0,
+                    "left": 145.0,
+                    "length": 120.0,
+                    "orientation": 90.0,
+                    "top": 60.0,
+                    "width": 150.0
+                }
+            ],
+            [
+                "table",
+                {
+                    "depth": 25.0,
+                    "height": 50.0,
+                    "left": 15.0,
+                    "length": 40.0,
+                    "orientation": 0.0,
+                    "top": 100.0,
+                    "width": 40.0
+                }
+            ],
+            [
+                "table",
+                {
+                    "depth": 25.0,
+                    "height": 50.0,
+                    "left": 215.0,
+                    "length": 40.0,
+                    "orientation": 0.0,
+                    "top": 100.0,
+                    "width": 40.0
+                }
+            ],
+            [
+                "sofa",
+                {
+                    "depth": 37.0,
+                    "height": 80.0,
+                    "left": 25.0,
+                    "length": 165.0,
+                    "orientation": -180.0,
+                    "top": 25.0,
+                    "width": 75.0
+                }
+            ],
+            [
+                "armchair",
+                {
+                    "depth": 50.0,
+                    "height": 100.0,
+                    "left": 180.0,
+                    "length": 90.0,
+                    "orientation": 45.0,
+                    "top": 220.0,
+                    "width": 80.0
+                }
+            ],
+            [
+                "coffee_table",
+                {
+                    "depth": 22.0,
+                    "height": 45.0,
+                    "left": 145.0,
+                    "length": 70.0,
+                    "orientation": 0.0,
+                    "top": 160.0,
+                    "width": 50.0
+                }
+            ],
+            [
+                "dressing_table",
+                {
+                    "depth": 40.0,
+                    "height": 80.0,
+                    "left": 180.0,
+                    "length": 110.0,
+                    "orientation": -180.0,
+                    "top": 15.0,
+                    "width": 30.0
+                }
+            ],
+            [
+                "stool",
+                {
+                    "depth": 20.0,
+                    "height": 40.0,
+                    "left": 210.0,
+                    "length": 35.0,
+                    "orientation": 0.0,
+                    "top": 50.0,
+                    "width": 35.0
+                }
+            ],
+            [
+                "stool",
+                {
+                    "depth": 20.0,
+                    "height": 40.0,
+                    "left": 140.0,
+                    "length": 35.0,
+                    "orientation": 0.0,
+                    "top": 50.0,
+                    "width": 35.0
+                }
+            ],
+            [
+                "floor_lamp",
+                {
+                    "depth": 75.0,
+                    "height": 150.0,
+                    "left": 190.0,
+                    "length": 25.0,
+                    "orientation": 90.0,
+                    "top": 240.0,
+                    "width": 25.0
+                }
+            ],
+            [
+                "pendant_lamp",
+                {
+                    "depth": 123.0,
+                    "height": 90.0,
+                    "left": 17.0,
+                    "length": 30.0,
+                    "orientation": 0.0,
+                    "top": 130.0,
+                    "width": 30.0
+                }
+            ]
+        ],
+        "prompt": "Condition:\nRoom Type: bedroom\nRoom Size: max length 256px, max width 291px\nDescription: A bedroom with an armchair, a coffee table, a double bed, a dressing table, a floor lamp, three pendant lamps, a sofa, two stools and two tables",
+        "query_id": "custom_20250625_123255_iter2",
+        "raw_gpt_response": "double_bed {length: 120px; width: 150px; height: 90px; left: 145px; top: 60px; depth: 45px; orientation: 90 degrees;}\ntable {length: 40px; width: 40px; height: 50px; left: 15px; top: 100px; depth: 25px; orientation: 0 degrees;}\ntable {length: 40px; width: 40px; height: 50px; left: 215px; top: 100px; depth: 25px; orientation: 0 degrees;}\nsofa {length: 165px; width: 75px; height: 80px; left: 25px; top: 25px; depth: 37px; orientation: -180 degrees;}\narmchair {length: 90px; width: 80px; height: 100px; left: 180px; top: 220px; depth: 50px; orientation: 45 degrees;}\ncoffee_table {length: 70px; width: 50px; height: 45px; left: 145px; top: 160px; depth: 22px; orientation: 0 degrees;}\ndressing_table {length: 110px; width: 30px; height: 80px; left: 180px; top: 15px; depth: 40px; orientation: -180 degrees;}\nstool {length: 35px; width: 35px; height: 40px; left: 210px; top: 50px; depth: 20px; orientation: 0 degrees;}\nstool {length: 35px; width: 35px; height: 40px; left: 140px; top: 50px; depth: 20px; orientation: 0 degrees;}\nfloor_lamp {length: 25px; width: 25px; height: 150px; left: 190px; top: 240px; depth: 75px; orientation: 90 degrees;}\npendant_lamp {length: 30px; width: 30px; height: 90px; left: 17px; top: 130px; depth: 123px; orientation: 0 degrees;}\npendant_lamp {length: 30px; width: 30",
+        "sorted_ids": [
+            "8b7f7e8e-0eae-428d-8c0f-9600435db055_Bedroom-3951",
+            "bb66077e-f845-4c61-bea7-d88fc7dd4aeb_Bedroom-1087",
+            "fbd8335f-0637-42e3-8d89-dc96d4651ac2_MasterBedroom-3684",
+            "99a9a277-df69-43f1-a934-3548f4438510_SecondBedroom-92664",
+            "06fd7746-9abf-4430-b674-a6b904d5f1a3_Bedroom-68029",
+            "864a6e55-ad69-4803-8922-391d57d061b9_MasterBedroom-32709",
+            "5de48c8f-3e53-43fa-b174-d59e597201e5_MasterBedroom-3298",
+            "14e7aa9f-8774-40f4-b786-c042aecb27ff_MasterBedroom-6712",
+            "5d31ce38-c87f-484b-85d4-952ba06bd13c_MasterBedroom-2504",
+            "e60d4680-8a03-4f74-be43-99483b9ad9d3_MasterBedroom-9093",
+            "6c39a824-c7de-4ca5-87b7-553057ddacf1_MasterBedroom-45563",
+            "0eee2f23-0f2f-4beb-9712-c54e8dd6bd9e_MasterBedroom-5493",
+            "15669288-4a23-49e3-b586-9822b27fc3c9_Bedroom-59127",
+            "6bc28ca2-2555-49b4-816a-042ae648f4c6_MasterBedroom-50612",
+            "3079ba44-1a94-4a0c-8bcc-f35dbc0602e6_MasterBedroom-18288",
+            "db113afa-d8c6-499e-b70c-08ce94e05071_Bedroom-24059",
+            "c8819e35-7f93-40de-98b0-3e62db618e8e_MasterBedroom-7747",
+            "71b1339c-fd3f-4150-981d-5b93097b136e_MasterBedroom-71915",
+            "30c0c5d6-30c7-43fc-95b1-e7424df97d77_Bedroom-46540",
+            "1283c8a5-b589-48a8-a6c9-486791da56ff_SecondBedroom-19482",
+            "2c36d890-0d02-438e-9dfc-b817f31c3f44_MasterBedroom-17448",
+            "1fb04296-436f-4676-bd6c-b56fa9e31f05_MasterBedroom-15007",
+            "a7c63ad9-cf85-43f2-bd62-6222344661b7_MasterBedroom-40171",
+            "041c7dfd-2422-40d0-9fa4-7fe1c18ff454_MasterBedroom-50863",
+            "dc8a8a1f-ea65-445b-9c5f-000d9bb20269_MasterBedroom-50875",
+            "0a77986b-5c04-41b9-8ee8-1ea301ccda3e_Bedroom-86824",
+            "bdaeaa5c-d79d-4540-a08c-be2cda8c5eb3_MasterBedroom-7220",
+            "c8819e35-7f93-40de-98b0-3e62db618e8e_SecondBedroom-7807",
+            "324e817c-96c3-43c0-a96d-70b8c8a35f6f_MasterBedroom-91485",
+            "55b2d6ae-86e5-40de-a739-95ce5b824d67_MasterBedroom-192",
+            "65e91b0e-4855-4f99-9ea0-4091b011e323_MasterBedroom-26181",
+            "00337f71-5f56-4d82-8848-b8d194a27d4e_MasterBedroom-6776",
+            "55f96837-a873-45b3-8feb-6c25ae7991d1_MasterBedroom-142285",
+            "615ee7d3-9ffc-457a-8ada-43ba03d79983_MasterBedroom-6762",
+            "06bb7494-bd68-45f7-b38c-af949dff8449_Bedroom-797",
+            "86b14d42-1ea7-4570-8cf3-81c4f7b6a840_MasterBedroom-34842",
+            "e02e2373-1bb0-4d67-819b-8c471edc78a3_Bedroom-8051",
+            "bdf64124-075e-4aea-a6e4-aa961e3af480_Bedroom-7707",
+            "184bdd8c-cbe7-4f95-a444-65dc56d389e1_MasterBedroom-19310",
+            "56fedd11-b226-4c51-8d89-552caf24487b_MasterBedroom-19251",
+            "a3793c44-f933-4356-84df-578a26e4cd33_MasterBedroom-7269",
+            "91ef40fc-0228-498f-87a8-38818269fd63_SecondBedroom-33144",
+            "5b60eded-8082-4efe-a33f-9e3c00768f20_SecondBedroom-25309",
+            "71b1339c-fd3f-4150-981d-5b93097b136e_SecondBedroom-71864",
+            "492f7d99-2d61-4c57-a95b-f83d9bb4f2eb_MasterBedroom-11013",
+            "11163921-47e3-4f3b-a7a2-c436c322b64c_MasterBedroom-8388",
+            "5b69a767-6a05-4cd5-b4d1-77ae696dadc5_MasterBedroom-18730",
+            "151777ef-6113-426c-bd88-335a9718c75a_MasterBedroom-8750",
+            "d581a7da-14ec-4c27-85d7-96908d89a9bd_Bedroom-46918",
+            "d33d3c64-330a-43c7-ab6f-059d2844d6a0_MasterBedroom-4588",
+            "c12b4b58-7546-4221-aea2-66b35952dafd_BedRoom-78013",
+            "519b86db-47ec-41aa-9375-34d6aa714349_SecondBedroom-21482",
+            "29c77527-8237-4bd3-8110-788c03a1f1cc_Bedroom-396",
+            "9647c855-837e-43b6-8be3-ead5320d3274_MasterBedroom-235420",
+            "16c0e506-c41b-4532-8293-1b15110c3919_MasterBedroom-13813",
+            "e255b2a0-dedb-464d-bad1-bf78d1dc7462_SecondBedroom-17259",
+            "ca0f44ac-687c-48e1-9b6a-dd64319d4a9b_Bedroom-44489",
+            "fd956aea-c66d-4771-9cb3-9247f5da110c_MasterBedroom-71933",
+            "959d7224-db8a-4ce0-8dd6-8e17adbe719f_SecondBedroom-1245",
+            "068b2b34-52cb-4499-b33e-b777e632e4a1_MasterBedroom-12970",
+            "6a58fca6-3af8-4807-b3cd-80b97aa81c7b_SecondBedroom-31363",
+            "55b2d6ae-86e5-40de-a739-95ce5b824d67_SecondBedroom-1360",
+            "491af85e-3c8f-40f2-a204-392483bb4308_MasterBedroom-7347",
+            "e2bae01c-2956-4025-8b86-7a8592b9e831_MasterBedroom-29555",
+            "058bec6f-bbc7-45ce-b5a1-177aea63be4f_MasterBedroom-20538",
+            "c15e5b24-87ea-4729-a648-e406f048a25b_MasterBedroom-41843",
+            "6bc28ca2-2555-49b4-816a-042ae648f4c6_SecondBedroom-48703",
+            "aee82a11-1d1f-47ff-80d5-902e800b839a_MasterBedroom-5121",
+            "0d83ef53-4122-4678-93be-69f8b6d32c77_Bedroom-727",
+            "9ced874b-7641-4dd6-b839-86e327f92344_MasterBedroom-20459",
+            "ad0ae7b6-f80d-4ba3-be86-2c2c7f86776e_Bedroom-7670",
+            "2f5da0b3-fa2f-4bd4-aa1f-6d49073c7b90_Bedroom-15516",
+            "b917e5c2-0271-4419-a3ae-65be2c108114_MasterBedroom-8000",
+            "b9443b5d-de9c-4392-b5f6-1239d7a4e8c2_Bedroom-11392",
+            "ba3303e0-761d-4cfc-9411-18f1ff7a4340_MasterBedroom-11688",
+            "a791d489-d419-435f-9235-827390615fdf_MasterBedroom-4225",
+            "40023299-f0a9-4017-a1fa-1972bddaaeea_MasterBedroom-10891",
+            "2d728150-ecd3-4648-b584-68de8e9f9a89_SecondBedroom-119762",
+            "0a77986b-5c04-41b9-8ee8-1ea301ccda3e_Bedroom-90564",
+            "bb1737bf-dae6-4215-bccf-fab6f584046b_Bedroom-4700",
+            "c2e891ec-de52-4ebd-bd91-5720ca647fd9_MasterBedroom-2957",
+            "d63b9c4d-0b03-4e0d-94d1-c113aec32e22_MasterBedroom-47915",
+            "53608c94-9c21-4beb-a7c4-fb19b05a1a34_SecondBedroom-9632",
+            "aa7599ea-5d9c-44bd-a3e5-1e4216dcbf34_Bedroom-11354",
+            "efae3b03-c5e7-42b6-8a1d-74a60df65af1_MasterBedroom-75082",
+            "fba48f02-1ffc-4328-b877-e53c3716ec18_SecondBedroom-29858",
+            "8eebb493-c733-478d-a90b-b43620d3291a_Bedroom-61862",
+            "396e4534-9929-456f-a091-8e4308d55d69_Bedroom-5928",
+            "2db22595-4053-4976-93c3-244fc17a0cbf_MasterBedroom-46100",
+            "3a19c7bb-bc35-44e3-8d48-4fb00b9789ff_MasterBedroom-24739",
+            "df69e2a1-9ca8-4512-9410-b848e91da0d8_MasterBedroom-1008",
+            "53057c6f-149c-44d1-8a2c-55a3955976c8_MasterBedroom-3486",
+            "78ea1591-9502-47a2-ad5d-db8a633f8179_Bedroom-10503",
+            "177baa22-21a7-4d8b-91df-a6934117160c_SecondBedroom-18352",
+            "39ffe480-646b-4a22-a4e9-b1118ed2cfdf_MasterBedroom-11106",
+            "a526e37a-fa7a-4fa1-95df-326ebdf3350e_Bedroom-1395",
+            "a390f6ea-2c8b-4e0f-8a0e-74eeed8b32fd_Bedroom-10811",
+            "ce51b1c1-72b8-4812-a291-30bf97c07aa1_Bedroom-32206",
+            "1bb9605f-fd81-45ef-a483-85c41038bc80_MasterBedroom-2035",
+            "e812a184-e26d-4700-b7b1-940b7cfbcd43_MasterBedroom-10156"
+        ],
+        "temperature": 1.0,
+        "timestamp": "20250625_123255",
+        "top_k": 100,
+        "unit": "px"
+    },
+    {
+        "custom_condition": "Condition:\nRoom Type: bedroom\nRoom Size: max length 256px, max width 291px\nDescription: A bedroom with an armchair, a coffee table, a double bed, a dressing table, a floor lamp, three pendant lamps, a sofa, two stools and two tables",
+        "generated_at": "2025-06-25T12:33:54.156746",
+        "gpt_type": "gpt-4-turbo",
+        "icl_type": "k-similar",
+        "is_custom": true,
+        "iter": 2,
+        "iteration": 3,
+        "iteration_id": "custom_20250625_123255_iter3",
+        "object_list": [
+            [
+                "double_bed",
+                {
+                    "depth": 35.0,
+                    "height": 70.0,
+                    "left": 122.0,
+                    "length": 128.0,
+                    "orientation": 0.0,
+                    "top": 90.0,
+                    "width": 114.0
+                }
+            ],
+            [
+                "table",
+                {
+                    "depth": 15.0,
+                    "height": 30.0,
+                    "left": 30.0,
+                    "length": 26.0,
+                    "orientation": 0.0,
+                    "top": 21.0,
+                    "width": 20.0
+                }
+            ],
+            [
+                "table",
+                {
+                    "depth": 15.0,
+                    "height": 30.0,
+                    "left": 199.0,
+                    "length": 26.0,
+                    "orientation": 0.0,
+                    "top": 21.0,
+                    "width": 20.0
+                }
+            ],
+            [
+                "sofa",
+                {
+                    "depth": 27.0,
+                    "height": 54.0,
+                    "left": 75.0,
+                    "length": 104.0,
+                    "orientation": -180.0,
+                    "top": 251.0,
+                    "width": 50.0
+                }
+            ],
+            [
+                "stool",
+                {
+                    "depth": 12.0,
+                    "height": 24.0,
+                    "left": 94.0,
+                    "length": 28.0,
+                    "orientation": 0.0,
+                    "top": 150.0,
+                    "width": 28.0
+                }
+            ],
+            [
+                "stool",
+                {
+                    "depth": 12.0,
+                    "height": 24.0,
+                    "left": 149.0,
+                    "length": 28.0,
+                    "orientation": 0.0,
+                    "top": 150.0,
+                    "width": 28.0
+                }
+            ],
+            [
+                "dressing_table",
+                {
+                    "depth": 37.0,
+                    "height": 74.0,
+                    "left": 230.0,
+                    "length": 68.0,
+                    "orientation": 0.0,
+                    "top": 143.0,
+                    "width": 25.0
+                }
+            ],
+            [
+                "coffee_table",
+                {
+                    "depth": 8.0,
+                    "height": 17.0,
+                    "left": 95.0,
+                    "length": 52.0,
+                    "orientation": 0.0,
+                    "top": 203.0,
+                    "width": 30.0
+                }
+            ],
+            [
+                "armchair",
+                {
+                    "depth": 22.0,
+                    "height": 45.0,
+                    "left": 245.0,
+                    "length": 32.0,
+                    "orientation": 90.0,
+                    "top": 203.0,
+                    "width": 35.0
+                }
+            ],
+            [
+                "floor_lamp",
+                {
+                    "depth": 41.0,
+                    "height": 82.0,
+                    "left": 22.0,
+                    "length": 20.0,
+                    "orientation": 0.0,
+                    "top": 151.0,
+                    "width": 20.0
+                }
+            ],
+            [
+                "pendant_lamp",
+                {
+                    "depth": 127.0,
+                    "height": 35.0,
+                    "left": 86.0,
+                    "length": 10.0,
+                    "orientation": 0.0,
+                    "top": 24.0,
+                    "width": 10.0
+                }
+            ]
+        ],
+        "prompt": "Condition:\nRoom Type: bedroom\nRoom Size: max length 256px, max width 291px\nDescription: A bedroom with an armchair, a coffee table, a double bed, a dressing table, a floor lamp, three pendant lamps, a sofa, two stools and two tables",
+        "query_id": "custom_20250625_123255_iter3",
+        "raw_gpt_response": "double_bed {length: 128px; width: 114px; height: 70px; orientation: 0 degrees; left: 122px; top: 90px; depth: 35px;}\ntable {length: 26px; width: 20px; height: 30px; orientation: 0 degrees; left: 30px; top: 21px; depth: 15px;}\ntable {length: 26px; width: 20px; height: 30px; orientation: 0 degrees; left: 199px; top: 21px; depth: 15px;}\nsofa {length: 104px; width: 50px; height: 54px; orientation: -180 degrees; left: 75px; top: 251px; depth: 27px;}\nstool {length: 28px; width: 28px; height: 24px; orientation: 0 degrees; left: 94px; top: 150px; depth: 12px;}\nstool {length: 28px; width: 28px; height: 24px; orientation: 0 degrees; left: 149px; top: 150px; depth: 12px;}\ndressing_table {length: 68px; width: 25px; height: 74px; orientation: 0 degrees; left: 230px; top: 143px; depth: 37px;}\ncoffee_table {length: 52px; width: 30px; height: 17px; orientation: 0 degrees; left: 95px; top: 203px; depth: 8px;}\narmchair {length: 32px; width: 35px; height: 45px; orientation: 90 degrees; left: 245px; top: 203px; depth: 22px;}\nfloor_lamp {length: 20px; width: 20px; height: 82px; orientation: 0 degrees; left: 22px; top: 151px; depth: 41px;}\npendant_lamp {length: 10px; width: 10px; height: 35px; orientation: 0 degrees; left: 86px; top: 24px; depth: 127px;}\npendant_lamp {length: 10px; width: 10",
+        "sorted_ids": [
+            "8b7f7e8e-0eae-428d-8c0f-9600435db055_Bedroom-3951",
+            "bb66077e-f845-4c61-bea7-d88fc7dd4aeb_Bedroom-1087",
+            "fbd8335f-0637-42e3-8d89-dc96d4651ac2_MasterBedroom-3684",
+            "99a9a277-df69-43f1-a934-3548f4438510_SecondBedroom-92664",
+            "06fd7746-9abf-4430-b674-a6b904d5f1a3_Bedroom-68029",
+            "864a6e55-ad69-4803-8922-391d57d061b9_MasterBedroom-32709",
+            "5de48c8f-3e53-43fa-b174-d59e597201e5_MasterBedroom-3298",
+            "14e7aa9f-8774-40f4-b786-c042aecb27ff_MasterBedroom-6712",
+            "5d31ce38-c87f-484b-85d4-952ba06bd13c_MasterBedroom-2504",
+            "e60d4680-8a03-4f74-be43-99483b9ad9d3_MasterBedroom-9093",
+            "6c39a824-c7de-4ca5-87b7-553057ddacf1_MasterBedroom-45563",
+            "0eee2f23-0f2f-4beb-9712-c54e8dd6bd9e_MasterBedroom-5493",
+            "15669288-4a23-49e3-b586-9822b27fc3c9_Bedroom-59127",
+            "6bc28ca2-2555-49b4-816a-042ae648f4c6_MasterBedroom-50612",
+            "3079ba44-1a94-4a0c-8bcc-f35dbc0602e6_MasterBedroom-18288",
+            "db113afa-d8c6-499e-b70c-08ce94e05071_Bedroom-24059",
+            "c8819e35-7f93-40de-98b0-3e62db618e8e_MasterBedroom-7747",
+            "71b1339c-fd3f-4150-981d-5b93097b136e_MasterBedroom-71915",
+            "30c0c5d6-30c7-43fc-95b1-e7424df97d77_Bedroom-46540",
+            "1283c8a5-b589-48a8-a6c9-486791da56ff_SecondBedroom-19482",
+            "2c36d890-0d02-438e-9dfc-b817f31c3f44_MasterBedroom-17448",
+            "1fb04296-436f-4676-bd6c-b56fa9e31f05_MasterBedroom-15007",
+            "a7c63ad9-cf85-43f2-bd62-6222344661b7_MasterBedroom-40171",
+            "041c7dfd-2422-40d0-9fa4-7fe1c18ff454_MasterBedroom-50863",
+            "dc8a8a1f-ea65-445b-9c5f-000d9bb20269_MasterBedroom-50875",
+            "0a77986b-5c04-41b9-8ee8-1ea301ccda3e_Bedroom-86824",
+            "bdaeaa5c-d79d-4540-a08c-be2cda8c5eb3_MasterBedroom-7220",
+            "c8819e35-7f93-40de-98b0-3e62db618e8e_SecondBedroom-7807",
+            "324e817c-96c3-43c0-a96d-70b8c8a35f6f_MasterBedroom-91485",
+            "55b2d6ae-86e5-40de-a739-95ce5b824d67_MasterBedroom-192",
+            "65e91b0e-4855-4f99-9ea0-4091b011e323_MasterBedroom-26181",
+            "00337f71-5f56-4d82-8848-b8d194a27d4e_MasterBedroom-6776",
+            "55f96837-a873-45b3-8feb-6c25ae7991d1_MasterBedroom-142285",
+            "615ee7d3-9ffc-457a-8ada-43ba03d79983_MasterBedroom-6762",
+            "06bb7494-bd68-45f7-b38c-af949dff8449_Bedroom-797",
+            "86b14d42-1ea7-4570-8cf3-81c4f7b6a840_MasterBedroom-34842",
+            "e02e2373-1bb0-4d67-819b-8c471edc78a3_Bedroom-8051",
+            "bdf64124-075e-4aea-a6e4-aa961e3af480_Bedroom-7707",
+            "184bdd8c-cbe7-4f95-a444-65dc56d389e1_MasterBedroom-19310",
+            "56fedd11-b226-4c51-8d89-552caf24487b_MasterBedroom-19251",
+            "a3793c44-f933-4356-84df-578a26e4cd33_MasterBedroom-7269",
+            "91ef40fc-0228-498f-87a8-38818269fd63_SecondBedroom-33144",
+            "5b60eded-8082-4efe-a33f-9e3c00768f20_SecondBedroom-25309",
+            "71b1339c-fd3f-4150-981d-5b93097b136e_SecondBedroom-71864",
+            "492f7d99-2d61-4c57-a95b-f83d9bb4f2eb_MasterBedroom-11013",
+            "11163921-47e3-4f3b-a7a2-c436c322b64c_MasterBedroom-8388",
+            "5b69a767-6a05-4cd5-b4d1-77ae696dadc5_MasterBedroom-18730",
+            "151777ef-6113-426c-bd88-335a9718c75a_MasterBedroom-8750",
+            "d581a7da-14ec-4c27-85d7-96908d89a9bd_Bedroom-46918",
+            "d33d3c64-330a-43c7-ab6f-059d2844d6a0_MasterBedroom-4588",
+            "c12b4b58-7546-4221-aea2-66b35952dafd_BedRoom-78013",
+            "519b86db-47ec-41aa-9375-34d6aa714349_SecondBedroom-21482",
+            "29c77527-8237-4bd3-8110-788c03a1f1cc_Bedroom-396",
+            "9647c855-837e-43b6-8be3-ead5320d3274_MasterBedroom-235420",
+            "16c0e506-c41b-4532-8293-1b15110c3919_MasterBedroom-13813",
+            "e255b2a0-dedb-464d-bad1-bf78d1dc7462_SecondBedroom-17259",
+            "ca0f44ac-687c-48e1-9b6a-dd64319d4a9b_Bedroom-44489",
+            "fd956aea-c66d-4771-9cb3-9247f5da110c_MasterBedroom-71933",
+            "959d7224-db8a-4ce0-8dd6-8e17adbe719f_SecondBedroom-1245",
+            "068b2b34-52cb-4499-b33e-b777e632e4a1_MasterBedroom-12970",
+            "6a58fca6-3af8-4807-b3cd-80b97aa81c7b_SecondBedroom-31363",
+            "55b2d6ae-86e5-40de-a739-95ce5b824d67_SecondBedroom-1360",
+            "491af85e-3c8f-40f2-a204-392483bb4308_MasterBedroom-7347",
+            "e2bae01c-2956-4025-8b86-7a8592b9e831_MasterBedroom-29555",
+            "058bec6f-bbc7-45ce-b5a1-177aea63be4f_MasterBedroom-20538",
+            "c15e5b24-87ea-4729-a648-e406f048a25b_MasterBedroom-41843",
+            "6bc28ca2-2555-49b4-816a-042ae648f4c6_SecondBedroom-48703",
+            "aee82a11-1d1f-47ff-80d5-902e800b839a_MasterBedroom-5121",
+            "0d83ef53-4122-4678-93be-69f8b6d32c77_Bedroom-727",
+            "9ced874b-7641-4dd6-b839-86e327f92344_MasterBedroom-20459",
+            "ad0ae7b6-f80d-4ba3-be86-2c2c7f86776e_Bedroom-7670",
+            "2f5da0b3-fa2f-4bd4-aa1f-6d49073c7b90_Bedroom-15516",
+            "b917e5c2-0271-4419-a3ae-65be2c108114_MasterBedroom-8000",
+            "b9443b5d-de9c-4392-b5f6-1239d7a4e8c2_Bedroom-11392",
+            "ba3303e0-761d-4cfc-9411-18f1ff7a4340_MasterBedroom-11688",
+            "a791d489-d419-435f-9235-827390615fdf_MasterBedroom-4225",
+            "40023299-f0a9-4017-a1fa-1972bddaaeea_MasterBedroom-10891",
+            "2d728150-ecd3-4648-b584-68de8e9f9a89_SecondBedroom-119762",
+            "0a77986b-5c04-41b9-8ee8-1ea301ccda3e_Bedroom-90564",
+            "bb1737bf-dae6-4215-bccf-fab6f584046b_Bedroom-4700",
+            "c2e891ec-de52-4ebd-bd91-5720ca647fd9_MasterBedroom-2957",
+            "d63b9c4d-0b03-4e0d-94d1-c113aec32e22_MasterBedroom-47915",
+            "53608c94-9c21-4beb-a7c4-fb19b05a1a34_SecondBedroom-9632",
+            "aa7599ea-5d9c-44bd-a3e5-1e4216dcbf34_Bedroom-11354",
+            "efae3b03-c5e7-42b6-8a1d-74a60df65af1_MasterBedroom-75082",
+            "fba48f02-1ffc-4328-b877-e53c3716ec18_SecondBedroom-29858",
+            "8eebb493-c733-478d-a90b-b43620d3291a_Bedroom-61862",
+            "396e4534-9929-456f-a091-8e4308d55d69_Bedroom-5928",
+            "2db22595-4053-4976-93c3-244fc17a0cbf_MasterBedroom-46100",
+            "3a19c7bb-bc35-44e3-8d48-4fb00b9789ff_MasterBedroom-24739",
+            "df69e2a1-9ca8-4512-9410-b848e91da0d8_MasterBedroom-1008",
+            "53057c6f-149c-44d1-8a2c-55a3955976c8_MasterBedroom-3486",
+            "78ea1591-9502-47a2-ad5d-db8a633f8179_Bedroom-10503",
+            "177baa22-21a7-4d8b-91df-a6934117160c_SecondBedroom-18352",
+            "39ffe480-646b-4a22-a4e9-b1118ed2cfdf_MasterBedroom-11106",
+            "a526e37a-fa7a-4fa1-95df-326ebdf3350e_Bedroom-1395",
+            "a390f6ea-2c8b-4e0f-8a0e-74eeed8b32fd_Bedroom-10811",
+            "ce51b1c1-72b8-4812-a291-30bf97c07aa1_Bedroom-32206",
+            "1bb9605f-fd81-45ef-a483-85c41038bc80_MasterBedroom-2035",
+            "e812a184-e26d-4700-b7b1-940b7cfbcd43_MasterBedroom-10156"
+        ],
+        "temperature": 1.0,
+        "timestamp": "20250625_123255",
+        "top_k": 100,
+        "unit": "px"
+    },
+    {
+        "custom_condition": "Condition:\nRoom Type: bedroom\nRoom Size: max length 256px, max width 291px\nDescription: A bedroom with an armchair, a coffee table, a double bed, a dressing table, a floor lamp, three pendant lamps, a sofa, two stools and two tables",
+        "generated_at": "2025-06-25T12:33:54.156746",
+        "gpt_type": "gpt-4-turbo",
+        "icl_type": "k-similar",
+        "is_custom": true,
+        "iter": 3,
+        "iteration": 4,
+        "iteration_id": "custom_20250625_123255_iter4",
+        "object_list": [
+            [
+                "double_bed",
+                {
+                    "depth": 37.0,
+                    "height": 75.0,
+                    "left": 80.0,
+                    "length": 120.0,
+                    "orientation": 0.0,
+                    "top": 30.0,
+                    "width": 130.0
+                }
+            ],
+            [
+                "armchair",
+                {
+                    "depth": 25.0,
+                    "height": 50.0,
+                    "left": 60.0,
+                    "length": 40.0,
+                    "orientation": 45.0,
+                    "top": 180.0,
+                    "width": 35.0
+                }
+            ],
+            [
+                "coffee_table",
+                {
+                    "depth": 10.0,
+                    "height": 20.0,
+                    "left": 145.0,
+                    "length": 50.0,
+                    "orientation": 0.0,
+                    "top": 200.0,
+                    "width": 30.0
+                }
+            ],
+            [
+                "dressing_table",
+                {
+                    "depth": 40.0,
+                    "height": 80.0,
+                    "left": 10.0,
+                    "length": 100.0,
+                    "orientation": 90.0,
+                    "top": 20.0,
+                    "width": 25.0
+                }
+            ],
+            [
+                "floor_lamp",
+                {
+                    "depth": 30.0,
+                    "height": 60.0,
+                    "left": 210.0,
+                    "length": 15.0,
+                    "orientation": -45.0,
+                    "top": 190.0,
+                    "width": 15.0
+                }
+            ],
+            [
+                "pendant_lamp",
+                {
+                    "depth": 20.0,
+                    "height": 40.0,
+                    "left": 30.0,
+                    "length": 10.0,
+                    "orientation": 0.0,
+                    "top": 21.0,
+                    "width": 10.0
+                }
+            ],
+            [
+                "pendant_lamp",
+                {
+                    "depth": 20.0,
+                    "height": 40.0,
+                    "left": 220.0,
+                    "length": 10.0,
+                    "orientation": 0.0,
+                    "top": 21.0,
+                    "width": 10.0
+                }
+            ],
+            [
+                "pendant_lamp",
+                {
+                    "depth": 20.0,
+                    "height": 40.0,
+                    "left": 30.0,
+                    "length": 10.0,
+                    "orientation": 0.0,
+                    "top": 250.0,
+                    "width": 10.0
+                }
+            ],
+            [
+                "sofa",
+                {
+                    "depth": 22.0,
+                    "height": 45.0,
+                    "left": 120.0,
+                    "length": 80.0,
+                    "orientation": 180.0,
+                    "top": 230.0,
+                    "width": 50.0
+                }
+            ],
+            [
+                "stool",
+                {
+                    "depth": 10.0,
+                    "height": 30.0,
+                    "left": 160.0,
+                    "length": 20.0,
+                    "orientation": 0.0,
+                    "top": 170.0,
+                    "width": 20.0
+                }
+            ],
+            [
+                "table",
+                {
+                    "depth": 25.0,
+                    "height": 50.0,
+                    "left": 25.0,
+                    "length": 45.0,
+                    "orientation": 0.0,
+                    "top": 220.0,
+                    "width": 30.0
+                }
+            ]
+        ],
+        "prompt": "Condition:\nRoom Type: bedroom\nRoom Size: max length 256px, max width 291px\nDescription: A bedroom with an armchair, a coffee table, a double bed, a dressing table, a floor lamp, three pendant lamps, a sofa, two stools and two tables",
+        "query_id": "custom_20250625_123255_iter4",
+        "raw_gpt_response": "double_bed {length: 120px; width: 130px; height: 75px; left: 80px; top: 30px; depth: 37px;orientation: 0 degrees;}\narmchair {length: 40px; width: 35px; height: 50px; left: 60px; top: 180px; depth: 25px;orientation: 45 degrees;}\ncoffee_table {length: 50px; width: 30px; height: 20px; left: 145px; top: 200px; depth: 10px;orientation: 0 degrees;}\ndressing_table {length: 100px; width: 25px; height: 80px; left: 10px; top: 20px; depth: 40px;orientation: 90 degrees;}\nfloor_lamp {length: 15px; width: 15px; height: 60px; left: 210px; top: 190px; depth: 30px;orientation: -45 degrees;}\npendant_lamp {length: 10px; width: 10px; height: 40px; left: 30px; top: 21px; depth: 20px;orientation: 0 degrees;}\npendant_lamp {length: 10px; width: 10px; height: 40px; left: 220px; top: 21px; depth: 20px;orientation: 0 degrees;}\npendant_lamp {length: 10px; width: 10px; height: 40px; left: 30px; top: 250px; depth: 20px;orientation: 0 degrees;}\nsofa {length: 80px; width: 50px; height: 45px; left: 120px; top: 230px; depth: 22px;orientation: 180 degrees;}\nstool {length: 20px; width: 20px; height: 30px; left: 160px; top: 170px; depth: 10px;orientation: 0 degrees;}\ntable {length: 45px; width: 30px; height: 50px; left: 25px; top: 220px; depth: 25px;orientation: 0 degrees;}\ntable {length: 50px; width:",
+        "sorted_ids": [
+            "8b7f7e8e-0eae-428d-8c0f-9600435db055_Bedroom-3951",
+            "bb66077e-f845-4c61-bea7-d88fc7dd4aeb_Bedroom-1087",
+            "fbd8335f-0637-42e3-8d89-dc96d4651ac2_MasterBedroom-3684",
+            "99a9a277-df69-43f1-a934-3548f4438510_SecondBedroom-92664",
+            "06fd7746-9abf-4430-b674-a6b904d5f1a3_Bedroom-68029",
+            "864a6e55-ad69-4803-8922-391d57d061b9_MasterBedroom-32709",
+            "5de48c8f-3e53-43fa-b174-d59e597201e5_MasterBedroom-3298",
+            "14e7aa9f-8774-40f4-b786-c042aecb27ff_MasterBedroom-6712",
+            "5d31ce38-c87f-484b-85d4-952ba06bd13c_MasterBedroom-2504",
+            "e60d4680-8a03-4f74-be43-99483b9ad9d3_MasterBedroom-9093",
+            "6c39a824-c7de-4ca5-87b7-553057ddacf1_MasterBedroom-45563",
+            "0eee2f23-0f2f-4beb-9712-c54e8dd6bd9e_MasterBedroom-5493",
+            "15669288-4a23-49e3-b586-9822b27fc3c9_Bedroom-59127",
+            "6bc28ca2-2555-49b4-816a-042ae648f4c6_MasterBedroom-50612",
+            "3079ba44-1a94-4a0c-8bcc-f35dbc0602e6_MasterBedroom-18288",
+            "db113afa-d8c6-499e-b70c-08ce94e05071_Bedroom-24059",
+            "c8819e35-7f93-40de-98b0-3e62db618e8e_MasterBedroom-7747",
+            "71b1339c-fd3f-4150-981d-5b93097b136e_MasterBedroom-71915",
+            "30c0c5d6-30c7-43fc-95b1-e7424df97d77_Bedroom-46540",
+            "1283c8a5-b589-48a8-a6c9-486791da56ff_SecondBedroom-19482",
+            "2c36d890-0d02-438e-9dfc-b817f31c3f44_MasterBedroom-17448",
+            "1fb04296-436f-4676-bd6c-b56fa9e31f05_MasterBedroom-15007",
+            "a7c63ad9-cf85-43f2-bd62-6222344661b7_MasterBedroom-40171",
+            "041c7dfd-2422-40d0-9fa4-7fe1c18ff454_MasterBedroom-50863",
+            "dc8a8a1f-ea65-445b-9c5f-000d9bb20269_MasterBedroom-50875",
+            "0a77986b-5c04-41b9-8ee8-1ea301ccda3e_Bedroom-86824",
+            "bdaeaa5c-d79d-4540-a08c-be2cda8c5eb3_MasterBedroom-7220",
+            "c8819e35-7f93-40de-98b0-3e62db618e8e_SecondBedroom-7807",
+            "324e817c-96c3-43c0-a96d-70b8c8a35f6f_MasterBedroom-91485",
+            "55b2d6ae-86e5-40de-a739-95ce5b824d67_MasterBedroom-192",
+            "65e91b0e-4855-4f99-9ea0-4091b011e323_MasterBedroom-26181",
+            "00337f71-5f56-4d82-8848-b8d194a27d4e_MasterBedroom-6776",
+            "55f96837-a873-45b3-8feb-6c25ae7991d1_MasterBedroom-142285",
+            "615ee7d3-9ffc-457a-8ada-43ba03d79983_MasterBedroom-6762",
+            "06bb7494-bd68-45f7-b38c-af949dff8449_Bedroom-797",
+            "86b14d42-1ea7-4570-8cf3-81c4f7b6a840_MasterBedroom-34842",
+            "e02e2373-1bb0-4d67-819b-8c471edc78a3_Bedroom-8051",
+            "bdf64124-075e-4aea-a6e4-aa961e3af480_Bedroom-7707",
+            "184bdd8c-cbe7-4f95-a444-65dc56d389e1_MasterBedroom-19310",
+            "56fedd11-b226-4c51-8d89-552caf24487b_MasterBedroom-19251",
+            "a3793c44-f933-4356-84df-578a26e4cd33_MasterBedroom-7269",
+            "91ef40fc-0228-498f-87a8-38818269fd63_SecondBedroom-33144",
+            "5b60eded-8082-4efe-a33f-9e3c00768f20_SecondBedroom-25309",
+            "71b1339c-fd3f-4150-981d-5b93097b136e_SecondBedroom-71864",
+            "492f7d99-2d61-4c57-a95b-f83d9bb4f2eb_MasterBedroom-11013",
+            "11163921-47e3-4f3b-a7a2-c436c322b64c_MasterBedroom-8388",
+            "5b69a767-6a05-4cd5-b4d1-77ae696dadc5_MasterBedroom-18730",
+            "151777ef-6113-426c-bd88-335a9718c75a_MasterBedroom-8750",
+            "d581a7da-14ec-4c27-85d7-96908d89a9bd_Bedroom-46918",
+            "d33d3c64-330a-43c7-ab6f-059d2844d6a0_MasterBedroom-4588",
+            "c12b4b58-7546-4221-aea2-66b35952dafd_BedRoom-78013",
+            "519b86db-47ec-41aa-9375-34d6aa714349_SecondBedroom-21482",
+            "29c77527-8237-4bd3-8110-788c03a1f1cc_Bedroom-396",
+            "9647c855-837e-43b6-8be3-ead5320d3274_MasterBedroom-235420",
+            "16c0e506-c41b-4532-8293-1b15110c3919_MasterBedroom-13813",
+            "e255b2a0-dedb-464d-bad1-bf78d1dc7462_SecondBedroom-17259",
+            "ca0f44ac-687c-48e1-9b6a-dd64319d4a9b_Bedroom-44489",
+            "fd956aea-c66d-4771-9cb3-9247f5da110c_MasterBedroom-71933",
+            "959d7224-db8a-4ce0-8dd6-8e17adbe719f_SecondBedroom-1245",
+            "068b2b34-52cb-4499-b33e-b777e632e4a1_MasterBedroom-12970",
+            "6a58fca6-3af8-4807-b3cd-80b97aa81c7b_SecondBedroom-31363",
+            "55b2d6ae-86e5-40de-a739-95ce5b824d67_SecondBedroom-1360",
+            "491af85e-3c8f-40f2-a204-392483bb4308_MasterBedroom-7347",
+            "e2bae01c-2956-4025-8b86-7a8592b9e831_MasterBedroom-29555",
+            "058bec6f-bbc7-45ce-b5a1-177aea63be4f_MasterBedroom-20538",
+            "c15e5b24-87ea-4729-a648-e406f048a25b_MasterBedroom-41843",
+            "6bc28ca2-2555-49b4-816a-042ae648f4c6_SecondBedroom-48703",
+            "aee82a11-1d1f-47ff-80d5-902e800b839a_MasterBedroom-5121",
+            "0d83ef53-4122-4678-93be-69f8b6d32c77_Bedroom-727",
+            "9ced874b-7641-4dd6-b839-86e327f92344_MasterBedroom-20459",
+            "ad0ae7b6-f80d-4ba3-be86-2c2c7f86776e_Bedroom-7670",
+            "2f5da0b3-fa2f-4bd4-aa1f-6d49073c7b90_Bedroom-15516",
+            "b917e5c2-0271-4419-a3ae-65be2c108114_MasterBedroom-8000",
+            "b9443b5d-de9c-4392-b5f6-1239d7a4e8c2_Bedroom-11392",
+            "ba3303e0-761d-4cfc-9411-18f1ff7a4340_MasterBedroom-11688",
+            "a791d489-d419-435f-9235-827390615fdf_MasterBedroom-4225",
+            "40023299-f0a9-4017-a1fa-1972bddaaeea_MasterBedroom-10891",
+            "2d728150-ecd3-4648-b584-68de8e9f9a89_SecondBedroom-119762",
+            "0a77986b-5c04-41b9-8ee8-1ea301ccda3e_Bedroom-90564",
+            "bb1737bf-dae6-4215-bccf-fab6f584046b_Bedroom-4700",
+            "c2e891ec-de52-4ebd-bd91-5720ca647fd9_MasterBedroom-2957",
+            "d63b9c4d-0b03-4e0d-94d1-c113aec32e22_MasterBedroom-47915",
+            "53608c94-9c21-4beb-a7c4-fb19b05a1a34_SecondBedroom-9632",
+            "aa7599ea-5d9c-44bd-a3e5-1e4216dcbf34_Bedroom-11354",
+            "efae3b03-c5e7-42b6-8a1d-74a60df65af1_MasterBedroom-75082",
+            "fba48f02-1ffc-4328-b877-e53c3716ec18_SecondBedroom-29858",
+            "8eebb493-c733-478d-a90b-b43620d3291a_Bedroom-61862",
+            "396e4534-9929-456f-a091-8e4308d55d69_Bedroom-5928",
+            "2db22595-4053-4976-93c3-244fc17a0cbf_MasterBedroom-46100",
+            "3a19c7bb-bc35-44e3-8d48-4fb00b9789ff_MasterBedroom-24739",
+            "df69e2a1-9ca8-4512-9410-b848e91da0d8_MasterBedroom-1008",
+            "53057c6f-149c-44d1-8a2c-55a3955976c8_MasterBedroom-3486",
+            "78ea1591-9502-47a2-ad5d-db8a633f8179_Bedroom-10503",
+            "177baa22-21a7-4d8b-91df-a6934117160c_SecondBedroom-18352",
+            "39ffe480-646b-4a22-a4e9-b1118ed2cfdf_MasterBedroom-11106",
+            "a526e37a-fa7a-4fa1-95df-326ebdf3350e_Bedroom-1395",
+            "a390f6ea-2c8b-4e0f-8a0e-74eeed8b32fd_Bedroom-10811",
+            "ce51b1c1-72b8-4812-a291-30bf97c07aa1_Bedroom-32206",
+            "1bb9605f-fd81-45ef-a483-85c41038bc80_MasterBedroom-2035",
+            "e812a184-e26d-4700-b7b1-940b7cfbcd43_MasterBedroom-10156"
+        ],
+        "temperature": 1.0,
+        "timestamp": "20250625_123255",
+        "top_k": 100,
+        "unit": "px"
+    }
+]

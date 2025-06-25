@@ -9,6 +9,45 @@ def create_prompt(sample):
     return sample[0] + sample[1] + "\n\n"
 
 
+def build_prompt_for_val_example(val_example, supporting_examples, args, stats):
+    """为验证样本构建提示 - 根据GPT类型选择合适的prompt构建函数"""
+    
+    # 创建一个临时的args副本，强制使用fixed-random模式
+    # 因为supporting_examples已经在外面被选择好了
+    temp_args = type('Args', (), {})()
+    for attr in dir(args):
+        if not attr.startswith('_'):
+            setattr(temp_args, attr, getattr(args, attr))
+    temp_args.icl_type = 'fixed-random'  # 强制使用fixed-random避免重复处理
+    
+    if args.gpt_type == 'gpt3.5':
+        # GPT-3.5 使用文本提示
+        prompt, _ = form_prompt_for_gpt3(
+            text_input=val_example,
+            top_k=len(supporting_examples),
+            stats=stats,
+            supporting_examples=supporting_examples,
+            args=temp_args,
+            train_features=None,
+            val_feature=None
+        )
+        return prompt
+    elif args.gpt_type in ['gpt3.5-chat', 'gpt4', 'gpt-4.1', 'gpt-4-turbo', 'gpt-4.5-preview', 'o3', 'o4-mini']:
+        # ChatGPT/GPT-4 使用消息列表
+        messages, _ = form_prompt_for_chatgpt(
+            text_input=val_example,
+            top_k=len(supporting_examples),
+            stats=stats,
+            supporting_examples=supporting_examples,
+            args=temp_args,
+            train_features=None,
+            val_feature=None
+        )
+        return messages
+    else:
+        raise NotImplementedError(f"Unsupported GPT type: {args.gpt_type}")
+
+
 def form_prompt_for_gpt3(text_input, top_k, stats, supporting_examples, args,
                         train_features=None, val_feature=None):
     """为GPT-3构建提示"""
@@ -19,21 +58,30 @@ def form_prompt_for_gpt3(text_input, top_k, stats, supporting_examples, args,
                 'and is followed by the 3D size, orientation and absolute position. ' \
                 "Formally, each line should follow the template: \n" \
                 f"FURNITURE {{length: ?{args.unit}: width: ?{args.unit}; height: ?{args.unit}; left: ?{args.unit}; top: ?{args.unit}; depth: ?{args.unit}; orientation: ? degrees;}}\n" \
-                f'All values are in {unit_name} but the orientation angle is in degrees.\n\n' \
-                f"Available furnitures: {', '.join(stats['object_types'])} \n" \
-                f"Overall furniture frequencies: ({'; '.join(class_freq)})\n\n"
+                f'All values are in {unit_name} but the orientation angle is in degrees.\n\n'
+    
+    # Add constraints based on args
+    if hasattr(args, 'no_overlapping_furniture') and args.no_overlapping_furniture:
+        rtn_prompt += "IMPORTANT: Generate CSS for furniture layout. Each item must use absolute positioning and must not overlap with others based on top/left/width/height.\n\n"
+    
+    rtn_prompt += f"Available furnitures: {', '.join(stats['object_types'])} \n" \
+                  f"Overall furniture frequencies: ({'; '.join(class_freq)})\n\n"
+    
+    if hasattr(args, 'no_additional_furniture') and args.no_additional_furniture:
+        rtn_prompt += "CONSTRAINT: - No furniture should significantly overlap with another. Ensure all furniture bounding boxes are non-overlapping in both horizontal and vertical directions.\n" \
+                      "- All furniture must be placed entirely within the room boundaries.\n\n"
                 
     last_example = f'{text_input[0]}Layout:\n'
     prompting_examples = ''
     total_length = len(tokenizer(rtn_prompt + last_example)['input_ids'])
 
+    # Initialize sorted_ids for all cases
+    sorted_ids = []
+    
     if args.icl_type == 'k-similar':
         assert train_features is not None
         sorted_ids = get_closest_room(train_features, val_feature)
         supporting_examples = [supporting_examples[id] for id in sorted_ids[:top_k]]
-        if args.test:
-            print("retrieved examples:")
-            print("\n".join(sorted_ids[:top_k]))
 
     # loop through the related supporting examples, check if the prompt length exceed limit
     for i, supporting_example in enumerate(supporting_examples[:top_k]):
@@ -62,21 +110,29 @@ def form_prompt_for_chatgpt(text_input, top_k, stats, supporting_examples, args,
                 'and is followed by the 3D size, orientation and absolute position. ' \
                 "Formally, each line should follow the template: \n" \
                 f"FURNITURE {{length: ?{args.unit}: width: ?{args.unit}; height: ?{args.unit}; orientation: ? degrees; left: ?{args.unit}; top: ?{args.unit}; depth: ?{args.unit};}}\n" \
-                f'All values are in {unit_name} but the orientation angle is in degrees.\n\n' \
-                f"Available furnitures: {', '.join(stats['object_types'])} \n" \
-                f"Overall furniture frequencies: ({'; '.join(class_freq)})\n\n"
+                f'All values are in {unit_name} but the orientation angle is in degrees.\n\n'
+    
+    # Add constraints based on args
+    if hasattr(args, 'no_overlapping_furniture') and args.no_overlapping_furniture:
+        rtn_prompt += "IMPORTANT: Generate CSS for furniture layout. Each item must use absolute positioning and must not overlap with others based on top/left/width/height.\n\n"
+    
+    rtn_prompt += f"Available furnitures: {', '.join(stats['object_types'])} \n" \
+                  f"Overall furniture frequencies: ({'; '.join(class_freq)})\n\n"
+    
+    if hasattr(args, 'no_additional_furniture') and args.no_additional_furniture:
+        rtn_prompt += "CONSTRAINT: No additional furniture beyond what is specified in the room description.\n\n"
 
     message_list.append({'role': 'system', 'content': rtn_prompt})
     last_example = f'{text_input[0]}Layout:\n'
     total_length = len(tokenizer(rtn_prompt + last_example)['input_ids'])
 
+    # Initialize sorted_ids for all cases
+    sorted_ids = []
+    
     if args.icl_type == 'k-similar':
         assert train_features is not None
         sorted_ids = get_closest_room(train_features, val_feature)
         supporting_examples = [supporting_examples[id] for id in sorted_ids[:top_k]]
-        if args.test:
-            print("retrieved examples:")
-            print("\n".join(sorted_ids[:top_k]))
 
     # loop through the related supporting examples, check if the prompt length exceed limit
     for i, supporting_example in enumerate(supporting_examples[:top_k]):

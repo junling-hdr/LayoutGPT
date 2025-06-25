@@ -1,0 +1,115 @@
+[
+    {
+        "choices": [
+            {
+                "finish_reason": "stop",
+                "index": 0,
+                "logprobs": null,
+                "message": {
+                    "annotations": [],
+                    "audio": null,
+                    "content": "double_bed {length: 185px; width: 205px; height: 87px; left: 143px; top: 135px; depth: 43px;orientation: 0 degrees;}\ntable {length: 54px; width: 64px; height: 72px; left: 10px; top: 152px; depth: 36px;orientation: 0 degrees;}\nbookshelf {length: 84px; width: 30px; height: 201px; left: 12px; top: 13px; depth: 100px;orientation: -90 degrees;}\nbookshelf {length: 84px; width: 30px; height: 201px; left: 238px; top: 13px; depth: 100px;orientation: 90 degrees;}",
+                    "function_call": null,
+                    "refusal": null,
+                    "role": "assistant",
+                    "tool_calls": null
+                }
+            }
+        ],
+        "created": 1750776844,
+        "id": "chatcmpl-BlzK8MRrc9lfYx0MIAxywpYkzhRrp",
+        "model": "gpt-4-0613",
+        "object": "chat.completion",
+        "prompt": [
+            {
+                "content": "You are a 3D indoor scene designer. \nInstruction: synthesize the 3D layout of an indoor scene. The generated 3D layout should follow the CSS style, where each line starts with the furniture category and is followed by the 3D size, orientation and absolute position. Formally, each line should follow the template: \nFURNITURE {length: ?px: width: ?px; height: ?px; orientation: ? degrees; left: ?px; top: ?px; depth: ?px;}\nAll values are in pixel but the orientation angle is in degrees.\n\nAvailable furnitures: armchair, bookshelf, cabinet, ceiling_lamp, chair, children_cabinet, coffee_table, desk, double_bed, dressing_chair, dressing_table, floor_lamp, kids_bed, nightstand, pendant_lamp, shelf, single_bed, sofa, stool, table, tv_stand, wardrobe \nOverall furniture frequencies: (armchair: 0.0049; bookshelf: 0.0077; cabinet: 0.0222; ceiling_lamp: 0.0616; chair: 0.0247; children_cabinet: 0.0072; coffee_table: 0.0011; desk: 0.0171; double_bed: 0.1675; dressing_chair: 0.006; dressing_table: 0.021; floor_lamp: 0.0093; kids_bed: 0.0077; nightstand: 0.2655; pendant_lamp: 0.1251; shelf: 0.0086; single_bed: 0.0215; sofa: 0.0019; stool: 0.0117; table: 0.0209; tv_stand: 0.0315; wardrobe: 0.1555)\n\n",
+                "role": "system"
+            },
+            {
+                "content": "Condition:\nRoom Type: bedroom\nRoom Size: max length 256px, max width 313px\nLayout:\n",
+                "role": "user"
+            },
+            {
+                "content": "double_bed {length: 213px; width: 250px; height: 113px; left: 125px; top: 108px; depth: 56px;orientation: 90 degrees;}\nnightstand {length: 45px; width: 36px; height: 62px; left: 7px; top: 205px; depth: 31px;orientation: 90 degrees;}\ndesk {length: 152px; width: 67px; height: 85px; left: 201px; top: 246px; depth: 42px;orientation: -90 degrees;}\nchair {length: 49px; width: 53px; height: 90px; left: 167px; top: 240px; depth: 45px;orientation: 90 degrees;}\n",
+                "role": "assistant"
+            },
+            {
+                "content": "Condition:\nRoom Type: bedroom\nRoom Size: max length 256px, max width 313px\nLayout:\n",
+                "role": "user"
+            },
+            {
+                "content": "desk {length: 202px; width: 90px; height: 119px; left: 204px; top: 216px; depth: 59px;orientation: -90 degrees;}\nnightstand {length: 64px; width: 54px; height: 56px; left: 17px; top: 202px; depth: 28px;orientation: 90 degrees;}\ndouble_bed {length: 212px; width: 251px; height: 158px; left: 126px; top: 107px; depth: 79px;orientation: 90 degrees;}\n",
+                "role": "assistant"
+            },
+            {
+                "content": "Condition:\nRoom Type: bedroom\nRoom Size: max length 256px, max width 270px\nLayout:\n",
+                "role": "user"
+            },
+            {
+                "content": "double_bed {length: 180px; width: 219px; height: 109px; left: 145px; top: 156px; depth: 54px;orientation: -90 degrees;}\nnightstand {length: 38px; width: 31px; height: 53px; left: 236px; top: 48px; depth: 26px;orientation: -90 degrees;}\nceiling_lamp {length: 42px; width: 42px; height: 20px; left: 127px; top: 135px; depth: 243px;orientation: 0 degrees;}\n",
+                "role": "assistant"
+            },
+            {
+                "content": "Condition:\nRoom Type: bedroom\nRoom Size: max length 256px, max width 268px\nLayout:\n",
+                "role": "user"
+            },
+            {
+                "content": "pendant_lamp {length: 29px; width: 29px; height: 64px; left: 107px; top: 116px; depth: 241px;orientation: 0 degrees;}\ndouble_bed {length: 160px; width: 236px; height: 97px; left: 119px; top: 187px; depth: 48px;orientation: 90 degrees;}\nnightstand {length: 42px; width: 34px; height: 42px; left: 21px; top: 91px; depth: 21px;orientation: 90 degrees;}\nwardrobe {length: 165px; width: 60px; height: 234px; left: 83px; top: 30px; depth: 117px;orientation: 0 degrees;}\n",
+                "role": "assistant"
+            },
+            {
+                "content": "Condition:\nRoom Type: bedroom\nRoom Size: max length 263px, max width 256px\nLayout:\n",
+                "role": "user"
+            },
+            {
+                "content": "double_bed {length: 203px; width: 217px; height: 103px; left: 131px; top: 111px; depth: 51px;orientation: 0 degrees;}\nfloor_lamp {length: 46px; width: 31px; height: 155px; left: 20px; top: 12px; depth: 77px;orientation: 0 degrees;}\nnightstand {length: 58px; width: 43px; height: 55px; left: 240px; top: 15px; depth: 27px;orientation: 0 degrees;}\ntv_stand {length: 91px; width: 16px; height: 15px; left: 68px; top: 235px; depth: 7px;orientation: 180 degrees;}\nceiling_lamp {length: 68px; width: 58px; height: 20px; left: 130px; top: 129px; depth: 231px;orientation: 0 degrees;}\n",
+                "role": "assistant"
+            },
+            {
+                "content": "Condition:\nRoom Type: bedroom\nRoom Size: max length 258px, max width 256px\nLayout:\n",
+                "role": "user"
+            },
+            {
+                "content": "double_bed {length: 212px; width: 223px; height: 71px; left: 113px; top: 121px; depth: 35px;orientation: 90 degrees;}\nnightstand {length: 35px; width: 35px; height: 48px; left: 10px; top: 9px; depth: 24px;orientation: -90 degrees;}\nwardrobe {length: 166px; width: 55px; height: 222px; left: 173px; top: 232px; depth: 111px;orientation: -180 degrees;}\n",
+                "role": "assistant"
+            },
+            {
+                "content": "Condition:\nRoom Type: bedroom\nRoom Size: max length 295px, max width 256px\nLayout:\n",
+                "role": "user"
+            },
+            {
+                "content": "double_bed {length: 165px; width: 189px; height: 91px; left: 103px; top: 94px; depth: 45px;orientation: 0 degrees;}\nwardrobe {length: 176px; width: 48px; height: 222px; left: 271px; top: 88px; depth: 111px;orientation: -90 degrees;}\nfloor_lamp {length: 42px; width: 41px; height: 194px; left: 208px; top: 38px; depth: 97px;orientation: -45 degrees;}\npendant_lamp {length: 75px; width: 75px; height: 67px; left: 114px; top: 110px; depth: 183px;orientation: 0 degrees;}\n",
+                "role": "assistant"
+            },
+            {
+                "content": "Condition:\nRoom Type: bedroom\nRoom Size: max length 294px, max width 256px\nLayout:\n",
+                "role": "user"
+            },
+            {
+                "content": "wardrobe {length: 459px; width: 55px; height: 232px; left: 27px; top: 267px; depth: 116px;orientation: 90 degrees;}\ndouble_bed {length: 185px; width: 195px; height: 74px; left: 182px; top: 108px; depth: 37px;orientation: 90 degrees;}\npendant_lamp {length: 79px; width: 79px; height: 96px; left: 171px; top: 128px; depth: 255px;orientation: 0 degrees;}\ntable {length: 52px; width: 51px; height: 59px; left: 68px; top: 18px; depth: 29px;orientation: 0 degrees;}\n",
+                "role": "assistant"
+            },
+            {
+                "content": "Condition:\nRoom Type: bedroom\nRoom Size: max length 273px, max width 256px\nDescription: A bedroom with a double bed, a table and two bookshelfLayout:\n",
+                "role": "user"
+            }
+        ],
+        "service_tier": "default",
+        "system_fingerprint": null,
+        "usage": {
+            "completion_tokens": 179,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens": 2053,
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+            },
+            "total_tokens": 2232
+        }
+    }
+]

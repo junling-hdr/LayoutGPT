@@ -278,6 +278,9 @@ def _main(args):
     if args.regular_floor_plan:
         args.suffix += '_regular'
 
+    # Sanitize gpt_type for file paths (replace dots with underscores)
+    gpt_type_safe = args.gpt_type.replace('.', '_').replace('-', '_')
+
     # check if have been processed
     args.output_dir = args.base_output_dir
     os.makedirs(args.output_dir, exist_ok=True)
@@ -347,8 +350,8 @@ def _main(args):
                 print('\n' + '-'*30)
                 pdb.set_trace()
 
-            if op.exists(op.join(args.output_dir, 'tmp', args.gpt_type, f"{val_id}.json")):
-                response = json.load(open(op.join(args.output_dir, 'tmp', args.gpt_type, f"{val_id}.json")))
+            if op.exists(op.join(args.output_dir, 'tmp', gpt_type_safe, f"{val_id}.json")):
+                response = json.load(open(op.join(args.output_dir, 'tmp', gpt_type_safe, f"{val_id}.json")))
                 break
 
             try:
@@ -393,8 +396,8 @@ def _main(args):
                 print('OpenAI Bad Gateway Error.\tWill try again in 5 seconds.')
                 time.sleep(5)
         
-        os.makedirs(op.join(args.output_dir, 'tmp', args.gpt_type), exist_ok=True)
-        write_json(op.join(args.output_dir, 'tmp', args.gpt_type, f"{val_id}.json"), response)
+        os.makedirs(op.join(args.output_dir, 'tmp', gpt_type_safe), exist_ok=True)
+        write_json(op.join(args.output_dir, 'tmp', gpt_type_safe, f"{val_id}.json"), response)
         response['prompt'] = prompt_for_gpt3
         all_responses.append(response)
 

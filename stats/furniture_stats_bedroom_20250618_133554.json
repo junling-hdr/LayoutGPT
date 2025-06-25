@@ -1,0 +1,169 @@
+{
+    "room_type": "bedroom",
+    "dataset_path": "./ATISS/data_output",
+    "generated_at": "2025-06-18T13:35:54.661456",
+    "available_furnitures": [
+        "armchair",
+        "bookshelf",
+        "cabinet",
+        "ceiling_lamp",
+        "chair",
+        "children_cabinet",
+        "coffee_table",
+        "desk",
+        "double_bed",
+        "dressing_chair",
+        "dressing_table",
+        "floor_lamp",
+        "kids_bed",
+        "nightstand",
+        "pendant_lamp",
+        "shelf",
+        "single_bed",
+        "sofa",
+        "stool",
+        "table",
+        "tv_stand",
+        "wardrobe"
+    ],
+    "class_frequencies": {
+        "nightstand": 0.2654664150558474,
+        "double_bed": 0.16749120212169125,
+        "wardrobe": 0.1554546845514357,
+        "pendant_lamp": 0.12505737746723108,
+        "ceiling_lamp": 0.06161064925791809,
+        "tv_stand": 0.03146835313918499,
+        "chair": 0.02468506145764268,
+        "cabinet": 0.02218595399602183,
+        "single_bed": 0.021522925485795888,
+        "dressing_table": 0.021012903554852858,
+        "table": 0.02085989697556995,
+        "desk": 0.017085734686591525,
+        "stool": 0.011730504411689702,
+        "floor_lamp": 0.009282399143163157,
+        "shelf": 0.008619370632937216,
+        "kids_bed": 0.007701331157239762,
+        "bookshelf": 0.007650328964145458,
+        "children_cabinet": 0.007242311419391034,
+        "dressing_chair": 0.005967256592033458,
+        "armchair": 0.004947212730147396,
+        "sofa": 0.001887081144489213,
+        "coffee_table": 0.0010710460549803642
+    },
+    "total_furniture_types": 22,
+    "detailed_info": {
+        "furniture_list": "armchair, bookshelf, cabinet, ceiling_lamp, chair, children_cabinet, coffee_table, desk, double_bed, dressing_chair, dressing_table, floor_lamp, kids_bed, nightstand, pendant_lamp, shelf, single_bed, sofa, stool, table, tv_stand, wardrobe",
+        "frequency_details": [
+            {
+                "furniture_type": "nightstand",
+                "frequency": 0.2654664150558474,
+                "display_name": "Nightstand"
+            },
+            {
+                "furniture_type": "double_bed",
+                "frequency": 0.16749120212169125,
+                "display_name": "Double Bed"
+            },
+            {
+                "furniture_type": "wardrobe",
+                "frequency": 0.1554546845514357,
+                "display_name": "Wardrobe"
+            },
+            {
+                "furniture_type": "pendant_lamp",
+                "frequency": 0.12505737746723108,
+                "display_name": "Pendant Lamp"
+            },
+            {
+                "furniture_type": "ceiling_lamp",
+                "frequency": 0.06161064925791809,
+                "display_name": "Ceiling Lamp"
+            },
+            {
+                "furniture_type": "tv_stand",
+                "frequency": 0.03146835313918499,
+                "display_name": "Tv Stand"
+            },
+            {
+                "furniture_type": "chair",
+                "frequency": 0.02468506145764268,
+                "display_name": "Chair"
+            },
+            {
+                "furniture_type": "cabinet",
+                "frequency": 0.02218595399602183,
+                "display_name": "Cabinet"
+            },
+            {
+                "furniture_type": "single_bed",
+                "frequency": 0.021522925485795888,
+                "display_name": "Single Bed"
+            },
+            {
+                "furniture_type": "dressing_table",
+                "frequency": 0.021012903554852858,
+                "display_name": "Dressing Table"
+            },
+            {
+                "furniture_type": "table",
+                "frequency": 0.02085989697556995,
+                "display_name": "Table"
+            },
+            {
+                "furniture_type": "desk",
+                "frequency": 0.017085734686591525,
+                "display_name": "Desk"
+            },
+            {
+                "furniture_type": "stool",
+                "frequency": 0.011730504411689702,
+                "display_name": "Stool"
+            },
+            {
+                "furniture_type": "floor_lamp",
+                "frequency": 0.009282399143163157,
+                "display_name": "Floor Lamp"
+            },
+            {
+                "furniture_type": "shelf",
+                "frequency": 0.008619370632937216,
+                "display_name": "Shelf"
+            },
+            {
+                "furniture_type": "kids_bed",
+                "frequency": 0.007701331157239762,
+                "display_name": "Kids Bed"
+            },
+            {
+                "furniture_type": "bookshelf",
+                "frequency": 0.007650328964145458,
+                "display_name": "Bookshelf"
+            },
+            {
+                "furniture_type": "children_cabinet",
+                "frequency": 0.007242311419391034,
+                "display_name": "Children Cabinet"
+            },
+            {
+                "furniture_type": "dressing_chair",
+                "frequency": 0.005967256592033458,
+                "display_name": "Dressing Chair"
+            },
+            {
+                "furniture_type": "armchair",
+                "frequency": 0.004947212730147396,
+                "display_name": "Armchair"
+            },
+            {
+                "furniture_type": "sofa",
+                "frequency": 0.001887081144489213,
+                "display_name": "Sofa"
+            },
+            {
+                "furniture_type": "coffee_table",
+                "frequency": 0.0010710460549803642,
+                "display_name": "Coffee Table"
+            }
+        ]
+    }
+}

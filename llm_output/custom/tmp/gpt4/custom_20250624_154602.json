@@ -1,0 +1,39 @@
+{
+    "choices":[
+        {
+            "finish_reason":"stop",
+            "index":0,
+            "logprobs":null,
+            "message":{
+                "annotations":[],
+                "audio":null,
+                "content":"double_bed {length: 108px; width: 120px; height: 57px; left: 80px; top: 125px; depth: 28px;orientation: 0 degrees;}\nwardrobe {length: 92px; width: 31px; height: 118px; left: 20px; top: 50px; depth: 59px;orientation: 90 degrees;}\nwardrobe {length: 92px; width: 31px; height: 118px; left: 20px; top: 180px; depth: 59px;orientation: 90 degrees;}\npendant_lamp {length: 46px; width: 46px; height: 37px; left: 130px; top: 75px; depth: 130px;orientation: 0 degrees;}",
+                "function_call":null,
+                "refusal":null,
+                "role":"assistant",
+                "tool_calls":null
+            }
+        }
+    ],
+    "created":1750794375,
+    "id":"chatcmpl-Bm3stRD5XHrAUN9F5X3kz5AI3pihh",
+    "model":"gpt-4-0613",
+    "object":"chat.completion",
+    "service_tier":"default",
+    "system_fingerprint":null,
+    "usage":{
+        "completion_tokens":182,
+        "completion_tokens_details":{
+            "accepted_prediction_tokens":0,
+            "audio_tokens":0,
+            "reasoning_tokens":0,
+            "rejected_prediction_tokens":0
+        },
+        "prompt_tokens":3640,
+        "prompt_tokens_details":{
+            "audio_tokens":0,
+            "cached_tokens":0
+        },
+        "total_tokens":3822
+    }
+}
