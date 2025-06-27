@@ -54,6 +54,10 @@ class LayoutGPTGUI:
         self.custom_prompt_frame = ttk.Frame(notebook)
         notebook.add(self.custom_prompt_frame, text="Custom Prompt")
         
+        # partial completion
+        self.partial_completion_frame = ttk.Frame(notebook)
+        notebook.add(self.partial_completion_frame, text="Partial Completion")
+        
         # data query
         self.data_query_frame = ttk.Frame(notebook)
         notebook.add(self.data_query_frame, text="Data Query")
@@ -66,6 +70,9 @@ class LayoutGPTGUI:
         
         # create custom prompt ui
         self.create_custom_prompt_ui()
+        
+        # create partial completion ui
+        self.create_partial_completion_ui()
         
         # create data query ui
         self.create_data_query_ui()
@@ -574,6 +581,21 @@ class LayoutGPTGUI:
         self.add_timestamp_custom_var.set(True)
         self.no_additional_furniture_custom_var.set(True)
         self.no_overlapping_furniture_custom_var.set(True)
+        
+        # partial completion default values
+        self.partial_room_var.set("bedroom")
+        self.partial_gpt_type_var.set("gpt4")
+        self.partial_icl_type_var.set("k-similar")
+        self.partial_k_var.set("4")
+        self.partial_room_condition_var.set("Room Type: bedroom\nRoom Size: max length 300px, max width 250px")
+        self.partial_temperature_var.set("0.8")
+        self.partial_n_iter_var.set("3")
+        self.partial_unit_var.set("px")
+        self.partial_no_overlapping_var.set(True)
+        self.partial_maintain_symmetry_var.set(True)
+        self.partial_enhance_functionality_var.set(True)
+        self.partial_verbose_var.set(False)
+        self.partial_add_timestamp_var.set(True)
     
     def browse_dataset_dir(self):
         """browse dataset directory"""
@@ -1762,6 +1784,292 @@ class LayoutGPTGUI:
             
         except Exception as e:
             self.log_visualization(f"[ERROR] Auto visualization error: {str(e)}")
+
+    def create_partial_completion_ui(self):
+        """创建部分场景补全界面"""
+        # main frame
+        main_frame = ttk.Frame(self.partial_completion_frame)
+        main_frame.pack(fill=tk.BOTH, expand=True, padx=10, pady=10)
+        
+        # basic parameters group
+        basic_group = ttk.LabelFrame(main_frame, text="Basic Parameters", padding=10)
+        basic_group.pack(fill=tk.X, pady=(0, 10))
+        
+        # room type
+        ttk.Label(basic_group, text="Room Type:").grid(row=0, column=0, sticky=tk.W, padx=(0, 10))
+        self.partial_room_var = tk.StringVar()
+        partial_room_combo = ttk.Combobox(basic_group, textvariable=self.partial_room_var, 
+                                        values=["bedroom", "livingroom"], state="readonly")
+        partial_room_combo.grid(row=0, column=1, sticky=tk.W, padx=(0, 20))
+        
+        # GPT model
+        ttk.Label(basic_group, text="GPT Model:").grid(row=0, column=2, sticky=tk.W, padx=(0, 10))
+        self.partial_gpt_type_var = tk.StringVar()
+        partial_gpt_combo = ttk.Combobox(basic_group, textvariable=self.partial_gpt_type_var, 
+                                       values=["gpt3.5-chat", "gpt4", "gpt-4.1", "gpt-4-turbo", "gpt-4.5-preview", "o3", "o4-mini"], state="readonly")
+        partial_gpt_combo.grid(row=0, column=3, sticky=tk.W)
+        
+        # ICL parameters
+        ttk.Label(basic_group, text="ICL Type:").grid(row=1, column=0, sticky=tk.W, padx=(0, 10), pady=(10, 0))
+        self.partial_icl_type_var = tk.StringVar()
+        partial_icl_combo = ttk.Combobox(basic_group, textvariable=self.partial_icl_type_var, 
+                                       values=["fixed-random", "k-similar"], state="readonly")
+        partial_icl_combo.grid(row=1, column=1, sticky=tk.W, padx=(0, 20), pady=(10, 0))
+        
+        # K value
+        ttk.Label(basic_group, text="K Examples:").grid(row=1, column=2, sticky=tk.W, padx=(0, 10), pady=(10, 0))
+        self.partial_k_var = tk.StringVar()
+        partial_k_entry = ttk.Entry(basic_group, textvariable=self.partial_k_var, width=10)
+        partial_k_entry.grid(row=1, column=3, sticky=tk.W, pady=(10, 0))
+        
+        # room condition group
+        condition_group = ttk.LabelFrame(main_frame, text="Room Condition", padding=10)
+        condition_group.pack(fill=tk.X, pady=(0, 10))
+        
+        ttk.Label(condition_group, text="Room Condition (e.g., Room Type: bedroom, Room Size: max length 300px, max width 250px):").pack(anchor=tk.W)
+        self.partial_room_condition_var = tk.StringVar()
+        condition_entry = ttk.Entry(condition_group, textvariable=self.partial_room_condition_var, width=80)
+        condition_entry.pack(fill=tk.X, pady=(5, 0))
+        
+        # partial layout group
+        layout_group = ttk.LabelFrame(main_frame, text="Existing Partial Layout", padding=10)
+        layout_group.pack(fill=tk.BOTH, expand=True, pady=(0, 10))
+        
+        ttk.Label(layout_group, text="Existing Furniture Layout (CSS format):").pack(anchor=tk.W)
+        ttk.Label(layout_group, text='Example: double_bed {length: 180px; width: 200px; height: 100px; orientation: 0 degrees; left: 100px; top: 50px; depth: 150px;}', 
+                 foreground="gray", font=("TkDefaultFont", 8)).pack(anchor=tk.W)
+        
+        self.partial_layout_text = scrolledtext.ScrolledText(layout_group, height=8, wrap=tk.WORD)
+        self.partial_layout_text.pack(fill=tk.BOTH, expand=True, pady=(5, 0))
+        
+        # generation parameters group
+        gen_params_group = ttk.LabelFrame(main_frame, text="Generation Parameters", padding=10)
+        gen_params_group.pack(fill=tk.X, pady=(0, 10))
+        
+        # temperature
+        ttk.Label(gen_params_group, text="Temperature:").grid(row=0, column=0, sticky=tk.W, padx=(0, 10))
+        self.partial_temperature_var = tk.StringVar()
+        partial_temp_entry = ttk.Entry(gen_params_group, textvariable=self.partial_temperature_var, width=10)
+        partial_temp_entry.grid(row=0, column=1, sticky=tk.W, padx=(0, 20))
+        
+        # iterations
+        ttk.Label(gen_params_group, text="Iterations:").grid(row=0, column=2, sticky=tk.W, padx=(0, 10))
+        self.partial_n_iter_var = tk.StringVar()
+        partial_iter_entry = ttk.Entry(gen_params_group, textvariable=self.partial_n_iter_var, width=10)
+        partial_iter_entry.grid(row=0, column=3, sticky=tk.W)
+        
+        # unit
+        ttk.Label(gen_params_group, text="Unit:").grid(row=1, column=0, sticky=tk.W, padx=(0, 10), pady=(10, 0))
+        self.partial_unit_var = tk.StringVar()
+        partial_unit_combo = ttk.Combobox(gen_params_group, textvariable=self.partial_unit_var, 
+                                        values=["px", "m", ""], state="readonly")
+        partial_unit_combo.grid(row=1, column=1, sticky=tk.W, pady=(10, 0))
+        
+        # completion options group
+        options_group = ttk.LabelFrame(main_frame, text="Completion Options", padding=10)
+        options_group.pack(fill=tk.X, pady=(0, 10))
+        
+        self.partial_no_overlapping_var = tk.BooleanVar()
+        ttk.Checkbutton(options_group, text="No Overlapping Furniture", 
+                       variable=self.partial_no_overlapping_var).grid(row=0, column=0, sticky=tk.W)
+        
+        self.partial_maintain_symmetry_var = tk.BooleanVar()
+        ttk.Checkbutton(options_group, text="Maintain Visual Symmetry", 
+                       variable=self.partial_maintain_symmetry_var).grid(row=0, column=1, sticky=tk.W, padx=(20, 0))
+        
+        self.partial_enhance_functionality_var = tk.BooleanVar()
+        ttk.Checkbutton(options_group, text="Enhance Functionality", 
+                       variable=self.partial_enhance_functionality_var).grid(row=1, column=0, sticky=tk.W, pady=(10, 0))
+        
+        self.partial_verbose_var = tk.BooleanVar()
+        ttk.Checkbutton(options_group, text="Verbose Output", 
+                       variable=self.partial_verbose_var).grid(row=1, column=1, sticky=tk.W, padx=(20, 0), pady=(10, 0))
+        
+        self.partial_add_timestamp_var = tk.BooleanVar(value=True)
+        ttk.Checkbutton(options_group, text="Add Timestamp", 
+                       variable=self.partial_add_timestamp_var).grid(row=2, column=0, sticky=tk.W, pady=(10, 0))
+        
+        # control buttons
+        control_frame = ttk.Frame(main_frame)
+        control_frame.pack(fill=tk.X, pady=(10, 0))
+        
+        ttk.Button(control_frame, text="Start Partial Completion", command=self.start_partial_completion).pack(side=tk.LEFT, padx=(0, 10))
+        ttk.Button(control_frame, text="Reset Parameters", command=self.reset_partial_completion_params).pack(side=tk.LEFT)
+        ttk.Button(control_frame, text="Load Example", command=self.load_partial_completion_example).pack(side=tk.LEFT, padx=(10, 0))
+        
+        # output log
+        log_group = ttk.LabelFrame(main_frame, text="Output Log", padding=10)
+        log_group.pack(fill=tk.BOTH, expand=True, pady=(10, 0))
+        
+        self.partial_completion_log = scrolledtext.ScrolledText(log_group, height=8)
+        self.partial_completion_log.pack(fill=tk.BOTH, expand=True)
+
+    def log_partial_completion(self, message):
+        """log partial completion"""
+        timestamp = datetime.now().strftime("%H:%M:%S")
+        self.partial_completion_log.insert(tk.END, f"[{timestamp}] {message}\n")
+        self.partial_completion_log.see(tk.END)
+        self.root.update()
+    
+    def reset_partial_completion_params(self):
+        """reset partial completion parameters"""
+        self.partial_room_var.set("bedroom")
+        self.partial_gpt_type_var.set("gpt4")
+        self.partial_icl_type_var.set("k-similar")
+        self.partial_k_var.set("4")
+        self.partial_room_condition_var.set("Room Type: bedroom\nRoom Size: max length 300px, max width 250px")
+        self.partial_temperature_var.set("0.8")
+        self.partial_n_iter_var.set("3")
+        self.partial_unit_var.set("px")
+        self.partial_no_overlapping_var.set(True)
+        self.partial_maintain_symmetry_var.set(True)
+        self.partial_enhance_functionality_var.set(True)
+        self.partial_verbose_var.set(False)
+        self.partial_add_timestamp_var.set(True)
+        self.partial_layout_text.delete(1.0, tk.END)
+        self.log_partial_completion("parameters reset to default values")
+    
+    def load_partial_completion_example(self):
+        """load partial completion example"""
+        example_layout = """double_bed {length: 180px; width: 200px; height: 100px; orientation: 0 degrees; left: 100px; top: 50px; depth: 150px;}
+nightstand {length: 40px; width: 30px; height: 60px; orientation: 0 degrees; left: 50px; top: 50px; depth: 130px;}"""
+        
+        self.partial_layout_text.delete(1.0, tk.END)
+        self.partial_layout_text.insert(1.0, example_layout)
+        self.log_partial_completion("loaded example partial layout: double bed + one nightstand")
+    
+    def validate_partial_completion_params(self):
+        """validate partial completion parameters"""
+        if not self.partial_room_var.get():
+            messagebox.showerror("error", "please select room type")
+            return False
+        
+        if not self.partial_gpt_type_var.get():
+            messagebox.showerror("error", "please select GPT model")
+            return False
+        
+        if not self.partial_room_condition_var.get().strip():
+            messagebox.showerror("error", "please enter room condition")
+            return False
+        
+        partial_layout = self.partial_layout_text.get(1.0, tk.END).strip()
+        if not partial_layout:
+            messagebox.showerror("error", "please enter existing partial layout")
+            return False
+        
+        try:
+            k_val = int(self.partial_k_var.get())
+            if k_val < 0:
+                raise ValueError
+        except ValueError:
+            messagebox.showerror("error", "K examples must be non-negative integer")
+            return False
+        
+        try:
+            temp_val = float(self.partial_temperature_var.get())
+            if temp_val < 0 or temp_val > 2:
+                raise ValueError
+        except ValueError:
+            messagebox.showerror("error", "temperature must be between 0 and 2")
+            return False
+        
+        try:
+            iter_val = int(self.partial_n_iter_var.get())
+            if iter_val < 1:
+                raise ValueError
+        except ValueError:
+            messagebox.showerror("error", "iterations must be positive integer")
+            return False
+        
+        return True
+    
+    def start_partial_completion(self):
+        """start partial completion"""
+        if not self.validate_partial_completion_params():
+            return
+        
+        # run partial completion in a new thread
+        thread = threading.Thread(target=self.run_partial_completion)
+        thread.daemon = True
+        thread.start()
+    
+    def run_partial_completion(self):
+        """run partial completion"""
+        try:
+            self.log_partial_completion("starting partial scene completion...")
+            
+            # get parameters
+            room_type = self.partial_room_var.get()
+            gpt_type = self.partial_gpt_type_var.get()
+            icl_type = self.partial_icl_type_var.get()
+            k_val = self.partial_k_var.get()
+            room_condition = self.partial_room_condition_var.get().strip()
+            partial_layout = self.partial_layout_text.get(1.0, tk.END).strip()
+            temperature = self.partial_temperature_var.get()
+            n_iter = self.partial_n_iter_var.get()
+            unit = self.partial_unit_var.get()
+            
+            self.log_partial_completion(f"parameters: {room_type}, {gpt_type}, {icl_type}, K={k_val}")
+            
+            # build command
+            cmd = [sys.executable, "run_layoutgpt_partial_completion.py"]
+            cmd.extend(["--room", room_type])
+            cmd.extend(["--gpt_type", gpt_type])
+            cmd.extend(["--icl_type", icl_type])
+            cmd.extend(["--K", k_val])
+            cmd.extend(["--room_condition", room_condition])
+            cmd.extend(["--partial_layout", partial_layout])
+            cmd.extend(["--temperature", temperature])
+            cmd.extend(["--n_iter", n_iter])
+            cmd.extend(["--unit", unit])
+            
+            # add optional flags
+            if self.partial_no_overlapping_var.get():
+                cmd.append("--no_overlapping_furniture")
+            if self.partial_maintain_symmetry_var.get():
+                cmd.append("--maintain_symmetry")
+            if self.partial_enhance_functionality_var.get():
+                cmd.append("--enhance_functionality")
+            if self.partial_verbose_var.get():
+                cmd.append("--verbose")
+            if self.partial_add_timestamp_var.get():
+                cmd.append("--add_timestamp")
+            
+            self.log_partial_completion(f"executing command: {' '.join(cmd)}")
+            
+            # execute command
+            process = subprocess.Popen(
+                cmd,
+                stdout=subprocess.PIPE,
+                stderr=subprocess.STDOUT,
+                text=True,
+                bufsize=1,
+                universal_newlines=True
+            )
+            
+            # real-time output
+            generated_file_path = None
+            
+            for line in process.stdout:
+                line = line.strip()
+                self.log_partial_completion(line)
+                
+                # extract output file path
+                if "结果保存至:" in line:
+                    generated_file_path = line.split("结果保存至: ")[-1]
+            
+            process.wait()
+            
+            if process.returncode == 0:
+                self.log_partial_completion("[SUCCESS] partial scene completion completed!")
+                messagebox.showinfo("success", "partial scene completion completed!")
+            else:
+                self.log_partial_completion(f"[ERROR] partial completion failed, exit code: {process.returncode}")
+                messagebox.showerror("error", "partial completion failed, please check log")
+                
+        except Exception as e:
+            self.log_partial_completion(f"[ERROR] execution error: {str(e)}")
+            messagebox.showerror("error", f"execution error: {str(e)}")
 
 
 def main():

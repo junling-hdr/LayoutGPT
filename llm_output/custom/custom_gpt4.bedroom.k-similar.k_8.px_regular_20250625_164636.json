@@ -1,0 +1,91 @@
+[
+    {
+        "custom_condition": "Condition:\nRoom Type: bedroom\nRoom Size: max length 273px, max width 256px\nDescription: A bedroom with a double bed, a table, a sofa and two bookshelf",
+        "generated_at": "2025-06-25T16:47:00.443086",
+        "gpt_type": "gpt4",
+        "icl_type": "k-similar",
+        "is_custom": true,
+        "iter": 0,
+        "iteration": 1,
+        "iteration_id": "custom_20250625_164636_iter1",
+        "object_list": [
+            [
+                "double_bed",
+                {
+                    "depth": 34.0,
+                    "height": 68.0,
+                    "left": 130.0,
+                    "length": 108.0,
+                    "orientation": 0.0,
+                    "top": 61.0,
+                    "width": 115.0
+                }
+            ],
+            [
+                "table",
+                {
+                    "depth": 8.0,
+                    "height": 16.0,
+                    "left": 24.0,
+                    "length": 30.0,
+                    "orientation": 0.0,
+                    "top": 95.0,
+                    "width": 20.0
+                }
+            ],
+            [
+                "sofa",
+                {
+                    "depth": 15.0,
+                    "height": 30.0,
+                    "left": 35.0,
+                    "length": 80.0,
+                    "orientation": 0.0,
+                    "top": 145.0,
+                    "width": 40.0
+                }
+            ],
+            [
+                "bookshelf",
+                {
+                    "depth": 50.0,
+                    "height": 100.0,
+                    "left": 185.0,
+                    "length": 70.0,
+                    "orientation": -180.0,
+                    "top": 195.0,
+                    "width": 22.0
+                }
+            ],
+            [
+                "bookshelf",
+                {
+                    "depth": 50.0,
+                    "height": 100.0,
+                    "left": 37.0,
+                    "length": 70.0,
+                    "orientation": -180.0,
+                    "top": 210.0,
+                    "width": 22.0
+                }
+            ]
+        ],
+        "prompt": "Condition:\nRoom Type: bedroom\nRoom Size: max length 273px, max width 256px\nDescription: A bedroom with a double bed, a table, a sofa and two bookshelf",
+        "query_id": "custom_20250625_164636",
+        "raw_gpt_response": "double_bed {length: 108px; width: 115px; height: 68px; left: 130px; top: 61px; depth: 34px;orientation: 0 degrees;}\ntable {length: 30px; width: 20px; height: 16px; left: 24px; top: 95px; depth: 8px;orientation: 0 degrees;}\nsofa {length: 80px; width: 40px; height: 30px; left: 35px; top: 145px; depth: 15px;orientation: 0 degrees;}\nbookshelf {length: 70px; width: 22px; height: 100px; left: 185px; top: 195px; depth: 50px;orientation: -180 degrees;}\nbookshelf {length: 70px; width: 22px; height: 100px; left: 37px; top: 210px; depth: 50px;orientation: -180 degrees;}",
+        "sorted_ids": [
+            "8b7f7e8e-0eae-428d-8c0f-9600435db055_Bedroom-3951",
+            "bb66077e-f845-4c61-bea7-d88fc7dd4aeb_Bedroom-1087",
+            "fbd8335f-0637-42e3-8d89-dc96d4651ac2_MasterBedroom-3684",
+            "99a9a277-df69-43f1-a934-3548f4438510_SecondBedroom-92664",
+            "06fd7746-9abf-4430-b674-a6b904d5f1a3_Bedroom-68029",
+            "e60d4680-8a03-4f74-be43-99483b9ad9d3_MasterBedroom-9093",
+            "14e7aa9f-8774-40f4-b786-c042aecb27ff_MasterBedroom-6712",
+            "864a6e55-ad69-4803-8922-391d57d061b9_MasterBedroom-32709"
+        ],
+        "temperature": 1.0,
+        "timestamp": "20250625_164636",
+        "top_k": 8,
+        "unit": "px"
+    }
+]
